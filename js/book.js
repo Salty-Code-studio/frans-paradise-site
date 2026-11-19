@@ -109,7 +109,9 @@
     days: () => q("For how long?", "Coming back another day? Sort it out with Taty on the beach.") + chips(DAYS, s.days, "days", "two"),
     people: () => q(s.ride === "kids" ? "How many kids?" : "How many people?", s.ride === "rent" ? "" : "Groups are 5 people at most.") +
       chips(["1", "2", "3", "4", "5+"].map(k => ({ k })), s.people, "people", "row"),
-    day: () => q(s.ride === "rent" ? "When are you coming?" : "Pick a day", "Each day shows the forecast wind on Lac Bay, 9:00 to 18:00.") + `<div class="bk-cal" data-cal><div class="bk-load">Loading the wind…</div></div><div class="bk-dayinfo" data-dayinfo></div>`,
+    day: () => s.pre
+      ? q("What time suits you?", "Your day is picked on the page.") + `<div class="bk-dayinfo pre" data-dayinfo></div><details class="bk-change"><summary>Change day</summary><div class="bk-cal" data-cal><div class="bk-load">Loading the wind…</div></div></details>`
+      : q(s.ride === "rent" ? "When are you coming?" : "Pick a day", "Each day shows the forecast wind on Lac Bay, 9:00 to 18:00.") + `<div class="bk-cal" data-cal><div class="bk-load">Loading the wind…</div></div><div class="bk-dayinfo" data-dayinfo></div>`,
     you: () => {
       const m = msg();
       return q("And your name?") + `<label class="bk-lab" for="bk-name">Name</label><input class="bk-in" id="bk-name" autocomplete="given-name" placeholder="Your first name" value="${esc(s.name)}">
@@ -156,7 +158,7 @@
     const head = fmt(s.date, { weekday: "long", day: "numeric", month: "long" });
     const tm = TIMES.map(t => { const v = w && t.h ? t.h.map(h => w.sp[h]).filter(x => x != null) : []; return { ...t, s: v.length ? `${Math.round(avg(v))} kn` : t.k === "any" ? "Flexible" : "" }; });
     box.innerHTML = `<div class="bk-sel"><div><b>${head}</b>${w ? `<span>${w.kn} kn from ${compass(w.dir)}, gusts ${w.gust}. ${b.t}.</span>` : `<span>No forecast yet for this day.</span>`}</div>
-      ${f != null ? `<em class="f${f}">${FIT[f]}</em>` : ""}</div>${q(s.ride === "rent" ? "What time will you be there?" : "What time suits you?")}${chips(tm, s.time, "time", "hours")}`;
+      ${f != null ? `<em class="f${f}">${FIT[f]}</em>` : ""}</div>${s.pre ? "" : q(s.ride === "rent" ? "What time will you be there?" : "What time suits you?")}${chips(tm, s.time, "time", "hours")}`;
   };
 
   const render = () => {
@@ -164,7 +166,9 @@
     bar.style.width = `${((at + 1) / flow.length) * 100}%`;
     backBtn.style.visibility = at ? "visible" : "hidden";
     body.innerHTML = `<div class="bk-step">${views[id]()}</div>`;
-    if (id === "day") { if (wind) calendar(); else loadWind().then(() => { if (flow[at] === "day") calendar(); }); }
+    if (id === "day") {
+      if (wind) calendar(); else loadWind().then(() => { if (flow[at] === "day") calendar(); });
+    }
     if (id === "you") {
       const n = body.querySelector("#bk-name"), out = body.querySelector("[data-msg]"), go = body.querySelector("[data-send]");
       const sync = () => { s.name = n.value.trim(); const m = msg(); out.textContent = m; go.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(m)}`; };
@@ -186,14 +190,20 @@
   });
 
   const open = (preset = {}, from) => {
-    reset(); Object.assign(s, preset); back = from; loadWind();
+    reset(); Object.assign(s, preset); s.pre = !!preset.date; back = from; loadWind();
     flow = steps(); at = 0;
     // skip what the button already told us
-    while (at < flow.length - 1 && s[{ ride: "ride", level: "level", age: "age", gear: "gear", days: "days" }[flow[at]]]) { at++; flow = steps(); }
+    while (at < flow.length - 1 && s[{ ride: "ride", level: "level", age: "age", gear: "gear", days: "days", people: "people" }[flow[at]]]) { at++; flow = steps(); }
     render(); document.documentElement.classList.add("bk-on");
     dlg.showModal ? dlg.showModal() : dlg.setAttribute("open", "");
   };
   window.fpBook = open;
+  // Wind for one day, for the homepage bar: { kn, gust, dir, band, fit }
+  window.fpWind = (date, ride, level) => loadWind().then(w => {
+    const d = w && w[date]; if (!d) return null;
+    const f = fit(ride, level, d.kn);
+    return { kn: d.kn, gust: d.gust, dir: compass(d.dir), band: band(d.kn).t, color: band(d.kn).c, fit: f == null ? null : FIT[f], f };
+  });
 
   // Read a button: which ride, level or gear it was about
   const read = a => {

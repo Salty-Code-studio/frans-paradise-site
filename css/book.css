@@ -75,6 +75,14 @@ html.bk-on{overflow:hidden}
 .bk-sel em{flex:none;font:700 12.5px "DM Sans",sans-serif;font-style:normal;padding:5px 10px;border-radius:999px;white-space:nowrap}
 .bk-sel .f2{background:#dcf3e5;color:#0d6b38}.bk-sel .f1{background:#fff4c2;color:#6b5600}.bk-sel .f0{background:#fde2dd;color:#a3321f}
 
+.bk-dayinfo.pre:not(:empty){margin-top:18px;padding-top:0;border-top:0}
+.bk-dayinfo.pre .bk-chips.hours{margin-top:14px}
+.bk .bk-change{margin-top:20px;border:0!important;border-top:1px solid var(--line)!important;border-radius:0;padding:14px 0 0;background:none!important;box-shadow:none!important}
+.bk-change summary{cursor:pointer;list-style:none;font:700 14.5px "DM Sans",sans-serif;color:var(--teal);display:inline-flex;align-items:center;gap:6px}
+.bk-change summary::-webkit-details-marker{display:none}
+.bk-change summary::after{content:"+";font-weight:400;font-size:18px}
+.bk-change[open] summary::after{content:"−"}
+
 /* Last step */
 .bk-lab{display:block;font:700 13.5px "DM Sans",sans-serif;margin:18px 0 7px}
 .bk-lab span{font-weight:500;color:var(--ink2);margin-left:4px}
