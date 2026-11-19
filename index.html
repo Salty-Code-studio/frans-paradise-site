@@ -86,19 +86,8 @@ h2{font:800 clamp(1.8rem,3vw,2.4rem)/1.15 var(--head);margin-top:6px;letter-spac
   .hero .wrap{margin-top:28px}
 }
 
-/* Find a lesson bar */
-.finder{position:relative;z-index:5;margin-top:-82px}
-.finder form{background:#fff;border-radius:var(--rc);box-shadow:0 18px 50px rgba(0,0,0,.14);padding:22px 26px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr auto;gap:16px;align-items:end}
-.finder h3{font:800 17px var(--head);text-transform:uppercase}
-.finder p{font-size:14px;color:var(--ink-2)}
-.finder label{display:block;font-size:12.5px;color:var(--ink-2);margin-bottom:5px}
 .field{position:relative}
 .field i{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--teal);pointer-events:none}
-.finder select,.finder input{width:100%;height:46px;border:1px solid var(--line);border-radius:var(--r);background:#fff;font:500 14.5px var(--body);color:var(--ink);padding:0 12px 0 38px;appearance:none;-webkit-appearance:none}
-.finder select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23111111' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center}
-.finder .btn{height:46px;min-height:46px}
-@media (max-width:980px){.finder{margin-top:0}.finder form{grid-template-columns:1fr 1fr;padding:22px}.finder .intro,.finder .btn{grid-column:1/-1}}
-@media (max-width:480px){.finder form{grid-template-columns:1fr}}
 
 /* Lessons */
 .lessons{padding:90px 0 120px}
@@ -262,7 +251,6 @@ footer li i{color:var(--ink);margin-right:6px}
 @media (max-width:860px){.hero::after{display:none}.hero{background:linear-gradient(180deg,#c9f7fb,#e9fcfe)}}
 
 /* Finder: glassy card with a gradient edge */
-.finder form{border:2px solid transparent;background:linear-gradient(#fff,#fff) padding-box,var(--grad-sea) border-box;box-shadow:0 22px 60px rgba(0,119,182,.22)}
 .field i{color:var(--ocean)}
 
 /* Soft aqua washes on the white sections */
@@ -340,7 +328,6 @@ footer.site{background:linear-gradient(170deg,rgba(0,103,184,.93) 0%,rgba(2,62,1
 .eyebrow{color:var(--ocean)}
 .hero h1 .glow{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--ocean)}
 .hero{background:linear-gradient(160deg,rgba(236,249,252,.93) 0%,rgba(214,243,248,.9) 45%,rgba(190,235,243,.88) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
-.finder form{border:1px solid var(--line);background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.12)}
 .card::before{height:3px}
 .card .btn{background:#fff;color:var(--ink);border:2px solid var(--ink)}
 .card .btn:hover{background:var(--ink);color:#fff}
@@ -386,7 +373,6 @@ footer.site .tag{color:#d4ecf7}
 .hero h1 .glow{color:var(--sky)}
 .hero{background:linear-gradient(160deg,rgba(225,244,255,.92) 0%,rgba(196,234,252,.88) 45%,rgba(160,224,240,.85) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
 .perks i,.field i,.card li i{color:var(--sky)}
-.finder form{border:2px solid var(--lagoon2)}
 .card::before{background:linear-gradient(90deg,var(--lagoon2),var(--sky));height:4px}
 .reviews::before{background:linear-gradient(115deg,rgba(22,184,198,.82) 0%,rgba(22,118,210,.86) 55%,rgba(13,90,166,.9) 100%)}
 .quote .stars,.rv-head a{color:#ffd166}.dots button[aria-current="true"]{background:#ffd166}
@@ -425,7 +411,6 @@ footer li i,footer ul a:hover,.social a:hover,.news-ok{color:#ffd166}
 .hero h1 .glow{color:var(--teal)}
 .hero{background:linear-gradient(160deg,rgba(226,245,253,.93) 0%,rgba(198,236,251,.9) 45%,rgba(160,220,244,.86) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
 .perks i,.field i,.card li i{color:var(--teal)}
-.finder form{border:2px solid var(--teal)}
 .lessons{background:linear-gradient(180deg,#fff 0%,var(--sand-l) 100%)}
 .card::before{background:linear-gradient(90deg,var(--teal),var(--sky2))}
 .reviews::before{background:linear-gradient(115deg,rgba(14,143,154,.85) 0%,rgba(36,150,200,.8) 55%,rgba(11,95,102,.9) 100%)}
@@ -531,8 +516,6 @@ footer.site{background:#111111!important;border-top:1px solid rgba(255,255,255,.
 .btn,.btn.ghost,.btn.white,.card .btn,.finder form,.finder select,.finder input,details,details:first-child,.news input,.news button,.film-x{border:0!important}
 .btn.ghost,.btn.white{background:rgba(255,255,255,.5)!important;color:var(--teal-dk)!important;-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 6px 22px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.6)!important}
 .btn.ghost:hover,.btn.white:hover{background:rgba(255,255,255,.72)!important;color:var(--teal-dk)!important}
-.finder form{background:rgba(255,255,255,.58)!important;-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);box-shadow:0 20px 60px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.7)!important}
-.finder select,.finder input{background-color:rgba(255,255,255,.62)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 2px 10px rgba(0,0,0,.06)}
 details{background:rgba(255,255,255,.6)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 6px 20px rgba(0,0,0,.06)}
 details[open]{box-shadow:0 10px 28px rgba(14,143,154,.12)!important}
 .news input{background:rgba(255,255,255,.1)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
@@ -551,8 +534,6 @@ details[open]{box-shadow:0 10px 28px rgba(14,143,154,.12)!important}
 .logo-track img{flex:none;-webkit-user-drag:none;user-select:none}
 /* Hero ends on a straight line, no wave */
 .hero::after{display:none!important}
-.finder{background:linear-gradient(transparent 82px,var(--sand-l) 82px)}
-@media (max-width:980px){.finder{background:var(--sand-l)}}
 /* The strips: one open at a time, the rest wait as tinted slivers */
 .strips{display:flex;gap:12px;height:600px}
 .strip{position:relative;flex:1 1 0;min-width:0;border:0;padding:0;border-radius:22px;overflow:hidden;cursor:pointer;background:var(--ink);
@@ -708,17 +689,6 @@ footer.site .social a:hover{color:var(--aqua-hi)!important}
 .perks i{color:#6ae6e0!important}
 .hero .eyebrow{color:#f06a24!important}
 @media (max-width:860px){.hero::before{display:block!important;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.85))!important}}
-/* Find a lesson: solid turquoise bar, black text, white fields, orange button */
-.finder form{background:#6ae6e0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:0 20px 50px rgba(0,0,0,.18)!important}
-.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#111111!important}
-.finder .intro p,.finder label{opacity:.78}
-.finder select,.finder input{background-color:#fff!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
-.finder .field i{color:#0b5f66!important}
-/* Find a lesson: dark frosted teal glass, white text */
-.finder form{background:rgba(6,78,84,.8)!important;-webkit-backdrop-filter:blur(22px) saturate(1.5)!important;backdrop-filter:blur(22px) saturate(1.5)!important;box-shadow:0 20px 50px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)!important}
-.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#fff!important}
-.finder .intro p,.finder label{opacity:.8}
-@media (prefers-reduced-transparency:reduce){.finder form{background:#0b5f66!important}}
 /* Lesson name in bright orange; Windsurf strip tinted red so all four strips differ */
 .rs-name{color:var(--orange)!important}
 .rs .strip:nth-child(1){--tone:linear-gradient(180deg,#ff6b57,#e0352b)}
@@ -761,9 +731,6 @@ footer.site .social a:hover{color:var(--aqua-hi)!important}
 :root{--grain:url(img/sand-grain.png);--dune:linear-gradient(transparent,transparent);--speck:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .96 0 0 0 0 .92 0 0 0 0 .85 1.6 0 0 0 -.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E")}
 body,.ride,.cta-grid,.faq,.extras,.rated{background-image:var(--grain),var(--dune)!important;background-size:384px 384px,317px 317px!important;background-repeat:repeat,repeat!important}
 .ride.rs{background-image:var(--grain),var(--dune),radial-gradient(rgba(0,0,0,.07) 1.2px,transparent 1.4px)!important;background-size:384px 384px,317px 317px,22px 22px!important;background-repeat:repeat!important}
-.finder::before{content:"";position:absolute;left:0;right:0;top:82px;bottom:0;z-index:0;pointer-events:none;background:var(--grain),var(--dune);background-size:384px 384px,317px 317px;background-repeat:repeat}
-.finder>*{position:relative;z-index:1}
-@media (max-width:980px){.finder::before{top:0}}
 /* Footer: sand dusted along the top edge, fading into the dark */
 footer.site{position:relative}
 footer.site::before{content:"";position:absolute;inset:0;pointer-events:none;
@@ -786,7 +753,6 @@ section.cta-grid .cta-head{margin-bottom:34px}
 body{background-color:#fbf6ec!important;background-image:var(--grain),var(--dune)!important;background-size:384px 384px,317px 317px!important;background-repeat:repeat!important}
 .ride,.ride.rs,.faq,.extras,.rated,.finder{background:transparent!important}
 .ride.rs{background-image:none!important}
-.finder::before{display:none!important}
 section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(180deg,rgba(251,246,236,0) 0%,rgba(251,246,236,.35) 45%,rgba(251,246,236,.85) 80%,#fbf6ec 100%)!important;background-size:384px 384px,317px 317px,auto!important;background-position:0 0,0 0,0 0!important}
 /* Hero: second button, frosted outline next to Book a Lesson */
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
@@ -891,18 +857,6 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
         <li><i class="ph ph-wind"></i>Warm, shallow water</li>
         <li><i class="ph ph-users-three"></i>All levels welcome</li>
       </ul>
-    </div>
-  </section>
-
-  <section class="finder" aria-label="Find a lesson">
-    <div class="wrap">
-      <form id="finder">
-        <div class="intro"><h3>Find a lesson</h3><p>See the wind for your day, then book on WhatsApp.</p></div>
-        <div><label for="f-act">Activity</label><div class="field"><i class="ph ph-sailboat"></i><select id="f-act"><option>Windsurfing</option><option>Wing foil</option><option>Wind foil</option><option>Kids lesson</option></select></div></div>
-        <div><label for="f-lvl">Level</label><div class="field"><i class="ph ph-chart-bar"></i><select id="f-lvl"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div></div>
-        <div><label for="f-date">Date</label><div class="field"><i class="ph ph-calendar-blank"></i><input type="date" id="f-date"></div></div>
-        <button class="btn" type="submit">Check wind &amp; book</button>
-      </form>
     </div>
   </section>
 
@@ -1061,19 +1015,6 @@ document.querySelectorAll('[data-wa]').forEach(a=>{a.href=WA+encodeURIComponent(
 const nav=document.getElementById('nav'),mb=nav.querySelector('.menu-btn');
 mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
 nav.querySelectorAll('ul a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');mb.setAttribute('aria-expanded',false);}));
-
-// Find a lesson: builds a WhatsApp request from the three fields
-const d=document.getElementById('f-date'); d.valueAsDate=new Date(); d.min=d.value;
-document.getElementById('finder').addEventListener('submit',e=>{
-  e.preventDefault();
-  const act=document.getElementById('f-act').value,lvl=document.getElementById('f-lvl').value;
-  // Hand the three answers to the booking quiz, which adds the wind and writes the message
-  const ride={'Windsurfing':'windsurf','Wing foil':'wing','Wind foil':'foil','Kids lesson':'kids'}[act];
-  const level=ride==='kids'?null:{Beginner:'new',Intermediate:'ride',Advanced:'adv'}[lvl];
-  if(window.fpBook){window.fpBook({ride,level,date:d.value},e.submitter);return;}
-  const day=new Date(d.value+'T12:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
-  window.open(WA+encodeURIComponent(`Hi Taty! Is there space for a ${lvl.toLowerCase()} ${act.toLowerCase()} lesson on ${day}?`),'_blank','noopener');
-});
 
 // Reviews: rotate one quote at a time
 const rq=[...document.querySelectorAll('#rq blockquote')];let qi=0;
