@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>Advanced Windsurf, Wing &amp; Foil Coaching in Bonaire | Frans Paradise</title>
+<meta name="description" content="Level up at Sorobon, Bonaire: advanced windsurf coaching ($110, 1 hour), wing foil intermediate ($145) and advanced wind foil ($165). Harness, footstraps, gybes, freestyle, foiling.">
+<link rel="canonical" href="https://fransparadise.com/lessons/advanced-lessons/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Improve Your Skills at Frans Paradise, Bonaire">
+<meta property="og:description" content="One-on-one coaching for windsurf, wing foil and wind foil riders who want to go further.">
+<meta property="og:image" content="img/coaching.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/","telephone":"+5997850514",
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "hasOfferCatalog":{"@type":"OfferCatalog","name":"Advanced coaching","itemListElement":[
+  {"@type":"Offer","name":"Advanced windsurf lesson, 1 hour","price":"110","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wing foil intermediate lesson, 1 to 1.5 hours","price":"145","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Advanced wind foil lesson, 1 hour","price":"165","priceCurrency":"USD"}]}}
+</script>
+<style>
+/* Improve your skills: a progression page. Big action hero, three discipline cards, a skill ladder, then a coaching request. */
+.page-hero{min-height:640px;display:flex;align-items:center}
+.page-hero>img{left:auto;right:0;width:64%;object-position:35% 40%;-webkit-mask:linear-gradient(90deg,transparent 0,#000 28%);mask:linear-gradient(90deg,transparent 0,#000 28%)}
+@media (max-width:900px){.page-hero>img{width:100%;-webkit-mask:none;mask:none;object-position:45% 50%}}
+.page-hero::before{background:linear-gradient(90deg,rgba(10,10,10,.6) 0%,rgba(10,10,10,.3) 40%,rgba(10,10,10,0) 60%)}
+@media (max-width:900px){.page-hero::before{background:linear-gradient(0deg,rgba(10,10,10,.92) 0%,rgba(10,10,10,.6) 55%,rgba(10,10,10,.2) 100%)}}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.intro2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.intro2 p{font-size:19px;color:var(--ink-2);margin-bottom:14px}
+.goals{list-style:none;padding:0;display:grid;gap:12px}
+.goals li{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:16px 18px;box-shadow:0 10px 30px rgba(0,0,0,.04);font-weight:500}
+.goals i{font-size:26px;color:var(--orange)}
+
+.disc{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dc{background:#111111;color:#fff;border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+.dc .ph{aspect-ratio:4/3;overflow:hidden;position:relative}
+.dc .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.dc:hover .ph img{transform:scale(1.05)}
+.dc .lvl{position:absolute;left:16px;top:16px;background:var(--aqua-hi);color:#111;font:800 11px var(--head);letter-spacing:.12em;text-transform:uppercase;padding:7px 11px;border-radius:999px}
+.dc .bd{padding:24px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.dc h3{font:400 2.1rem/.95 var(--big);text-transform:uppercase;color:var(--canary)}
+.dc .pr{display:flex;align-items:baseline;gap:10px}
+.dc .pr b{font:400 2rem/1 var(--big)}
+.dc .pr span{color:rgba(255,255,255,.65);font-size:14px}
+.dc p{color:rgba(255,255,255,.78);font-size:15.5px}
+.dc ul{list-style:none;padding:0;display:grid;gap:8px;margin:4px 0 8px}
+.dc li{display:flex;gap:10px;align-items:center;font-size:15px}
+.dc li i{color:var(--aqua-hi);font-size:18px}
+.dc .btn{margin-top:auto;align-self:flex-start}
+
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:l;position:relative}
+.ladder::before{content:"";position:absolute;left:6%;right:6%;top:34px;height:3px;background:repeating-linear-gradient(90deg,var(--teal) 0 12px,transparent 12px 22px);opacity:.5}
+.rung{position:relative;text-align:center;padding:0 14px}
+.rung .dot{width:70px;height:70px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;background:var(--teal-dk);color:#fff;font:400 1.8rem/1 var(--big);box-shadow:0 0 0 8px var(--sand-l);position:relative}
+.rung:last-child .dot{background:var(--orange)}
+.rung h3{font:800 18px var(--head);margin-bottom:6px}
+.rung p{color:var(--ink-2);font-size:15px}
+
+.req{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start;background:var(--teal-dk);color:#fff;border-radius:28px;padding:44px}
+.req h2{font:400 clamp(2.4rem,4.4vw,3.4rem)/.95 var(--big);text-transform:uppercase}
+.req p{color:rgba(255,255,255,.82);margin-top:12px}
+.req form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.req label{display:grid;gap:6px;font-size:13.5px;color:rgba(255,255,255,.8)}
+.req label.full{grid-column:1/-1}
+.req select,.req input,.req textarea{width:100%;border:0;border-radius:12px;padding:13px 14px;font:500 15.5px var(--body);color:var(--ink);background:#fff}
+.req textarea{min-height:110px;resize:vertical}
+.req .btn{grid-column:1/-1;justify-self:start}
+
+@media (max-width:900px){
+  .page-hero{min-height:560px;align-items:flex-end;padding-bottom:48px}
+  .intro2,.req{grid-template-columns:1fr;gap:28px}
+  .disc{grid-template-columns:1fr}
+  .ladder{grid-template-columns:1fr 1fr;row-gap:30px}.ladder::before{display:none}
+  .req{padding:28px}.req form{grid-template-columns:1fr}
+}
+.page-hero h1{max-width:8.5ch}
+.page-hero .lead{max-width:34ch}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="page-hero">
+  <img src="img/coaching.jpg" alt="An instructor in a straw hat coaching a rider next to a rigged sail on Lac Bay" fetchpriority="high">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / <a href="lessons.html">Lessons</a> / Improve your skills</p>
+    <p class="eyebrow light">Advanced coaching</p>
+    <h1>Improve your <span>skills</span></h1>
+    <p class="lead">Stuck on that one move? Can't stay up on the foil? Book a coaching session and work on exactly the skill you want to master.</p>
+    <div class="hero-acts">
+      <a class="btn" href="#request">Request coaching <i class="ph ph-arrow-right"></i></a>
+      <a class="btn ghost" href="#disciplines">See disciplines</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap intro2">
+    <div class="rv">
+      <h2 class="h2" style="margin-bottom:20px">Coaching built around you</h2>
+      <p>Every rider has different goals. Your instructor tailors each session to your level, your gear and what you want to get better at, with honest feedback on the water.</p>
+      <p>Lac Bay's steady trade winds and open, flat water make it a great place to push your limits while staying in a safe spot.</p>
+    </div>
+    <ul class="goals rv">
+      <li><i class="ph ph-arrows-clockwise"></i>Perfect your gybes and transitions</li>
+      <li><i class="ph ph-lightning"></i>Plane faster, ride in stronger wind</li>
+      <li><i class="ph ph-star-four"></i>Land freestyle moves and tricks</li>
+      <li><i class="ph ph-trend-up"></i>Get up and stay up on the foil</li>
+      <li><i class="ph ph-trophy"></i>Prepare for competition</li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="disciplines" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Choose your discipline</h2><p>Prices per person, in US dollars. Not sure which fits? Message us your level.</p></div>
+    <div class="disc">
+      <article class="dc rv">
+        <div class="ph"><img src="img/lacbay-fleet.jpg" alt="A fleet of windsurfers racing on Lac Bay" loading="lazy" style="object-position:50% 70%"><span class="lvl">Advanced</span></div>
+        <div class="bd">
+          <h3>Windsurf</h3>
+          <div class="pr"><b>$110</b><span>1 hour</span></div>
+          <p>Ready to go beyond gybes? Work on technique the way the pros do.</p>
+          <ul><li><i class="ph ph-check"></i>Harness and footstraps</li><li><i class="ph ph-check"></i>Planing and high-speed control</li><li><i class="ph ph-check"></i>Freestyle moves and loops</li></ul>
+          <a class="btn" data-wa="Hi! I'd like an advanced windsurf lesson (1 hour, $110). My level: ..." href="https://wa.me/5997850514">Book Windsurf <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="dc rv">
+        <div class="ph"><img src="img/wing-beach.jpg" alt="A rider lifts a Duotone wing overhead on Sorobon beach" loading="lazy" style="object-position:50% 40%"><span class="lvl">Intermediate</span></div>
+        <div class="bd">
+          <h3>Wing foil</h3>
+          <div class="pr"><b>$145</b><span>1 to 1.5 hours</span></div>
+          <p>Past the basics? Explore tricks and tackle the specifics of your riding.</p>
+          <ul><li><i class="ph ph-check"></i>Riding upwind</li><li><i class="ph ph-check"></i>First jumps and tricks</li><li><i class="ph ph-check"></i>Downwind runs</li></ul>
+          <a class="btn" data-wa="Hi! I'd like an intermediate wing foil lesson ($145). My level: ..." href="https://wa.me/5997850514">Book Wing foil <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </article>
+      <article class="dc rv">
+        <div class="ph"><img src="img/windfoil-jump.jpg" alt="Taty Frans flying his foil board high above the water" loading="lazy" style="object-position:62% 50%"><span class="lvl">Advanced</span></div>
+        <div class="bd">
+          <h3>Wind foil</h3>
+          <div class="pr"><b>$165</b><span>1 hour</span></div>
+          <p>Take on specific challenges in windsurf foiling and lift your riding.</p>
+          <ul><li><i class="ph ph-check"></i>Staying up on the foil</li><li><i class="ph ph-check"></i>Carving turns and transitions</li><li><i class="ph ph-check"></i>Higher, cleaner jumps</li></ul>
+          <a class="btn" data-wa="Hi! I'd like an advanced wind foil lesson (1 hour, $165). My level: ..." href="https://wa.me/5997850514">Book Wind foil <i class="ph ph-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">The windsurf ladder</h2><p>Where are you now? Each step builds on the one before.</p></div>
+    <div class="ladder rv">
+      <div class="rung"><div class="dot">1</div><h3>Harness</h3><p>Hook in to save energy and stay stable at higher speed.</p></div>
+      <div class="rung"><div class="dot">2</div><h3>Footstraps</h3><p>Get your feet in the straps for a smoother, faster ride.</p></div>
+      <div class="rung"><div class="dot">3</div><h3>Planing</h3><p>Get the board up and flying over the water.</p></div>
+      <div class="rung"><div class="dot">4</div><h3>Tricks</h3><p>Beyond the gybe: freestyle moves, like the pros.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="request" style="padding-top:0">
+  <div class="wrap">
+    <div class="req rv">
+      <div>
+        <h2>Request your coaching</h2>
+        <p>Tell us what you ride and what you want to work on. The form opens WhatsApp with your message ready, so we can match you with the right instructor.</p>
+      </div>
+      <form id="coach-form">
+        <label>Discipline<select name="d"><option>Windsurfing</option><option>Wing foil</option><option>Wind foiling</option></select></label>
+        <label>Preferred date<input type="date" name="t"></label>
+        <label class="full">Your experience and goal<textarea name="x" placeholder="E.g. I can plane in the harness, now I want to learn to gybe."></textarea></label>
+        <button class="btn" type="submit">Send on WhatsApp <i class="ph ph-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>Just starting out?</h2><p>Beginner windsurf lessons from $50, wing foil and wind foil from $125.</p></div>
+    <div class="acts"><a class="btn" href="lessons.html">Beginner lessons <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="rentals.html">Rent gear</a></div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script>
+// Coaching request: build a WhatsApp message from the form
+document.getElementById("coach-form").addEventListener("submit",e=>{
+  e.preventDefault();const f=e.target;
+  const msg=`Hi! I'd like an advanced coaching session.\nDiscipline: ${f.d.value}\nDate: ${f.t.value||"flexible"}\nMy experience and goal: ${f.x.value||"-"}`;
+  window.open("https://wa.me/5997850514?text="+encodeURIComponent(msg),"_blank","noopener");
+});
+</script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+</body>
+</html>

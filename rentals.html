@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>Windsurf, Wing &amp; Foil Rentals in Bonaire | Frans Paradise</title>
+<meta name="description" content="Rent windsurf, slalom, wind foil and wing gear at Sorobon, Lac Bay, Bonaire. From $30 an hour, day and 6-day rates, gear storage and a rescue boat on the water.">
+<link rel="canonical" href="https://fransparadise.com/rentals/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gear Rentals on Lac Bay, Bonaire">
+<meta property="og:description" content="Windsurf sets from $30 an hour. Slalom, wind foil and wing sets by the hour, day or week.">
+<meta property="og:image" content="img/rack-sails.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/","telephone":"+5997850514",
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "openingHours":"Mo-Su 09:00-18:00",
+ "hasOfferCatalog":{"@type":"OfferCatalog","name":"Rentals","itemListElement":[
+  {"@type":"Offer","name":"Windsurf beginner set, 1 hour","price":"30","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Windsurf equipment set, full day","price":"75","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Slalom set, full day","price":"100","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wind foil and board, full day","price":"110","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wing set, full day","price":"120","priceCurrency":"USD"}]}}
+</script>
+<style>
+/* Rentals: a rental board. Photo hero, then one dark price table you can scan in seconds. */
+.page-hero{min-height:520px;display:flex;align-items:center}
+.page-hero>img{object-position:50% 50%}
+.from{display:inline-flex;align-items:baseline;gap:10px;margin-top:22px;background:rgba(255,255,255,.1);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:12px 18px;border-radius:14px}
+.from b{font:400 2.4rem/1 var(--big);color:var(--canary)}
+.from span{color:rgba(255,255,255,.8);font-size:15px}
+
+.rates{background:#111111;color:#fff;border-radius:26px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.18)}
+.rates table{width:100%;border-collapse:collapse}
+.rates th,.rates td{padding:20px 22px;text-align:right;white-space:nowrap}
+.rates thead th{font:700 12px var(--head);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);border-bottom:1px solid rgba(255,255,255,.12)}
+.rates th[scope=row],.rates thead th:first-child{text-align:left}
+.rates tbody tr{border-bottom:1px solid rgba(255,255,255,.08);transition:background .25s}
+.rates tbody tr:last-child{border-bottom:0}
+.rates th[scope=row]{white-space:normal}
+.rates th[scope=row] b{display:block;font:400 1.6rem/1 var(--big);text-transform:uppercase;letter-spacing:.01em}
+.rates th[scope=row] span{display:block;font:400 14px var(--body);color:rgba(255,255,255,.6);margin-top:6px}
+.rates td{font:400 1.7rem/1 var(--big)}
+.rates td.na{color:rgba(255,255,255,.25);font-size:1.2rem}
+.rates td .lbl{display:none}
+.rates .book{text-align:right}
+.rates .book a{min-height:40px;padding:0 14px;font-size:14px}
+
+.extras3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+.ex{border-radius:22px;padding:30px;background:#fff;box-shadow:0 14px 40px rgba(0,0,0,.05)}
+.ex i{font-size:34px;color:var(--teal)}
+.ex h3{font:800 19px var(--head);margin:14px 0 6px}
+.ex p{color:var(--ink-2)}
+.ex b{font:400 2rem/1 var(--big);display:block;margin-top:10px}
+
+.gear{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+.gear img{width:100%;height:100%;object-fit:cover;border-radius:20px}
+.gear img:first-child{grid-row:1/3}
+
+@media (max-width:900px){
+  .page-hero{min-height:460px;align-items:flex-end;padding-bottom:44px}
+  .rates thead{display:none}
+  .rates table,.rates tbody,.rates tr,.rates th,.rates td{display:block;width:100%}
+  .rates tbody tr{padding:20px 20px 16px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .rates th[scope=row]{grid-column:1/-1;padding:0 0 6px}
+  .rates td{padding:12px 14px;text-align:left;background:rgba(255,255,255,.06);border-radius:12px}
+  .rates td .lbl{display:block;font:700 11px var(--head);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px}
+  .rates td.na{display:none}
+  .rates .book{grid-column:1/-1;background:none;padding:6px 0 0}
+  .rates .book a{width:100%}
+  .extras3{grid-template-columns:1fr}
+  .gear{grid-template-columns:1fr 1fr;grid-template-rows:200px;grid-auto-rows:150px}
+  .gear img:first-child{grid-row:auto;grid-column:1/-1}
+  .gear img:last-child{display:none}
+}
+/* Rental table: sand dusting in the bottom corners, like the footer */
+.rates{position:relative}
+.rates::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:var(--speck),radial-gradient(55% 90% at 0% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%),radial-gradient(55% 90% at 100% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%);
+  -webkit-mask:radial-gradient(45% 95% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(45% 95% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%);
+  mask:radial-gradient(45% 95% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(45% 95% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%)}
+.rates table{position:relative;z-index:1}
+/* Rental table on dark-stained wood planks: the image, then a warm dark stain so text stays readable */
+.rates::before{display:none}
+.rates thead th{border-bottom-color:rgba(255,235,205,.18)}
+.rates tbody tr{border-bottom-color:rgba(255,235,205,.1)}
+.rates th[scope=row] span,.rates thead th{color:rgba(255,240,220,.65)}
+@media (max-width:900px){.rates td{background:rgba(0,0,0,.28)}}
+/* Light wood, like the real shed: pale honey pine, dark text */
+.rates thead th{color:rgba(40,25,10,.7)!important;border-bottom-color:rgba(60,35,15,.22)!important}
+.rates tbody tr{border-bottom-color:rgba(60,35,15,.16)!important}
+.rates th[scope=row] b,.rates td{color:#1a1007}
+.rates th[scope=row] span{color:rgba(40,25,10,.72)!important}
+.rates td.na{color:rgba(40,25,10,.35)!important}
+.rates .book a{box-shadow:0 6px 16px rgba(120,80,20,.28)!important}
+@media (max-width:900px){.rates td{background:rgba(255,248,232,.55)!important}.rates td .lbl{color:rgba(40,25,10,.6)!important}}
+/* Hand-built wood: every row is its own pine plank, gaps fall on the row edges, a nail at each end */
+:root{--plank1:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='120' preserveAspectRatio='none'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0018 0.16' numOctaves='4' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 .50 0 0 0 0 .33 0 0 0 0 .16 0 0 0 1.5 -.55'/%3E%3C/filter%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006 0.04' numOctaves='2' seed='43'/%3E%3CfeColorMatrix values='0 0 0 0 .62 0 0 0 0 .43 0 0 0 0 .22 0 0 0 1.4 -.7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23ead0a2'/%3E%3Crect width='100%25' height='100%25' filter='url(%23k)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23w)' opacity='.7'/%3E%3C/svg%3E");--plank2:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='120' preserveAspectRatio='none'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0018 0.16' numOctaves='4' seed='17'/%3E%3CfeColorMatrix values='0 0 0 0 .50 0 0 0 0 .33 0 0 0 0 .16 0 0 0 1.5 -.55'/%3E%3C/filter%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006 0.04' numOctaves='2' seed='57'/%3E%3CfeColorMatrix values='0 0 0 0 .62 0 0 0 0 .43 0 0 0 0 .22 0 0 0 1.4 -.7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23e6c99a'/%3E%3Crect width='100%25' height='100%25' filter='url(%23k)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23w)' opacity='.7'/%3E%3C/svg%3E");--plank3:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='120' preserveAspectRatio='none'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0018 0.16' numOctaves='4' seed='29'/%3E%3CfeColorMatrix values='0 0 0 0 .50 0 0 0 0 .33 0 0 0 0 .16 0 0 0 1.5 -.55'/%3E%3C/filter%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.006 0.04' numOctaves='2' seed='69'/%3E%3CfeColorMatrix values='0 0 0 0 .62 0 0 0 0 .43 0 0 0 0 .22 0 0 0 1.4 -.7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23eccfa0'/%3E%3Crect width='100%25' height='100%25' filter='url(%23k)'/%3E%3Crect width='100%25' height='100%25' filter='url(%23w)' opacity='.7'/%3E%3C/svg%3E");
+  --nails:linear-gradient(transparent,transparent);
+  --bevel:linear-gradient(180deg,rgba(255,250,235,.35) 0,rgba(255,250,235,0) 18%,rgba(0,0,0,0) 80%,rgba(80,50,20,.12) 100%)}
+.rates{background:#5b3d1f!important;box-shadow:0 24px 60px rgba(120,80,40,.22)}
+.rates table{border-collapse:separate;border-spacing:0 4px;margin:-4px 0}
+.rates tr{background-color:#e8cc9e}
+.rates thead tr{background:var(--nails),var(--bevel),var(--plank3);background-size:100% 100%}
+.rates tbody tr:nth-child(3n+1){background:var(--nails),var(--bevel),var(--plank1);background-size:100% 100%}
+.rates tbody tr:nth-child(3n+2){background:var(--nails),var(--bevel),var(--plank2);background-size:100% 100%}
+.rates tbody tr:nth-child(3n){background:var(--nails),var(--bevel),var(--plank3);background-size:100% 100%}
+.rates tbody tr:nth-child(2n){background-position:0 0,0 0,0 0}
+.rates tbody tr,.rates thead th{border:0!important}
+@media (min-width:901px){.rates{background-image:none!important}}
+@media (max-width:900px){.rates table{border-spacing:0;margin:0}.rates tbody tr{border-bottom:4px solid #5b3d1f!important}.rates td{background:rgba(255,248,232,.5)!important}}
+/* Header row: plain white. Plank text: burned into the wood */
+.rates thead tr{background:#fff!important}
+.rates thead th{color:#3b2a1a!important;text-shadow:none}
+.rates th[scope=row] b,.rates td{color:#3a1f0a!important;text-shadow:0 0 1px rgba(70,35,10,.55),0 0 5px rgba(150,85,25,.45),0 0 12px rgba(170,100,30,.22),0 1px 0 rgba(255,240,210,.35)}
+.rates th[scope=row] span{color:#5a3415!important;text-shadow:0 0 1px rgba(90,45,12,.4),0 0 4px rgba(160,95,30,.3)}
+.rates td.na{color:rgba(80,40,12,.45)!important;text-shadow:none}
+.rates .book a{text-shadow:none!important;color:#111!important}
+@media (max-width:900px){.rates td{text-shadow:0 0 1px rgba(70,35,10,.5),0 0 4px rgba(150,85,25,.3)}.rates td .lbl{text-shadow:none}}
+/* Brighter hover: the plank lights up */
+.rates tbody tr{transition:filter .25s}
+.rates tbody tr:hover{filter:brightness(1.14) saturate(1.08)!important}
+/* Style toggle (demo): wood planks or the original dark table */
+.look-toggle{display:inline-flex;gap:4px;padding:4px;margin:0 0 16px;border-radius:999px;background:rgba(0,0,0,.06)}
+.look-toggle button{display:inline-flex;align-items:center;gap:6px;border:0;background:transparent;padding:8px 14px;border-radius:999px;font:600 13.5px var(--body);color:var(--ink-2);cursor:pointer}
+.look-toggle button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.rates.dark{background:#111111!important;box-shadow:0 30px 70px rgba(0,0,0,.18)!important}
+.rates.dark::before{display:block!important;content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background:var(--speck),radial-gradient(55% 90% at 0% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%),radial-gradient(55% 90% at 100% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%);
+  -webkit-mask:radial-gradient(45% 95% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(45% 95% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%);
+  mask:radial-gradient(45% 95% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(45% 95% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%)}
+.rates.dark table{border-spacing:0!important;margin:0!important}
+.rates.dark tr,.rates.dark thead tr,.rates.dark tbody tr{background:transparent!important;filter:none!important}
+.rates.dark tbody tr{border-bottom:1px solid rgba(255,255,255,.08)!important}
+.rates.dark thead th{color:rgba(255,255,255,.55)!important;border-bottom:1px solid rgba(255,255,255,.12)!important}
+.rates.dark th[scope=row] b,.rates.dark td{color:#fff!important;text-shadow:none!important}
+.rates.dark th[scope=row] span{color:rgba(255,255,255,.6)!important;text-shadow:none!important}
+.rates.dark td.na{color:rgba(255,255,255,.25)!important}
+.rates.dark tbody tr:hover{background:rgba(106,230,224,.07)!important}
+@media (max-width:900px){.rates.dark td{background:rgba(255,255,255,.06)!important}.rates.dark td .lbl{color:rgba(255,255,255,.55)!important}.rates.dark tbody tr{border-bottom:1px solid rgba(255,255,255,.08)!important}}
+.hero-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.ex b small{font:600 15px var(--body);color:var(--ink-2);margin-left:4px}
+.extras-sec{padding-top:10px}.extras-sec .extras3{margin-top:0}
+.gg-thumbs{display:flex;margin-left:auto}
+.gg-thumbs img{width:44px;height:44px;object-fit:contain;border-radius:999px;background:#fff;border:1.5px solid var(--line,#dbe6ec);padding:5px;margin-left:-10px}
+.gg[open] .gg-thumbs{display:none}
+.gg-thumbs+i{margin-left:14px!important}
+.gg[open] summary i{margin-left:auto}
+@media (max-width:600px){.gg-thumbs{display:none}.hero-acts .btn{flex:1}.hero-acts .btn:first-child{flex-basis:100%}}
+/* Our gear: like a shop wall. Fold-open groups, one card per model with its sizes */
+.gear-list{padding-top:20px}
+.gg{border-top:1.5px solid var(--line,#dbe6ec)}
+.gg:last-of-type{border-bottom:1.5px solid var(--line,#dbe6ec)}
+.gg summary{list-style:none;display:flex;align-items:center;gap:14px;padding:24px 4px;cursor:pointer}
+.gg summary::-webkit-details-marker{display:none}
+.gg-t{font:800 clamp(1.3rem,2.4vw,1.7rem)/1.1 var(--head);letter-spacing:-.01em}
+.gg-n{font:600 14px var(--body);color:var(--ink-2)}
+.gg summary i{margin-left:auto;font-size:22px;width:44px;height:44px;display:grid;place-items:center;border-radius:999px;background:#f2f6f7;transition:transform .3s,background .2s}
+.gg summary:hover i{background:#e6eef0}
+.gg[open] summary i{transform:rotate(45deg)}
+.gg-intro{color:var(--ink-2);margin:-8px 4px 20px}
+.gg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;padding-bottom:34px}
+.gc{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line,#dbe6ec);border-radius:16px;overflow:hidden;transition:box-shadow .3s,transform .3s}
+.gc:hover{box-shadow:0 18px 44px rgba(0,0,0,.09);transform:translateY(-3px)}
+.gc-pic{position:relative;aspect-ratio:4/5;background:#f3f6f7;overflow:hidden}
+.gc-pic img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);max-width:none;object-fit:contain;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.gc:hover .gc-pic img{transform:scale(1.04)}
+.gc-pic.dark{background:#0b0b0b}
+.gc-pic.dark img{inset:0;width:100%;height:100%;object-fit:cover}
+.gc-none{position:absolute;inset:0;display:grid;place-items:center;font:800 18px var(--head);color:#9aa8ad}
+.gc-b{display:flex;flex-direction:column;flex:1;padding:18px 18px 20px}
+.gc-brand{font:700 12.5px var(--body);color:var(--teal);margin:0}
+.gc h4{font:800 20px/1.15 var(--head);margin:2px 0 2px}
+.gc-kind{font-size:14px;color:var(--ink-2);margin:0}
+.gc-sizes{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.gc-sizes li{font:700 13.5px var(--body);padding:5px 10px;border-radius:999px;background:#f2f6f7}
+.gc-sizes li.u{background:none;padding:5px 0;color:var(--ink-2);font-weight:600;order:-1;width:100%;font-size:12.5px}
+.gc-pts{margin:14px 0 0;padding-left:18px;color:var(--ink-2);font-size:14.5px;line-height:1.5}
+.gc-pts li+li{margin-top:4px}
+.gc-rent-x{margin-top:auto;padding-top:16px;align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font:700 15px var(--body);color:var(--ink);text-decoration:none;border-bottom:2px solid var(--canary,#ffe234)}
+.gc-rent:hover{color:var(--teal)}
+@media (max-width:600px){.gg-grid{grid-template-columns:1fr 1fr;gap:10px}.gc-b{padding:14px}.gc h4{font-size:17px}.gc-pts{display:none}.gc-pic img{inset:10px;width:calc(100% - 20px);height:calc(100% - 20px)}}
+@media (max-width:380px){.gg-grid{grid-template-columns:1fr}}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html" aria-current="page">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="page-hero">
+  <img src="img/beach-gear.jpg" alt="Sails, boards and foils lined up on the beach at Frans Paradise, Sorobon" fetchpriority="high" style="object-position:50% 60%">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Rentals</p>
+    <h1>Rent your <span>ride</span></h1>
+    <p class="lead">Windsurf, slalom, wind foil and wing gear, ready on the beach at Sorobon. By the hour, the day or the week.</p>
+    <div class="from"><b>$30</b><span>an hour for a beginner windsurf set</span></div>
+    <div class="hero-acts"><a class="btn" data-wa="I'm coming down" href="https://wa.me/5997850514">Let us know you're coming <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="#rates">Prices</a><a class="btn ghost" href="#gear">See the gear</a></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Rental prices</h2><p>All prices in US dollars. No reservations: gear is first come, first served on the beach.</p></div>
+    <div class="rates rv" id="rates">
+      <table>
+        <caption class="skip">Rental prices per set and duration</caption>
+        <thead><tr><th scope="col">Set</th><th scope="col">1 hour</th><th scope="col">2 hours</th><th scope="col">Half day</th><th scope="col">Full day</th><th scope="col">6 days</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><b>Windsurf beginner</b><span>Board and sail for learners</span></th>
+            <td><span class="lbl">1 hour</span>$30</td><td><span class="lbl">2 hours</span>$45</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+          <tr><th scope="row"><b>Windsurf equipment</b><span>Board and rig for your level</span></th>
+            <td><span class="lbl">1 hour</span>$35</td><td><span class="lbl">2 hours</span>$60</td><td class="na">–</td><td><span class="lbl">Full day</span>$75</td><td><span class="lbl">6 days</span>$375</td></tr>
+          <tr><th scope="row"><b>Slalom</b><span>For fast, experienced riders</span></th>
+            <td><span class="lbl">1 hour</span>$50</td><td><span class="lbl">2 hours</span>$75</td><td class="na">–</td><td><span class="lbl">Full day</span>$100</td><td><span class="lbl">6 days</span>$550</td></tr>
+          <tr><th scope="row"><b>Wind foil + board</b><span>Foil and foil board</span></th>
+            <td><span class="lbl">1 hour</span>$50</td><td><span class="lbl">2 hours</span>$80</td><td class="na">–</td><td><span class="lbl">Full day</span>$110</td><td class="na">–</td></tr>
+          <tr><th scope="row"><b>Wing set</b><span>$120 a day, extra days from $70</span></th>
+            <td><span class="lbl">1 hour</span>$50</td><td><span class="lbl">2 hours</span>$70</td><td><span class="lbl">Half day</span>$100</td><td><span class="lbl">Full day</span>$120</td><td><span class="lbl">6 days</span>$630</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<!-- GEAR:start (generated by tools/gear.py) -->
+<section class="sec gear-list" id="gear">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Our gear</h2><p>What's in the rack at the shack. No reservations: come down and we pick the right size for you.</p></div>
+    <details class="gg rv" open>
+      <summary><span class="gg-t">Windsurf sails</span><span class="gg-n">7 models</span><span class="gg-thumbs" aria-hidden="true"><img src="img/gear/hero.webp" alt="" loading="lazy"><img src="img/gear/duke.webp" alt="" loading="lazy"><img src="img/gear/idol.webp" alt="" loading="lazy"><img src="img/gear/e-pace.webp" alt="" loading="lazy"><img src="img/gear/warp.webp" alt="" loading="lazy"></span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+      <p class="gg-intro">Duotone and Point-7 sails, rigged and ready on the beach.</p>
+      <div class="gg-grid">
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/hero.webp" alt="Duotone Super_Hero" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Super_Hero</h4>
+          <p class="gc-kind">Wave sail</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>3.4</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>Made for waves in every condition</li><li>Balanced, easy to control pull</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/duke.webp" alt="Duotone Duke" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Duke</h4>
+          <p class="gc-kind">Wave and bump &amp; jump sail</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.2</li><li>4.5</li><li>5.0</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>5 battens for a big wind range</li><li>Neutral, light feel in the hands</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/idol.webp" alt="Duotone Idol" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Idol</h4>
+          <p class="gc-kind">Freestyle sail</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.4</li><li>4.8</li><li>5.2</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>Duotone&#x27;s freestyle sail</li><li>Smooth, progressive power for tricks</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/e-pace.webp" alt="Duotone E_Pace" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>E_Pace</h4>
+          <p class="gc-kind">Freeride sail, no cams</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>5.4</li><li>5.8</li><li>6.2</li><li>6.6</li><li>7.3</li><li>7.8</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>Planes early without pumping</li><li>Two trim settings for a wide wind range</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/warp.webp" alt="Duotone Warp_Fin" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Warp_Fin</h4>
+          <p class="gc-kind">Slalom race sail</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>5.7</li><li>6.2</li><li>6.7</li><li>7.7</li><li>8.4</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>7 battens, 4 cams</li><li>Holds its shape in the gusts</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/space.webp" alt="Duotone S_Pace" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>S_Pace</h4>
+          <p class="gc-kind">Freerace sail with cams</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>6.6</li><li>7.3</li><li>7.8</li><li>8.3</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>Easy rotation through the jibe</li><li>Biggest wind range in the Duotone line</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/rush.webp" alt="Point-7 Rush" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Point-7</p>
+          <h4>Rush</h4>
+          <p class="gc-kind">Freeride sail</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.7</li><li>5.1</li><li>5.7</li><li>6.2</li><li>6.7</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>The newest sails in the rack</li><li>Ask Taty to rig one for you</li></ul>
+        </div>
+      </article>
+      </div>
+    </details>
+    <details class="gg rv">
+      <summary><span class="gg-t">Windsurf boards</span><span class="gg-n">7 models</span><span class="gg-thumbs" aria-hidden="true"><img src="img/gear/eagle.webp" alt="" loading="lazy"><img src="img/gear/blitz.webp" alt="" loading="lazy"><img src="img/gear/falcon-dlab.webp" alt="" loading="lazy"><img src="img/gear/ultra-freewave.webp" alt="" loading="lazy"><img src="img/gear/white-tiger.webp" alt="" loading="lazy"></span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+      <p class="gg-intro">From big, stable freeride boards to slalom and wave.</p>
+      <div class="gg-grid">
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/eagle.webp" alt="Duotone Eagle" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Eagle</h4>
+          <p class="gc-kind">Freeride board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>120</li><li>130</li><li>148</li><li>168</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Easy, early planing</li><li>From first footstraps to fast freeride</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/blitz.webp" alt="Duotone Blitz" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Blitz</h4>
+          <p class="gc-kind">Freeride and freerace board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>116</li><li>126</li><li>136</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Light, fast and lively</li><li>For riders who want more speed</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/falcon-dlab.webp" alt="Duotone Falcon_Fin D/LAB" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Falcon_Fin D/LAB</h4>
+          <p class="gc-kind">Slalom race board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>98</li><li>111</li><li>118</li><li>129</li><li>139</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Duotone&#x27;s top slalom shape</li><li>Super light D/LAB build</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/ultra-freewave.webp" alt="Duotone Ultra FreeWave" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Ultra FreeWave</h4>
+          <p class="gc-kind">Freewave board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>84</li><li>94</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Waves, freestyle and bump &amp; jump</li><li>Huge wind range</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/white-tiger.webp" alt="Future Fly White Tiger" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Future Fly</p>
+          <h4>White Tiger</h4>
+          <p class="gc-kind">Freerace board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>115</li><li>125</li><li>132</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>A pure freerace board</li><li>Fast on edge, still comfortable</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/abu-fish.webp" alt="Future Fly Abu Fish" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Future Fly</p>
+          <h4>Abu Fish</h4>
+          <p class="gc-kind">Wave board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>105</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Floats and turns in light wind</li><li>Great for heavier riders</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/blue-rabbit.webp" alt="Future Fly Blue Rabbit" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Future Fly</p>
+          <h4>Blue Rabbit</h4>
+          <p class="gc-kind">Freewave and bump &amp; jump board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>95</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Balance of speed and easy turns</li><li>Fun in all conditions</li></ul>
+        </div>
+      </article>
+      </div>
+    </details>
+    <details class="gg rv">
+      <summary><span class="gg-t">Wing foil</span><span class="gg-n">8 models</span><span class="gg-thumbs" aria-hidden="true"><img src="img/gear/unit.webp" alt="" loading="lazy"><img src="img/gear/sky-start.webp" alt="" loading="lazy"><img src="img/gear/sky-free.webp" alt="" loading="lazy"><img src="img/gear/sky-free-dst.webp" alt="" loading="lazy"><img src="img/gear/skybrid.webp" alt="" loading="lazy"></span><i class="ph ph-plus" aria-hidden="true"></i></summary>
+      <p class="gg-intro">Duotone wings and boards, from your first flight to freestyle.</p>
+      <div class="gg-grid">
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/unit.webp" alt="Duotone Unit" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Unit</h4>
+          <p class="gc-kind">Wing, with boom</p>
+          <ul class="gc-sizes" aria-label="Sizes in square metres"><li>2.0</li><li>2.5</li><li>3.0</li><li>3.5</li><li>4.0</li><li>4.5</li><li>5.0</li><li>5.5</li><li>6.0</li><li>6.5</li><li class="u">Sizes, m²</li></ul>
+          <ul class="gc-pts"><li>Balanced on every course</li><li>Comes with the Fusion boom</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/sky-start.webp" alt="Duotone Sky Start DST" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Sky Start DST</h4>
+          <p class="gc-kind">Beginner wing board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>170</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>170 L and 80 cm wide, very stable</li><li>Easy to stand up on</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/sky-free.webp" alt="Duotone Sky Free" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Sky Free</h4>
+          <p class="gc-kind">Freeride wing board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>105</li><li>120</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Early take-off, easy glide</li><li>Stable and easy to steer</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/sky-free-dst.webp" alt="Duotone Sky Free DST" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Sky Free DST</h4>
+          <p class="gc-kind">Freeride wing board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>135</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Same shape as the Sky Free</li><li>Tough, ding-resistant top sheet</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/skybrid.webp" alt="Duotone Skybrid" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Skybrid</h4>
+          <p class="gc-kind">Mid-length foil board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>80</li><li>90</li><li>100</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Long glide, easy take-off</li><li>Wing, foil assist and prone</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/skybrid-sls.webp" alt="Duotone Skybrid SLS" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Skybrid SLS</h4>
+          <p class="gc-kind">Mid-length foil board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>60</li><li>70</li><li>80</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>The Skybrid in a lighter carbon build</li><li>For riders who pump and glide</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/sky-style.webp" alt="Duotone Sky Style" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Sky Style</h4>
+          <p class="gc-kind">Freestyle and wave wing board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>85</li><li>95</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Wide nose for stable starts</li><li>Recessed deck for control</li></ul>
+        </div>
+      </article>
+      <article class="gc">
+        <div class="gc-pic"><img src="img/gear/sky-style-sls.webp" alt="Duotone Sky Style SLS" loading="lazy"></div>
+        <div class="gc-b">
+          <p class="gc-brand">Duotone</p>
+          <h4>Sky Style SLS</h4>
+          <p class="gc-kind">Freestyle and wave wing board</p>
+          <ul class="gc-sizes" aria-label="Sizes in litres"><li>55</li><li>65</li><li>75</li><li class="u">Sizes, L</li></ul>
+          <ul class="gc-pts"><li>Light carbon SLS build</li><li>Quick and responsive on the wave</li></ul>
+        </div>
+      </article>
+      </div>
+    </details>
+  </div>
+</section>
+<!-- GEAR:end -->
+
+<section class="sec extras-sec">
+  <div class="wrap">
+    <div class="extras3">
+      <div class="ex rv"><i class="ph ph-warehouse"></i><h3>Gear storage</h3><p>Keep your own sail, board or wing set at the shack. Locals pay $80 a month or $800 a year.</p><b>$10<small> a day</small></b></div>
+      <div class="ex rv"><i class="ph ph-lifebuoy"></i><h3>Rescue boat</h3><p>On the water every day we're open. A rescue costs</p><b>$10</b></div>
+      <div class="ex rv"><i class="ph ph-graduation-cap"></i><h3>New to it?</h3><p>Start with a lesson first. <a href="lessons.html" style="color:var(--teal);font-weight:700">See lessons</a>, beginner windsurf from $50.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="gear rv">
+      <img src="img/rack-boards.jpg" alt="Rental boards lined up in the rack" loading="lazy">
+      <img src="img/sails.jpg" alt="Wings and sails racked under the roof" loading="lazy" style="object-position:80% 50%">
+      <img src="img/wing-shed.jpg" alt="A wing held overhead in the gear shed" loading="lazy" style="object-position:48% 40%">
+      <img src="img/rider-rig.jpg" alt="A rider carries a rigged sail past the Frans Paradise flag" loading="lazy" style="object-position:35% 40%">
+      <img src="img/shack-front.jpg" alt="Boards and foils on the sand in front of the shack" loading="lazy" style="object-position:30% 60%">
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>Wind's up?</h2><p>Come down to Sorobon and pick what's free. A heads-up on WhatsApp helps.</p></div>
+    <div class="acts"><a class="btn" data-wa="I'm coming down" href="https://wa.me/5997850514">Let us know you're coming <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="lessons.html">Take a lesson</a></div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+</body>
+</html>

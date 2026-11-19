@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Frans Paradise Bonaire · Windsurf lessons, equipment, good times</title>
+<meta name="description" content="Windsurf and wing foil lessons and rentals on the beach at Sorobon, Lac Bay, Bonaire. Open every day from 9 to 6.">
+<meta property="og:image" content="img/taty-air.jpg">
+<link rel="icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="preload" as="image" href="video/hero-poster.jpg">
+<style>
+/* Built from Mo's wireframe (2026-11-01). Light theme, teal actions, navy type, diagonal section edges.
+   Shape rule: buttons and inputs 6px, cards and photos 8px. */
+:root{
+  --bg:#ffffff; --tint:#f2f8fa; --ink:#111111; --ink-2:#555555; --line:#dbe6ec;
+  --teal:#0e7c86; --teal-d:#0a646c; --teal-l:#1fb5c4; --navy:#111111;
+  --r:6px; --rc:8px; --wrap:1180px;
+  --head:"Montserrat",system-ui,sans-serif; --body:"DM Sans",system-ui,sans-serif; --script:"Mr Dafoe",cursive;
+  color-scheme:light;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.eyebrow{font:800 13px var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+h2{font:800 clamp(1.8rem,3vw,2.4rem)/1.15 var(--head);margin-top:6px;letter-spacing:-.01em}
+.sub{color:var(--ink-2);margin-top:6px}
+.more{font:700 15px var(--body);color:var(--teal);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.more:hover{color:var(--teal-d)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}
+:focus-visible{outline:3px solid var(--teal-l);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 22px;border-radius:var(--r);background:var(--teal);color:#fff;font:700 15px var(--body);text-decoration:none;border:2px solid var(--teal);cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:var(--teal-d);border-color:var(--teal-d);transform:translateY(-1px)}
+.btn:active{transform:scale(.98)}
+.btn i{font-size:18px}
+.btn.ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink)}
+.btn.white{background:#fff;color:var(--ink);border-color:#fff}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:30px;height:72px}
+.wordmark{text-decoration:none;line-height:1;text-align:center;display:inline-block}
+.wordmark b{display:block;font:400 37px/.9 var(--script);color:var(--navy);letter-spacing:.01em}
+.wordmark small{display:block;font:700 9.5px var(--head);letter-spacing:.42em;margin-top:5px;color:var(--navy);padding-left:.42em}
+.nav ul{display:flex;gap:30px;list-style:none;padding:0;margin:0 auto}
+.nav ul a{text-decoration:none;font-weight:500;font-size:15px}
+.nav ul a:hover{color:var(--teal)}
+.nav .btn{min-height:42px;padding:0 18px}
+.wordmark b,.nav .btn{white-space:nowrap}
+@media (max-width:520px){.wordmark b{font-size:24px}.wordmark small{font-size:8px}.nav .wrap{gap:12px}.nav .btn{padding:0 14px;font-size:14px}}
+.menu-btn{display:none;background:none;border:0;font-size:28px;color:var(--ink);cursor:pointer;width:44px;height:44px}
+@media (max-width:860px){.nav ul{display:none}.nav .btn{margin-left:auto}.menu-btn{display:grid;place-items:center}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 32px 24px;gap:16px;border-bottom:1px solid var(--line)}}
+
+/* Hero */
+.hero{position:relative;min-height:min(92vh,760px);display:flex;align-items:center;overflow:hidden;padding:60px 0 150px}
+.hero>img{position:absolute;top:0;right:0;bottom:0;width:68%;height:100%;object-fit:cover;object-position:45% 40%}
+.hero{background:linear-gradient(180deg,#eaf4f9,#fff)}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,#f3f8fb 0%,#f3f8fb 32%,rgba(243,248,251,.85) 40%,rgba(243,248,251,0) 56%)}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.hero h1{font:900 clamp(2.6rem,5.4vw,4.4rem)/1 var(--head);text-transform:uppercase;letter-spacing:-.01em;margin:12px 0 14px;max-width:12ch}
+.hero .lead{font-size:19px;max-width:32ch}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 30px}
+.perks{display:flex;gap:26px;flex-wrap:wrap;list-style:none;padding:0;font-size:14.5px;font-weight:500}
+.perks li{display:flex;align-items:center;gap:8px}
+.perks i{font-size:22px;color:var(--teal)}
+.sig{position:absolute;right:40px;top:58px;z-index:1;color:#fff;text-align:right;transform:rotate(-6deg);text-shadow:0 2px 18px rgba(0,30,50,.45)}
+.sig b{display:block;font:400 clamp(2.6rem,4.6vw,4rem)/1 var(--script)}
+.sig span{display:block;font:800 14px/1.35 var(--head);letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+@media (max-width:860px){
+  .hero{padding:0 0 60px;align-items:flex-end;min-height:auto}
+  .hero>img{position:relative;height:300px;order:-1;width:100%}
+  .hero{flex-direction:column}
+  .hero::before{display:none}
+  .sig{top:24px;right:18px}
+  .hero .wrap{margin-top:28px}
+}
+
+/* Find a lesson bar */
+.finder{position:relative;z-index:5;margin-top:-82px}
+.finder form{background:#fff;border-radius:var(--rc);box-shadow:0 18px 50px rgba(0,0,0,.14);padding:22px 26px;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr auto;gap:16px;align-items:end}
+.finder h3{font:800 17px var(--head);text-transform:uppercase}
+.finder p{font-size:14px;color:var(--ink-2)}
+.finder label{display:block;font-size:12.5px;color:var(--ink-2);margin-bottom:5px}
+.field{position:relative}
+.field i{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--teal);pointer-events:none}
+.finder select,.finder input{width:100%;height:46px;border:1px solid var(--line);border-radius:var(--r);background:#fff;font:500 14.5px var(--body);color:var(--ink);padding:0 12px 0 38px;appearance:none;-webkit-appearance:none}
+.finder select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23111111' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 12px center}
+.finder .btn{height:46px;min-height:46px}
+@media (max-width:980px){.finder{margin-top:0}.finder form{grid-template-columns:1fr 1fr;padding:22px}.finder .intro,.finder .btn{grid-column:1/-1}}
+@media (max-width:480px){.finder form{grid-template-columns:1fr}}
+
+/* Lessons */
+.lessons{padding:90px 0 120px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid var(--line);border-radius:var(--rc);overflow:hidden;background:#fff;transition:box-shadow .3s,transform .3s}
+.card:hover{box-shadow:0 16px 40px rgba(0,0,0,.1);transform:translateY(-3px)}
+.card img{height:200px;width:100%;object-fit:cover}
+.card .b{padding:20px 20px 22px}
+.card h3{font:700 18px var(--head)}
+.card ul{list-style:none;padding:0;margin:12px 0 18px;display:grid;gap:6px;font-size:14.5px;color:var(--ink-2)}
+.card li{display:flex;gap:8px;align-items:center}
+.card li i{font-size:18px}
+.card li b{color:var(--ink)}
+.card .btn{width:100%;background:#fff;color:var(--ink);border-color:var(--ink);min-height:44px}
+.card .btn:hover{background:var(--ink);color:#fff}
+@media (max-width:900px){.cards{grid-template-columns:1fr}.sec-head{flex-direction:column;align-items:flex-start}}
+
+/* Reviews band */
+.reviews{position:relative;color:#fff;padding:150px 0 170px;clip-path:polygon(0 18%,100% 0,100% 82%,0 100%);margin-top:-40px}
+.reviews>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.reviews::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,32,58,.86),rgba(6,48,80,.8))}
+.reviews .wrap{position:relative;z-index:1}
+.rv-head{text-align:center;margin-bottom:26px;font:700 15px var(--body)}
+.rv-head a{color:#bdf3f8}
+.carousel{display:grid;grid-template-columns:48px 1fr 48px;align-items:center;gap:20px}
+.arrow{width:46px;height:46px;border-radius:50%;border:2px solid rgba(255,255,255,.85);background:none;color:#fff;font-size:20px;cursor:pointer;display:grid;place-items:center}
+.arrow:hover{background:rgba(255,255,255,.15)}
+.viewport{overflow:hidden}
+.track{display:flex;gap:18px;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.quote{flex:0 0 calc((100% - 36px)/3);background:rgba(10,45,70,.55);border:1px solid rgba(255,255,255,.18);border-radius:var(--rc);padding:26px 24px;text-align:center;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.quote .stars{color:#3fd6e4;font-size:20px;letter-spacing:2px;margin-bottom:12px}
+.quote p{font-size:17px;line-height:1.45}
+.quote footer{margin-top:16px;font-size:14px}
+.quote footer b{display:block;font-weight:700}
+.quote footer span{opacity:.8}
+.dots{display:flex;justify-content:center;gap:10px;margin-top:24px}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer;padding:0}
+.dots button[aria-current="true"]{background:#3fd6e4}
+@media (max-width:900px){.quote{flex-basis:100%}.carousel{grid-template-columns:40px 1fr 40px;gap:8px}.arrow{width:40px;height:40px}.reviews{padding:120px 0 130px;clip-path:polygon(0 8%,100% 0,100% 92%,0 100%)}}
+
+/* More than lessons */
+.extras{padding:70px 0 90px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tile{position:relative;height:300px;border-radius:var(--rc);overflow:hidden;color:#fff;text-decoration:none}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.16,1,.3,1)}
+.tile:hover img{transform:scale(1.06)}
+.tile::after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(0deg,rgba(6,40,66,.75),transparent)}
+.tile span{position:absolute;left:18px;bottom:16px;right:18px;z-index:1;font:700 18px var(--head);display:flex;justify-content:space-between;align-items:center}
+@media (max-width:900px){.tiles{grid-template-columns:1fr}.tile{height:240px}}
+
+/* Surf shack */
+.shack{position:relative;min-height:440px;display:flex;align-items:center;clip-path:polygon(0 12%,100% 0,100% 100%,0 100%)}
+.shack>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 55%}
+.shack::before{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(5,32,58,.88) 0%,rgba(5,32,58,.7) 32%,rgba(5,32,58,0) 62%)}
+.shack .wrap{position:relative;z-index:1;width:100%;display:flex;justify-content:flex-end}
+.shack .box{text-align:center;color:#fff;padding:60px 0}
+.shack h2{font:900 clamp(2rem,3.4vw,2.8rem)/1 var(--head);text-transform:uppercase}
+.shack p{font-size:18px;margin:10px 0 20px}
+@media (max-width:700px){.shack .wrap{justify-content:center}.shack::before{background:rgba(6,40,66,.45)}}
+
+/* FAQ */
+.faq{padding:90px 0}
+.faq h2{text-transform:uppercase;font-size:clamp(1.5rem,2.4vw,1.9rem);color:var(--teal)}
+.qgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;align-items:start}
+details{border:1px solid var(--line);border-radius:var(--r);background:#fff}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary i{font-size:20px;transition:transform .3s;flex:none}
+details[open] summary i{transform:rotate(45deg)}
+details p{padding:0 20px 18px;color:var(--ink-2)}
+.qgrid .extra{display:none}
+.qgrid.all .extra{display:block}
+@media (max-width:760px){.qgrid{grid-template-columns:1fr}}
+
+/* Sponsors */
+.sponsors{background:var(--tint);padding:34px 0}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0 18px}
+.logos img{height:110px;width:auto;margin:-18px -6px;filter:grayscale(1) contrast(1.3);opacity:.7;transition:opacity .2s,filter .2s}
+.logos img:hover{opacity:1;filter:none}
+
+/* CTA */
+.cta-band{position:relative;padding:80px 0;overflow:hidden}
+.cta-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+.cta-band::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.75) 45%,rgba(255,255,255,.2) 75%)}
+.cta-band .wrap{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band h2{text-transform:uppercase;font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.cta-band .btn{min-height:52px;padding:0 30px}
+
+/* Footer */
+footer.site{padding:60px 0 30px;border-top:1px solid var(--line)}
+.fgrid{display:grid;grid-template-columns:1.3fr .8fr 1.2fr .8fr 1.3fr;gap:30px}
+.fgrid .tag{font:700 12.5px var(--head);letter-spacing:.06em;margin-top:18px;color:var(--ink-2)}
+footer h4{font:700 14px var(--body);margin-bottom:12px}
+footer ul{list-style:none;padding:0;display:grid;gap:7px;font-size:14.5px;color:var(--ink-2)}
+footer ul a{text-decoration:none}
+footer ul a:hover{color:var(--teal)}
+footer li i{color:var(--ink);margin-right:6px}
+.social{display:flex;gap:14px;font-size:24px}
+.social a{text-decoration:none}
+.social a:hover{color:var(--teal)}
+.news{display:flex;gap:8px}
+.news input{flex:1;min-width:0;height:46px;border:1px solid var(--line);border-radius:var(--r);padding:0 14px;font:400 15px var(--body)}
+.news button{width:46px;height:46px;border-radius:var(--r);border:0;background:var(--navy);color:#fff;font-size:20px;cursor:pointer}
+.news-ok{font-size:14px;color:var(--teal);margin-top:8px;min-height:1.4em}
+.legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--ink-2)}
+.legal nav{display:flex;gap:22px}
+.legal a{text-decoration:none}
+.legal b{color:var(--ink)}
+@media (max-width:980px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.fgrid{grid-template-columns:1fr}}
+@media (max-width:640px){.wrap{padding:0 18px}.lessons{padding:60px 0 90px}.faq{padding:60px 0}}
+
+/* Motion */
+@media (prefers-reduced-motion:no-preference){
+  .hero>img{animation:settle 1.6s cubic-bezier(.16,1,.3,1) both}
+  .hero .wrap>*{animation:rise .9s cubic-bezier(.16,1,.3,1) both}
+  .hero .wrap>*:nth-child(2){animation-delay:.08s}.hero .wrap>*:nth-child(3){animation-delay:.16s}.hero .wrap>*:nth-child(4){animation-delay:.24s}.hero .wrap>*:nth-child(5){animation-delay:.32s}
+  .sig{animation:rise 1s .4s cubic-bezier(.16,1,.3,1) both}
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+  .rv.in{opacity:1;transform:none}
+}
+@keyframes settle{from{transform:scale(1.06)}to{transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.sig{--r:-6deg}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{transition:none}}
+/* Layer order: photo, then its fade, then the content. */
+.hero>img,.reviews>img,.shack>img,.cta-band>img{z-index:0}
+.hero::before,.reviews::before,.shack::before,.cta-band::before{z-index:1}
+.hero .wrap,.reviews .wrap,.shack .wrap,.cta-band .wrap{z-index:2}
+.hero .sig{z-index:3}
+
+/* ===== Vibrant layer (2026-11-02): tropical gradients + moving water light. Calm version kept in v3-calm.html. ===== */
+:root{
+  --lagoon:#00c2d6; --aqua:#5ee7f0; --ocean:#0077b6; --deep:#023e8a; --abyss:#111111;
+  --sun:#ffc93c; --coral:#ff6b4a;
+  --teal:#0096c7; --teal-d:#0077b6; --teal-l:#00c2d6; --ink:#111111; --navy:#111111;
+  --grad-sea:linear-gradient(120deg,#00d4e0 0%,#00a6d6 45%,#0067b8 100%);
+  --grad-sun:linear-gradient(100deg,#ff6b4a 0%,#ff9a3c 55%,#ffc93c 100%);
+}
+.water{position:relative;isolation:isolate}
+/* Buttons: sun gradient for the main action, sea gradient elsewhere */
+.btn{background:var(--grad-sun);border:0;color:#3a1400;font-weight:800;box-shadow:0 8px 22px rgba(255,107,74,.35)}
+.btn:hover{background:var(--grad-sun);filter:saturate(1.15) brightness(1.04);box-shadow:0 12px 28px rgba(255,107,74,.45)}
+.nav .btn{background:var(--grad-sea);color:#fff;box-shadow:0 6px 18px rgba(0,119,182,.3)}
+.btn.ghost{background:rgba(255,255,255,.85);color:var(--ink);border:2px solid #fff;box-shadow:none;backdrop-filter:blur(6px)}
+.btn.white{background:#fff;color:var(--ink);box-shadow:0 8px 22px rgba(0,0,0,.18)}
+.eyebrow{color:var(--coral)}
+.more{color:var(--ocean)}
+
+/* Hero: lagoon gradient instead of grey, light rays, gradient phrase */
+.hero{background:linear-gradient(160deg,#c9f7fb 0%,#8ee8f2 38%,#3fcfe3 70%,#11a9d4 100%)}
+.hero::before{background:linear-gradient(90deg,rgba(201,247,251,.96) 0%,rgba(178,242,248,.9) 30%,rgba(150,235,245,.5) 44%,rgba(150,235,245,0) 58%)}
+.hero h1{color:var(--abyss)}
+.hero h1 .glow{background:var(--grad-sun);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em}
+.hero .lead{color:#111111;font-weight:500}
+.perks i{color:var(--ocean)}
+.hero .wrap{z-index:3}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:90px;z-index:2;background:#fff;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'%3E%3Cpath d='M0 50 C 240 10 480 10 720 45 S 1200 85 1440 40 V90 H0Z'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'%3E%3Cpath d='M0 50 C 240 10 480 10 720 45 S 1200 85 1440 40 V90 H0Z'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+@media (max-width:860px){.hero::after{display:none}.hero{background:linear-gradient(180deg,#c9f7fb,#e9fcfe)}}
+
+/* Finder: glassy card with a gradient edge */
+.finder form{border:2px solid transparent;background:linear-gradient(#fff,#fff) padding-box,var(--grad-sea) border-box;box-shadow:0 22px 60px rgba(0,119,182,.22)}
+.field i{color:var(--ocean)}
+
+/* Soft aqua washes on the white sections */
+.lessons{background:linear-gradient(180deg,#fff 0%,#eefcfe 100%)}
+.card{border:0;box-shadow:0 10px 30px rgba(0,103,184,.1)}
+.card::before{content:"";display:block;height:5px;background:var(--grad-sea)}
+.card:hover{box-shadow:0 20px 50px rgba(0,103,184,.2)}
+.card .btn{background:var(--grad-sea);color:#fff;border:0;box-shadow:none}
+.card .btn:hover{background:var(--grad-sea);color:#fff}
+.card li i{color:var(--ocean)}
+
+/* Reviews: bright sea gradient over the drone shot */
+.reviews::before{background:linear-gradient(115deg,rgba(0,190,214,.82) 0%,rgba(0,119,182,.86) 55%,rgba(2,62,138,.9) 100%)}
+.quote{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35)}
+.quote .stars,.dots button[aria-current="true"]{color:var(--sun)}
+.dots button[aria-current="true"]{background:var(--sun)}
+.rv-head{color:#fff}.rv-head a{color:var(--sun)}
+
+.extras{background:linear-gradient(180deg,#fff,#effcfe)}
+.tile::after{background:linear-gradient(0deg,rgba(2,62,138,.8),rgba(0,166,214,0))}
+.tile span i{background:var(--grad-sun);color:#3a1400;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:18px}
+
+.shack::before{background:linear-gradient(270deg,rgba(2,62,138,.88) 0%,rgba(0,119,182,.62) 34%,rgba(0,166,214,0) 64%)}
+
+.faq{background:radial-gradient(1200px 400px at 85% 0%,#d9f8fc 0%,rgba(217,248,252,0) 70%),#fff}
+.faq h2{background:var(--grad-sea);-webkit-background-clip:text;background-clip:text;color:transparent}
+details{border:1px solid #cdeff5;transition:box-shadow .2s}
+details[open]{box-shadow:inset 4px 0 0 var(--coral),0 10px 26px rgba(0,119,182,.1)}
+summary i{color:var(--coral)}
+
+/* Sponsors on the sea gradient, logos in white */
+.sponsors{background:var(--grad-sea)}
+.logos img{filter:brightness(0) invert(1);opacity:.85}
+.logos img:hover{filter:brightness(0) invert(1);opacity:1}
+
+/* CTA: lagoon gradient over the water photo, white type */
+.cta-band{padding:100px 0}
+.cta-band::before{background:linear-gradient(90deg,rgba(0,166,214,.9) 0%,rgba(0,119,182,.72) 50%,rgba(2,62,138,.35) 100%)}
+.cta-band h2,.cta-band .sub{color:#fff!important}
+
+/* Footer: deep ocean gradient */
+footer.site{background:linear-gradient(170deg,#0067b8 0%,#023e8a 45%,#03224f 100%);color:#e6f6ff;border:0;position:relative;overflow:hidden}
+footer.site .wrap{position:relative;z-index:2}
+footer .wordmark b,footer .wordmark small{color:#fff}
+footer h4{color:#fff}
+footer ul,footer .tag,.legal{color:#b9def5}
+footer li i{color:var(--sun)}
+footer ul a:hover,.social a:hover{color:var(--sun)}
+.social{color:#fff}
+.news input{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+.news input::placeholder{color:#b9def5}
+.news button{background:var(--grad-sun);color:#3a1400}
+.news-ok{color:var(--sun)}
+.legal{border-color:rgba(255,255,255,.18)}.legal b{color:#fff}
+
+/* Real water texture: their own drone shot of the lagoon, tinted and drifting slowly */
+.hero>img{-webkit-mask:linear-gradient(90deg,transparent 0,#000 30%);mask:linear-gradient(90deg,transparent 0,#000 30%)}
+@media (max-width:860px){.hero>img{-webkit-mask:none;mask:none}}
+.hero{background:linear-gradient(160deg,rgba(201,247,251,.86) 0%,rgba(142,232,242,.8) 40%,rgba(63,207,227,.75) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.reviews::before{background:linear-gradient(115deg,rgba(0,190,214,.7) 0%,rgba(0,119,182,.74) 55%,rgba(2,62,138,.82) 100%)}
+footer.site{background:linear-gradient(170deg,rgba(0,103,184,.93) 0%,rgba(2,62,138,.95) 45%,rgba(3,34,79,.97) 100%),url(img/drone.jpg) center/1600px auto}
+.sponsors{background:linear-gradient(120deg,rgba(0,212,224,.9),rgba(0,166,214,.9) 45%,rgba(0,103,184,.92)),url(img/drone.jpg) center 70%/1600px auto}
+@media (prefers-reduced-motion:no-preference){
+  .hero,footer.site,.sponsors{animation:lagoon 60s ease-in-out infinite alternate}
+  .reviews>img{animation:lagoon-img 40s ease-in-out infinite alternate}
+}
+@keyframes lagoon{from{background-position:0 0,20% 30%}to{background-position:0 0,60% 70%}}
+@keyframes lagoon-img{from{transform:scale(1.05) translate(0,0)}to{transform:scale(1.12) translate(-2%,-2%)}}
+
+/* ===== Toned down (2026-11-02): keep the lagoon, lose the loud bits. Full-colour version in v4-vibrant.html ===== */
+.btn{background:var(--ocean);color:#fff;font-weight:700;box-shadow:none}
+.btn:hover{background:var(--deep);filter:none;box-shadow:none}
+.nav .btn{background:var(--ocean);box-shadow:none}
+.btn.ghost{background:#fff;border:2px solid var(--line)}
+.eyebrow{color:var(--ocean)}
+.hero h1 .glow{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--ocean)}
+.hero{background:linear-gradient(160deg,rgba(236,249,252,.93) 0%,rgba(214,243,248,.9) 45%,rgba(190,235,243,.88) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.finder form{border:1px solid var(--line);background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.12)}
+.card::before{height:3px}
+.card .btn{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.card .btn:hover{background:var(--ink);color:#fff}
+.reviews::before{background:linear-gradient(115deg,rgba(6,90,120,.8) 0%,rgba(5,60,100,.84) 60%,rgba(4,40,75,.88) 100%)}
+.quote .stars{color:#7fe3ec}.dots button[aria-current="true"]{background:#7fe3ec}.rv-head a{color:#bdf3f8}
+.tile span i{background:rgba(255,255,255,.92);color:var(--ink)}
+.shack::before{background:linear-gradient(270deg,rgba(4,40,75,.82) 0%,rgba(4,40,75,.55) 34%,rgba(4,40,75,0) 64%)}
+.faq h2{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--ocean)}
+details[open]{box-shadow:inset 3px 0 0 var(--ocean),0 8px 20px rgba(0,80,130,.06)}
+summary i{color:var(--ocean)}
+.sponsors{background:#eef8fa;animation:none}
+.logos img,.logos img:hover{filter:grayscale(1) contrast(1.3);opacity:.7}
+.logos img:hover{opacity:1}
+.cta-band::before{background:linear-gradient(90deg,rgba(240,250,252,.94) 0%,rgba(225,245,249,.8) 45%,rgba(225,245,249,.2) 80%)}
+.cta-band h2{color:var(--ink)!important}.cta-band .sub{color:var(--ink-2)!important}
+footer.site{background:linear-gradient(170deg,#111111 0%,#111111 100%);animation:none}
+footer li i{color:#7fe3ec}
+footer ul a:hover,.social a:hover,.news-ok{color:#7fe3ec}
+.news button{background:var(--ocean);color:#fff}
+@media (prefers-reduced-motion:no-preference){.hero{animation:lagoon 90s ease-in-out infinite alternate}.reviews>img{animation:none}}
+footer.site .tag{color:#d4ecf7}
+.hero>img{-webkit-mask:linear-gradient(90deg,transparent 0,#000 16%);mask:linear-gradient(90deg,transparent 0,#000 16%)}
+@media (max-width:860px){.hero>img{-webkit-mask:none;mask:none;object-position:40% 45%!important}}
+
+/* Photo grade: their shoot is soft and pastel, so lift it a little */
+.hero>img,.card img,.tile img,.shack>img{filter:saturate(1.22) contrast(1.06)}
+/* Check Availability: dark teal */
+.card .btn{background:#0b5f66;color:#fff;border:0}
+.card .btn:hover{background:#084a50;color:#fff}
+
+/* ===== Photo palette (2026-11-02): colours taken from Mo's Taty photos. Lively: sail red actions, sky blue, lagoon turquoise. ===== */
+:root{--sky:#1676d2; --sky-d:#0d5aa6; --lagoon2:#16b8c6; --red:#e04a3c; --red-d:#c33a2d; --sand:#f6eedf; --ink:#111111; --ocean:#1676d2}
+.btn{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(224,74,60,.28)}
+.btn:hover{background:var(--red-d);box-shadow:0 10px 24px rgba(224,74,60,.36)}
+.nav .btn{background:var(--red);box-shadow:none}
+.btn.ghost{background:#fff;color:var(--sky);border:2px solid var(--sky)}
+.btn.ghost:hover{background:var(--sky);color:#fff}
+.btn.white{background:#fff;color:var(--red);box-shadow:none}
+.eyebrow{color:var(--red)}
+.more{color:var(--sky)}
+.nav ul a:hover{color:var(--red)}
+.hero h1{color:var(--ink)}
+.hero h1 .glow{color:var(--sky)}
+.hero{background:linear-gradient(160deg,rgba(225,244,255,.92) 0%,rgba(196,234,252,.88) 45%,rgba(160,224,240,.85) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.perks i,.field i,.card li i{color:var(--sky)}
+.finder form{border:2px solid var(--lagoon2)}
+.card::before{background:linear-gradient(90deg,var(--lagoon2),var(--sky));height:4px}
+.reviews::before{background:linear-gradient(115deg,rgba(22,184,198,.82) 0%,rgba(22,118,210,.86) 55%,rgba(13,90,166,.9) 100%)}
+.quote .stars,.rv-head a{color:#ffd166}.dots button[aria-current="true"]{background:#ffd166}
+.tile span i{background:var(--red);color:#fff}
+.shack::before{background:linear-gradient(270deg,rgba(13,90,166,.85) 0%,rgba(22,118,210,.55) 34%,rgba(22,118,210,0) 62%)}
+.faq h2{color:var(--sky)}
+details[open]{box-shadow:inset 3px 0 0 var(--red),0 8px 20px rgba(22,118,210,.08)}
+summary i{color:var(--red)}
+.sponsors{background:var(--sand)}
+.cta-band::before{background:linear-gradient(90deg,rgba(22,184,198,.9) 0%,rgba(22,118,210,.78) 55%,rgba(13,90,166,.4) 100%)}
+.cta-band h2,.cta-band .sub{color:#fff!important}
+footer.site{background:linear-gradient(170deg,#1676d2 0%,#0d5aa6 50%,#111111 100%)}
+footer li i,footer ul a:hover,.social a:hover,.news-ok{color:#ffd166}
+.news button{background:var(--red);color:#fff}
+
+/* Film popup */
+.film{border:0;padding:0;background:transparent;width:min(1100px,92vw);max-width:none;overflow:visible;margin:auto;position:fixed;inset:0;height:fit-content}
+.film::backdrop{background:rgba(8,28,52,.82);backdrop-filter:blur(4px)}
+.film video{display:block;width:100%;border-radius:10px;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.film-x{position:absolute;top:12px;right:12px;z-index:2;box-shadow:0 4px 14px rgba(0,0,0,.3);width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--ink);font-size:20px;cursor:pointer;display:grid;place-items:center}
+.film-x:hover{background:var(--red);color:#fff}
+
+/* ===== Photo palette v2 (2026-11-02, Mo): orange, teal, light blue, sand. Previous red version in v6-red.html ===== */
+:root{--orange:#f06a24;--orange-d:#d6571a;--orange-t:#b4470f;--teal:#0e8f9a;--teal-dk:#0b5f66;--sky2:#5bbfe8;--sky2-l:#d6f0fb;--sand:#f6ecd9;--sand-l:#fbf6ec;--ink:#111111;--ocean:#0e8f9a;--red:#f06a24}
+.btn{background:var(--orange);color:#2a1200;font-weight:800;box-shadow:0 8px 20px rgba(240,106,36,.3)}
+.btn:hover{background:var(--orange-d);color:#2a1200;box-shadow:0 10px 24px rgba(240,106,36,.38)}
+.nav .btn{background:var(--orange);color:#2a1200}
+.btn.ghost{background:#fff;color:var(--teal);border:2px solid var(--teal)}
+.btn.ghost:hover{background:var(--teal);color:#fff}
+.btn.white{background:#fff;color:var(--teal-dk)}
+.card .btn{background:var(--teal-dk);color:#fff;box-shadow:none}
+.card .btn:hover{background:#084a50;color:#fff}
+.eyebrow{color:var(--orange-t)}
+.more{color:var(--teal)}
+.nav ul a:hover{color:var(--orange-t)}
+.hero h1 .glow{color:var(--teal)}
+.hero{background:linear-gradient(160deg,rgba(226,245,253,.93) 0%,rgba(198,236,251,.9) 45%,rgba(160,220,244,.86) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.perks i,.field i,.card li i{color:var(--teal)}
+.finder form{border:2px solid var(--teal)}
+.lessons{background:linear-gradient(180deg,#fff 0%,var(--sand-l) 100%)}
+.card::before{background:linear-gradient(90deg,var(--teal),var(--sky2))}
+.reviews::before{background:linear-gradient(115deg,rgba(14,143,154,.85) 0%,rgba(36,150,200,.8) 55%,rgba(11,95,102,.9) 100%)}
+.quote .stars,.rv-head a{color:#ffb15e}.dots button[aria-current="true"]{background:var(--orange)}
+.extras{background:var(--sand)}
+.tile span i{background:var(--orange);color:#2a1200}
+.shack::before{background:linear-gradient(270deg,rgba(11,95,102,.86) 0%,rgba(14,143,154,.55) 34%,rgba(14,143,154,0) 62%)}
+.faq{background:var(--sand-l)}
+.faq h2{color:var(--teal)}
+details{background:#fff;border-color:#eadfc8}
+details[open]{box-shadow:inset 3px 0 0 var(--orange),0 8px 20px rgba(14,143,154,.08)}
+summary i{color:var(--orange-t)}
+.sponsors{background:var(--sand)}
+.cta-band::before{background:linear-gradient(90deg,rgba(91,191,232,.9) 0%,rgba(14,143,154,.82) 60%,rgba(11,95,102,.5) 100%)}
+.cta-band h2,.cta-band .sub{color:#fff!important}
+footer.site{background:linear-gradient(170deg,#0e8f9a 0%,#0b5f66 55%,#073c41 100%)}
+footer li i,footer ul a:hover,.social a:hover,.news-ok{color:#ffb15e}
+.news button{background:var(--orange);color:#2a1200}
+.film-x:hover{background:var(--orange);color:#2a1200}
+
+/* Hero video: full width behind the copy, light fade on the left keeps the text readable */
+.hero>video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 50%;z-index:0;filter:saturate(1.15) contrast(1.04)}
+.hero::before{background:linear-gradient(90deg,rgba(226,245,253,.96) 0%,rgba(214,240,251,.9) 30%,rgba(214,240,251,.55) 44%,rgba(214,240,251,0) 60%)}
+@media (max-width:860px){.hero>video{position:relative;height:300px;order:-1}}
+/* No colour strip on top of the lesson cards (Mo) */
+.card::before{display:none}
+/* Reviews band straight, no diagonal (Mo) */
+.reviews{clip-path:none!important;margin-top:0;padding:100px 0}
+@media (max-width:900px){.reviews{padding:70px 0}}
+/* Surf shack band straight too (Mo) */
+.shack{clip-path:none!important}
+/* Sponsors: dark strip, white logos (Mo) */
+.sponsors{background:#111111!important;padding:30px 0}
+.logos img,.logos img:hover{filter:brightness(0) invert(1)!important}
+.logos img{opacity:.8}.logos img:hover{opacity:1}
+/* Pinterest-style grid with the closing CTA (Mo) */
+.cta-grid{padding:90px 0;background:var(--sand-l)}
+.cta-head{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:30px}
+.cta-head h2{text-transform:uppercase;font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.masonry{columns:4 220px;column-gap:14px}
+.masonry img{width:100%;margin:0 0 14px;border-radius:var(--rc);break-inside:avoid;filter:saturate(1.2) contrast(1.05);transition:transform .4s cubic-bezier(.16,1,.3,1)}
+.masonry img:hover{transform:scale(1.02)}
+@media (max-width:600px){.masonry{columns:2;column-gap:10px}.masonry img{margin-bottom:10px}.masonry img:nth-child(n+9){display:none}}
+/* Footer dark, matching the sponsor strip (Mo) */
+footer.site{background:#111111!important;border-top:1px solid rgba(255,255,255,.08)}
+/* Compact staggered grid: 4 columns, tall (3 rows) and short (2 rows) tiles alternate */
+.masonry{columns:auto;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:104px;grid-auto-flow:column dense;grid-template-rows:repeat(5,104px);gap:12px}
+.masonry img{margin:0;height:100%;object-fit:cover}
+.masonry .t3{grid-row:span 3}.masonry .t2{grid-row:span 2}
+@media (max-width:600px){.masonry{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(5,80px);grid-auto-rows:80px;gap:8px}.masonry img{margin:0}.masonry img:nth-child(n+5){display:none}}
+/* Pick your ride: tall photo cards, condensed type (Mo, from v2) */
+.ride{padding:90px 0 70px;background:var(--sand-l)}
+.ride .big{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.88;letter-spacing:.003em}
+.ride-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.ride-head h2.big{font-size:clamp(3rem,6vw,5.6rem);color:var(--teal);margin:0}
+.ride-head p{font-size:19px;color:var(--ink-2);max-width:42ch}
+.ride-cards{display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:8px;padding:0 8px}
+.ride-card{position:relative;height:600px;border-radius:6px;overflow:hidden;color:#fff;text-decoration:none}
+.ride-card img{width:100%;height:100%;object-fit:cover;filter:saturate(1.2) contrast(1.05);transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.ride-card:hover img{transform:scale(1.05)}
+.ride-card::after{content:"";position:absolute;inset:42% 0 0;background:linear-gradient(0deg,rgba(6,35,45,.75),transparent)}
+.ride-card .t{position:absolute;left:22px;right:22px;bottom:22px;z-index:1}
+.ride-card small{display:block;font:800 13px var(--body);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.ride-card .big{font-size:clamp(2.6rem,3.6vw,3.6rem)}
+.ride-card .row{display:flex;justify-content:space-between;align-items:end;margin-top:14px}
+.ride-card .p{font:400 2.6rem/1 "Anton",Impact,sans-serif}
+.ride-card .p span{font:700 13px var(--body);display:block;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.ride-card .go{width:50px;height:50px;border-radius:50%;background:var(--orange);color:#2a1200;display:grid;place-items:center;font-size:22px;transition:transform .3s}
+.ride-card:hover .go{transform:rotate(-45deg)}
+.ride-note{margin-top:22px;color:var(--ink-2);font-size:15px}
+@media (max-width:1100px){.ride-cards{grid-template-columns:1fr 1fr}.ride-card{height:480px}}
+@media (max-width:600px){.ride{padding:60px 0 50px}.ride-cards{grid-template-columns:1fr}.ride-card{height:420px}.ride-head{flex-direction:column;align-items:flex-start;gap:12px}}
+/* Rated reviews: slim, centre rating, drifting photo columns (Mo, after the Miss Green layout) */
+.rated{display:grid;grid-template-columns:1fr minmax(320px,520px) 1fr;gap:40px;align-items:center;height:500px;overflow:hidden;background:#fff;padding:0 24px;
+  -webkit-mask:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%);mask:linear-gradient(180deg,transparent 0,#000 12%,#000 88%,transparent 100%)}
+.rside{display:grid;grid-template-columns:1fr 1fr;gap:14px;height:100%}
+.rcol{overflow:hidden;height:100%}
+.rtrack{display:flex;flex-direction:column;gap:14px}
+.rtrack img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;filter:saturate(1.2) contrast(1.05)}
+.rcol:nth-child(2) .rtrack{margin-top:-90px}
+@media (prefers-reduced-motion:no-preference){.rcol.up .rtrack{animation:rup 38s linear infinite}.rcol.down .rtrack{animation:rdown 44s linear infinite}}
+@keyframes rup{to{transform:translateY(-50%)}}
+@keyframes rdown{from{transform:translateY(-50%)}to{transform:translateY(0)}}
+.rcenter{text-align:center}
+.rated-k{font:800 12px var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.rated-x{font:800 clamp(2.4rem,3.6vw,3.2rem)/1 var(--head);color:var(--ink);margin-top:4px}
+.rated-s{color:var(--orange);font-size:26px;letter-spacing:4px;margin-top:8px}
+.rated-src{font-weight:700;color:var(--ink-2);font-size:15px}
+.rcenter h2{font-size:clamp(1.8rem,2.8vw,2.4rem);margin-top:22px;color:var(--teal)}
+.rq{position:relative;min-height:118px;margin:14px auto 12px;max-width:44ch}
+.rq blockquote{position:absolute;inset:0;opacity:0;transform:translateY(8px);transition:opacity .6s,transform .6s}
+.rq blockquote.on{opacity:1;transform:none}
+.rq p{font-size:18px;line-height:1.45}
+.rq footer{margin-top:8px;font-size:14px;color:var(--ink-2);font-weight:700}
+@media (max-width:1000px){.rated{grid-template-columns:1fr;height:auto;padding:70px 18px;-webkit-mask:none;mask:none;background:var(--sand-l)}.rside{display:none}.rq{min-height:150px}}
+.rated{grid-template-rows:500px}.rside,.rcol{min-height:0;height:500px}
+@media (max-width:1000px){.rated{grid-template-rows:auto}}
+/* Reviews band blends into the sand sections around it; only the photo columns fade, so no white strip shows. */
+.rated{background:linear-gradient(180deg,var(--sand-l) 0%,var(--sand) 100%);-webkit-mask:none;mask:none}
+.rside{-webkit-mask:linear-gradient(180deg,transparent 0,transparent 5%,#000 32%,#000 68%,transparent 95%,transparent 100%);mask:linear-gradient(180deg,transparent 0,transparent 5%,#000 32%,#000 68%,transparent 95%,transparent 100%)}
+@media (max-width:1000px){.rq{min-height:122px}}
+/* ===== No borders, frosted glass on every box and secondary button (Mo, 2026-11-02) ===== */
+.btn,.btn.ghost,.btn.white,.card .btn,.finder form,.finder select,.finder input,details,details:first-child,.news input,.news button,.film-x{border:0!important}
+.btn.ghost,.btn.white{background:rgba(255,255,255,.5)!important;color:var(--teal-dk)!important;-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 6px 22px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.6)!important}
+.btn.ghost:hover,.btn.white:hover{background:rgba(255,255,255,.72)!important;color:var(--teal-dk)!important}
+.finder form{background:rgba(255,255,255,.58)!important;-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);box-shadow:0 20px 60px rgba(0,0,0,.16),inset 0 1px 0 rgba(255,255,255,.7)!important}
+.finder select,.finder input{background-color:rgba(255,255,255,.62)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 2px 10px rgba(0,0,0,.06)}
+details{background:rgba(255,255,255,.6)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 6px 20px rgba(0,0,0,.06)}
+details[open]{box-shadow:0 10px 28px rgba(14,143,154,.12)!important}
+.news input{background:rgba(255,255,255,.1)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.film-x{background:rgba(255,255,255,.6)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.more{border-bottom:0!important;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+@media (prefers-reduced-transparency:reduce){.btn.ghost,.btn.white,.finder form,details,.film-x{background:#fff!important;backdrop-filter:none}}
+.field i{z-index:2}
+.ride-book{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:22px}.ride-book .ride-note{margin:0;max-width:62ch}
+@media (max-width:600px){.ride-book{flex-direction:column;align-items:flex-start}}
+/* Partner strip: drifts on its own, stops on hover so it can be dragged or scrolled by hand */
+.sponsors .logos{display:block;overflow:hidden;cursor:grab;touch-action:pan-y;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.sponsors .logos::-webkit-scrollbar{display:none}
+.sponsors .logos.drag{cursor:grabbing}
+.sponsors .logos:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.logo-track{display:flex;align-items:center;gap:0 18px;width:max-content;will-change:transform}
+.logo-track img{flex:none;-webkit-user-drag:none;user-select:none}
+/* Hero ends on a straight line, no wave */
+.hero::after{display:none!important}
+.finder{background:linear-gradient(transparent 82px,var(--sand-l) 82px)}
+@media (max-width:980px){.finder{background:var(--sand-l)}}
+/* The strips: one open at a time, the rest wait as tinted slivers */
+.strips{display:flex;gap:12px;height:600px}
+.strip{position:relative;flex:1 1 0;min-width:0;border:0;padding:0;border-radius:22px;overflow:hidden;cursor:pointer;background:var(--ink);
+  transition:flex-grow .7s cubic-bezier(.16,1,.3,1)}
+.strip.on{flex-grow:5.2;cursor:default}
+.strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.15);transition:filter .7s,transform 1.2s cubic-bezier(.16,1,.3,1)}
+.strip::before{content:"";position:absolute;inset:0;z-index:1;background:var(--tone);mix-blend-mode:color;transition:opacity .7s}
+.strip::after{content:"";position:absolute;inset:0;z-index:1;background:var(--tone);mix-blend-mode:multiply;opacity:.55;transition:opacity .7s}
+.strip.on img{filter:none;transform:scale(1.03)}
+.strip.on::before,.strip.on::after{opacity:0}
+.strip:nth-child(1){--tone:linear-gradient(180deg,#5bbfe8,#0e8f9a)}
+.strip:nth-child(2){--tone:linear-gradient(180deg,#5ee3e8,#14a7b0)}
+.strip:nth-child(3){--tone:linear-gradient(180deg,#0b5f66,#1d8f6a)}
+.strip:nth-child(4){--tone:linear-gradient(180deg,#ffc83d,#f06a24)}
+/* closed label, read bottom to top */
+.strip .v{position:absolute;left:50%;bottom:22px;z-index:2;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;
+  font:400 22px/1 "Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;color:#fff;white-space:nowrap;transition:opacity .3s}
+.strip.on .v{opacity:0}
+/* open caption */
+.strip .cap{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px;color:#fff;text-align:left;
+  background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,0));opacity:0;transform:translateY(12px);transition:opacity .3s,transform .5s}
+.strip.on .cap{opacity:1;transform:none;transition-delay:.25s}
+.cap small{font:700 12px "Montserrat";letter-spacing:.14em;text-transform:uppercase}
+.cap .big{font:400 clamp(2.6rem,4.4vw,4rem)/.9 "Anton",Impact,sans-serif;text-transform:uppercase;margin:6px 0 8px}
+.cap .p{font:400 1.9rem/1 "Anton";}
+.cap .p span{font:700 12px "Montserrat";letter-spacing:.12em;text-transform:uppercase;margin-right:6px;vertical-align:middle}
+/* Pick your ride, strip layout: photos left, list and booking right; on phones head, strips, then book */
+.ride.rs{padding:90px 0;background:var(--sand-l) radial-gradient(rgba(0,0,0,.08) 1.2px,transparent 1.4px) 0 0/22px 22px}
+.rs-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);grid-template-areas:"strips head" "strips cta";column-gap:56px;align-content:center}
+.rs-head{grid-area:head;align-self:end}.strips{grid-area:strips}.rs-cta{grid-area:cta}
+.rs-eyebrow{font:800 13px "Montserrat";letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.rs-h{font:400 clamp(3.4rem,6vw,5.6rem)/.9 "Anton",Impact,sans-serif;text-transform:uppercase;color:var(--teal);margin:10px 0 16px;letter-spacing:0}
+.rs-lede{color:var(--ink-2);max-width:42ch}
+.picker{list-style:none;padding:0;margin:24px 0 24px;display:grid;gap:8px}
+.picker button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 18px;border:0;border-radius:14px;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);font:500 16px var(--body,"DM Sans");color:var(--ink);cursor:pointer;text-align:left;transition:background .25s,transform .25s}
+.picker button b{font:400 1.3rem "Anton";letter-spacing:.02em}
+.picker button .d{color:var(--ink-2);font-size:14px}
+.picker button[aria-pressed="true"]{background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.1);transform:translateX(6px)}
+.picker button[aria-pressed="true"] b{color:var(--orange-t)}
+.rs-note{margin-top:18px;font-size:14px;color:var(--ink-2);max-width:46ch}
+@media (max-width:900px){
+  .ride.rs{padding:60px 0}
+  .rs-grid{grid-template-columns:1fr;grid-template-areas:"head" "strips" "cta";row-gap:24px}
+  .strips{height:440px;gap:8px}.strip{border-radius:16px}.strip.on{flex-grow:4.2}.strip .v{font-size:18px}.strip .cap{padding:18px}
+  .picker{display:none}
+}
+@media (prefers-reduced-motion:reduce){.strip,.strip img,.strip::before,.strip::after,.strip .cap{transition:none}}
+
+/* Lesson detail panel: follows the open strip */
+.rs-info{margin:26px 0 24px;padding:24px 26px;border-radius:20px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 14px 40px rgba(0,0,0,.08)}
+.rs-info.swap>*{animation:rsIn .45s cubic-bezier(.16,1,.3,1) both}
+.rs-info.swap>*:nth-child(2){animation-delay:.04s}.rs-info.swap>*:nth-child(3){animation-delay:.08s}.rs-info.swap>*:nth-child(4){animation-delay:.12s}
+@keyframes rsIn{from{opacity:0;transform:translateY(8px)}}
+.rs-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.rs-name{font:400 2.2rem/1 "Anton",Impact,sans-serif;text-transform:uppercase;color:var(--orange-t)}
+.rs-tag{font:700 12px "Montserrat";letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.rs-desc{margin:10px 0 16px;color:var(--ink-2)}
+.rs-rows{list-style:none;padding:0;margin:0;display:grid}
+.rs-rows li{display:grid;grid-template-columns:1fr auto auto;gap:18px;align-items:baseline;padding:11px 0;border-top:1px solid rgba(0,0,0,.08)}
+.rs-rows li:first-child{border-top:0}
+.rs-rows .lv{font-weight:700}
+.rs-rows .hr{color:var(--ink-2);font-size:14px;display:inline-flex;align-items:center;gap:6px}
+.rs-rows .pr{font:400 1.5rem/1 "Anton";color:var(--ink);min-width:3.6em;text-align:right}
+.rs-facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;padding:0;list-style:none}
+.rs-facts li{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:rgba(14,143,154,.1);color:var(--teal-dk);font-size:13.5px;font-weight:500}
+.rs-facts i{font-size:16px}
+@media (max-width:900px){.rs-info{margin:0 0 18px;padding:20px}.rs-name{font-size:1.9rem}}
+@media (prefers-reduced-motion:reduce){.rs-info.swap>*{animation:none}}
+/* Header turns to frosted glass once the page scrolls */
+.nav{transition:background .35s,box-shadow .35s,border-color .35s}
+.nav.scrolled{background:rgba(255,255,255,.42);-webkit-backdrop-filter:blur(20px) saturate(1.6);backdrop-filter:blur(20px) saturate(1.6);border-bottom-color:rgba(255,255,255,.35);box-shadow:0 8px 30px rgba(0,0,0,.08)}
+.nav.scrolled.open ul{background:rgba(255,255,255,.85);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+@media (prefers-reduced-transparency:reduce){.nav.scrolled{background:rgba(255,255,255,.96)}}
+/* Pick your ride: heading on one line, card (with Book inside) bottom-aligned to the strips */
+.rs-grid{grid-template-rows:auto 1fr;align-items:stretch}
+.rs-grid .strips{height:auto;min-height:690px;align-self:stretch}
+.rs-head{align-self:start}
+.rs-h{font-size:clamp(2.6rem,4.3vw,4.3rem);white-space:nowrap;margin:8px 0 12px}
+.rs-cta{align-self:end;margin-top:24px;padding:24px 26px;border-radius:20px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 14px 40px rgba(0,0,0,.08)}
+.rs-cta .rs-info{margin:0 0 20px;padding:0;background:none;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;border-radius:0}
+@media (max-width:900px){.rs-grid .strips{min-height:440px}.rs-cta{margin-top:0;padding:20px}.rs-h{white-space:normal}}
+/* Header: links left, logo centred, Book right. Phones: menu left, logo centre, Book right */
+.nav .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:24px}
+.nav .wordmark{grid-column:2;grid-row:1;justify-self:center;text-align:center}
+.nav ul{grid-column:1;grid-row:1;justify-self:start;margin:0;gap:26px}
+.nav .btn{grid-column:3;grid-row:1;justify-self:end;margin:0}
+@media (max-width:1060px){.nav ul{gap:18px}.nav ul a{font-size:14px}}
+@media (max-width:860px){.nav .menu-btn{grid-column:1;grid-row:1;justify-self:start;margin-left:-8px}.nav .btn{margin-left:0}}
+@media (max-width:520px){.nav .wrap{gap:8px}.nav .btn{padding:0 12px;min-height:38px;font-size:13.5px}.nav .btn i{display:none}.nav .wordmark b{font-size:21px}.nav .wordmark small{font-size:7.5px}}
+/* A little more white above and below the header */
+.nav .wrap{height:88px}
+.nav.open ul{top:88px}
+@media (max-width:520px){.nav .wrap{height:76px}.nav.open ul{top:76px}}
+/* Dark header: solid black at the top, smoky frosted glass once scrolled */
+.nav{background:#111111!important;border-bottom:1px solid rgba(255,255,255,.08)!important}
+.nav .wordmark,.nav .wordmark b,.nav .wordmark small,.nav ul a,.nav .menu-btn{color:#fff}
+.nav ul a{opacity:.85}.nav ul a:hover{opacity:1;color:var(--orange)}
+.nav.scrolled{background:rgba(17,17,17,.8)!important;-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.nav.open ul,.nav.scrolled.open ul{background:#111111!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-bottom:1px solid rgba(255,255,255,.08)}
+@media (prefers-reduced-transparency:reduce){.nav.scrolled{background:#111111!important}}
+@media (max-width:860px){.nav.open ul{justify-self:stretch;left:0;right:0;width:auto;margin:0}}
+/* Bottom gallery: one row of Instagram photos drifting left, pauses on hover */
+.ig{display:flex;justify-content:flex-end;margin:-6px 0 18px}
+.ig-handle{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;color:var(--ink);text-decoration:none}
+.ig-handle i{font-size:20px;color:var(--orange)}
+.ig-handle:hover{color:var(--orange-t)}
+.ig-row{overflow:hidden;padding:4px 0 8px}
+.ig-track{display:flex;gap:14px;width:max-content;animation:igRoll 60s linear infinite}
+.ig-row:hover .ig-track,.ig-row:focus-within .ig-track{animation-play-state:paused}
+.ig-tile{position:relative;flex:none;width:260px;height:260px;border-radius:18px;overflow:hidden;display:block}
+.ig-tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.ig-tile i{position:absolute;inset:0;display:grid;place-items:center;font-size:40px;color:#fff;background:rgba(0,0,0,.28);opacity:0;transition:opacity .3s}
+.ig-tile:hover img{transform:scale(1.06)}.ig-tile:hover i,.ig-tile:focus-visible i{opacity:1}
+@keyframes igRoll{to{transform:translateX(calc(-50% - 7px))}}
+@media (max-width:600px){.ig{justify-content:flex-start}.ig-tile{width:180px;height:180px;border-radius:14px}.ig-track{gap:10px;animation-duration:45s}@keyframes igRoll{to{transform:translateX(calc(-50% - 5px))}}}
+@media (prefers-reduced-motion:reduce){.ig-row{overflow-x:auto}.ig-track{animation:none}}
+.cta-grid{padding-bottom:0!important}.ig-row{padding-bottom:0}
+/* Gallery as one seamless strip: no gaps, square edges */
+.ig-track{gap:0!important;animation-name:igRoll0!important}
+.ig-tile{border-radius:0!important}
+@keyframes igRoll0{to{transform:translateX(-50%)}}
+/* Turquoise accent: only on the black parts (header, footer). Orange stays the booking colour. */
+:root{--aqua-hi:#6ae6e0}
+.nav ul a:hover,.nav ul a:focus-visible{color:var(--aqua-hi)!important;opacity:1}
+.nav ul a{position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--aqua-hi);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.nav ul a:hover::after,.nav ul a:focus-visible::after{transform:scaleX(1)}
+.wa-pill{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:14px 24px;border-radius:999px;background:var(--aqua-hi);color:#111111!important;font:700 13px "Montserrat",sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.wa-pill i{font-size:20px}
+.wa-pill:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(106,230,224,.3)}
+footer.site ul a:hover,footer.site .legal a:hover{color:var(--aqua-hi)!important}
+footer.site .fgrid li i{color:var(--aqua-hi)!important}
+footer.site .social a:hover{color:var(--aqua-hi)!important}
+.news button{background:var(--aqua-hi)!important;color:#111111!important}
+.wa-pill{white-space:nowrap;padding:13px 20px;font-size:11.5px;letter-spacing:.09em;gap:8px}.wa-pill i{font-size:18px}
+/* Partner logos float over the bottom of the Surf Shack photo, no band of their own */
+.shack{flex-direction:column;justify-content:center;padding-bottom:120px}
+.shack .wrap{flex:1;align-items:center}
+.sponsors.on-photo{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:18px 0 14px;background:linear-gradient(0deg,rgba(0,0,0,.55),rgba(0,0,0,0))!important;animation:none!important}
+.sponsors.on-photo .logos img{opacity:.95}
+@media (max-width:700px){.shack{padding-bottom:100px}.sponsors.on-photo .logos img{height:80px}}
+/* Shack photo: true colours, dark fade only behind the text and logos */
+.shack::before{background:linear-gradient(270deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.35) 34%,rgba(0,0,0,0) 60%)!important}
+.shack{min-height:560px}
+@media (max-width:700px){.shack::before{background:rgba(0,0,0,.4)!important}.shack>img{object-position:60% 55%!important}}
+/* Dark hero: black fade over the video, white headline, turquoise accent */
+.hero-v{filter:none!important;opacity:1!important}
+.hero::before{background:linear-gradient(90deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.78) 34%,rgba(10,10,10,.4) 52%,rgba(10,10,10,.12) 70%)!important}
+.hero::after{display:none!important}
+.hero h1{color:#fff!important}
+.hero h1 .glow{color:#6ae6e0!important;background:none!important;-webkit-text-fill-color:#6ae6e0}
+.hero .lead,.perks li{color:rgba(255,255,255,.9)!important}
+.perks i{color:#6ae6e0!important}
+.hero .eyebrow{color:#f06a24!important}
+@media (max-width:860px){.hero::before{display:block!important;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.85))!important}}
+/* Find a lesson: solid turquoise bar, black text, white fields, orange button */
+.finder form{background:#6ae6e0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:0 20px 50px rgba(0,0,0,.18)!important}
+.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#111111!important}
+.finder .intro p,.finder label{opacity:.78}
+.finder select,.finder input{background-color:#fff!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.finder .field i{color:#0b5f66!important}
+/* Find a lesson: dark frosted teal glass, white text */
+.finder form{background:rgba(6,78,84,.8)!important;-webkit-backdrop-filter:blur(22px) saturate(1.5)!important;backdrop-filter:blur(22px) saturate(1.5)!important;box-shadow:0 20px 50px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)!important}
+.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#fff!important}
+.finder .intro p,.finder label{opacity:.8}
+@media (prefers-reduced-transparency:reduce){.finder form{background:#0b5f66!important}}
+/* Lesson name in bright orange; Windsurf strip tinted red so all four strips differ */
+.rs-name{color:var(--orange)!important}
+.rs .strip:nth-child(1){--tone:linear-gradient(180deg,#ff6b57,#e0352b)}
+/* Open photo links to that ride's own page */
+.rs .strip.on{cursor:pointer}
+.strip .cap{display:block}
+.rs-acts{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.rs-more{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--teal-dk);text-decoration:none}
+.rs-more:hover{color:var(--orange-t)}
+/* Booking buttons: canary yellow, black text */
+:root{--canary:#ffe234;--canary-d:#f5d300}
+.btn:not(.white):not(.ghost){background:var(--canary)!important;color:#111111!important;box-shadow:0 10px 26px rgba(255,214,0,.28)!important}
+.btn:not(.white):not(.ghost):hover{background:var(--canary-d)!important}
+.btn:not(.white):not(.ghost) i{color:#111111!important}
+/* Hero accents swapped: teal label, orange "Good times." */
+.hero .eyebrow{color:#17a9b5!important}
+.hero h1 .glow{color:#f06a24!important;-webkit-text-fill-color:#f06a24}
+/* Merch button: outlined, sits left of Book Now */
+.nav-cta{grid-column:3;grid-row:1;justify-self:end;display:flex;gap:10px;align-items:center}
+.nav-cta .btn{grid-column:auto!important}
+.btn.merch{background:transparent!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)!important}
+.btn.merch i{color:#fff!important;font-size:18px}
+.btn.merch:hover{background:rgba(255,255,255,.1)!important;box-shadow:inset 0 0 0 1.5px var(--aqua-hi)!important}
+@media (max-width:860px){.btn.merch{display:none!important}}
+.nav li.m-only{display:none}@media (max-width:860px){.nav.open li.m-only{display:list-item}}
+.nav .nav-cta a.btn.merch{background:transparent!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)!important}
+.nav .nav-cta a.btn.merch i{color:#fff!important}
+.nav .nav-cta a.btn.merch:hover{background:rgba(255,255,255,.1)!important;box-shadow:inset 0 0 0 1.5px #6ae6e0!important}
+.credit{text-align:right;font-size:12.5px;opacity:.6;margin-top:14px;letter-spacing:.02em}.credit b{font-weight:700}
+@media (max-width:520px){.nav .wordmark b{font-size:26px!important}}
+/* SaltyCode credit, same as on arxongomperts.com */
+.credit{text-align:right;margin-top:14px;opacity:1!important}
+.crafted{display:inline-flex;align-items:center;gap:8px;font:600 11px/1.6 "Montserrat",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);text-decoration:none;transition:color .3s}
+.crafted img{width:22px;height:22px;border-radius:6px;box-shadow:0 0 0 1px rgba(255,255,255,.18);transition:transform .4s cubic-bezier(.3,1.6,.5,1)}
+.crafted b{font-weight:700;color:#fff;letter-spacing:.08em;text-transform:none}
+.crafted:hover{color:#fff}
+.crafted:hover img{transform:rotate(-8deg) scale(1.12)}
+@media (max-width:860px){.credit{text-align:left}}
+/* Sand texture: fine grain plus soft dune shading on every sand background */
+:root{--grain:url(img/sand-grain.png);--dune:linear-gradient(transparent,transparent);--speck:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .96 0 0 0 0 .92 0 0 0 0 .85 1.6 0 0 0 -.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E")}
+body,.ride,.cta-grid,.faq,.extras,.rated{background-image:var(--grain),var(--dune)!important;background-size:384px 384px,317px 317px!important;background-repeat:repeat,repeat!important}
+.ride.rs{background-image:var(--grain),var(--dune),radial-gradient(rgba(0,0,0,.07) 1.2px,transparent 1.4px)!important;background-size:384px 384px,317px 317px,22px 22px!important;background-repeat:repeat!important}
+.finder::before{content:"";position:absolute;left:0;right:0;top:82px;bottom:0;z-index:0;pointer-events:none;background:var(--grain),var(--dune);background-size:384px 384px,317px 317px;background-repeat:repeat}
+.finder>*{position:relative;z-index:1}
+@media (max-width:980px){.finder::before{top:0}}
+/* Footer: sand dusted along the top edge, fading into the dark */
+footer.site{position:relative}
+footer.site::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:var(--speck),radial-gradient(60% 75% at 0% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%),radial-gradient(60% 75% at 100% 100%,rgba(214,190,150,.30),rgba(214,190,150,0) 70%);
+  -webkit-mask:radial-gradient(55% 80% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(55% 80% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%);
+  mask:radial-gradient(55% 80% at 0% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%),radial-gradient(55% 80% at 100% 100%,#000 0%,rgba(0,0,0,.5) 40%,transparent 75%)}
+footer.site>.wrap{position:relative;z-index:1}
+/* Hero bottom: sand rises out of the beach below and fades into the dark film */
+section.hero.water::after{display:block!important;content:"";position:absolute;left:0;right:0;bottom:-1px;top:auto;height:220px;z-index:2;pointer-events:none;
+  -webkit-mask:none;mask:none;
+  background:var(--grain),linear-gradient(180deg,rgba(251,246,236,0) 0%,rgba(251,246,236,.35) 45%,rgba(251,246,236,.85) 80%,#fbf6ec 100%)!important;
+  background-size:384px 384px,100% 100%!important}
+section.hero.water::after{-webkit-mask:linear-gradient(180deg,transparent 0%,#000 55%);mask:linear-gradient(180deg,transparent 0%,#000 55%)}
+section.hero.water .wrap{z-index:3}
+@media (max-width:860px){section.hero.water::after{height:140px}}
+/* "Ready to get on the water?" strip: plain white, no sand */
+section.cta-grid{background:#fff!important;background-image:none!important}
+section.cta-grid .cta-head{margin-bottom:34px}
+/* One continuous sand: drawn once on the page, sand sections are see-through so nothing seams */
+body{background-color:#fbf6ec!important;background-image:var(--grain),var(--dune)!important;background-size:384px 384px,317px 317px!important;background-repeat:repeat!important}
+.ride,.ride.rs,.faq,.extras,.rated,.finder{background:transparent!important}
+.ride.rs{background-image:none!important}
+.finder::before{display:none!important}
+section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(180deg,rgba(251,246,236,0) 0%,rgba(251,246,236,.35) 45%,rgba(251,246,236,.85) 80%,#fbf6ec 100%)!important;background-size:384px 384px,317px 317px,auto!important;background-position:0 0,0 0,0 0!important}
+/* Hero: second button, frosted outline next to Book a Lesson */
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.hero-rent{background:rgba(255,255,255,.08)!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero .btn.hero-rent i{color:#fff!important}
+.hero .btn.hero-rent:hover{background:rgba(255,255,255,.16)!important;box-shadow:inset 0 0 0 1.5px #6ae6e0!important}
+
+/* Header: both sides in matching frosted pill groups (desktop) */
+@media (min-width:861px){
+  .nav ul{background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);border-radius:999px;padding:6px 8px!important;gap:2px!important}
+  .nav ul a{display:inline-block;padding:9px 14px;border-radius:999px;transition:background .2s,color .2s}
+  .nav ul a::after{display:none!important}
+  .nav ul a:hover,.nav ul a[aria-current]{background:rgba(255,255,255,.09)}
+  .nav ul a[aria-current]{color:#6ae6e0!important;opacity:1}
+}
+.nav-cta{gap:4px!important;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);border-radius:999px;padding:6px}
+.nav-cta .wind-btn,.nav .nav-cta a.btn.merch{height:38px!important;min-height:38px!important;box-shadow:none!important;background:transparent!important;border-radius:999px!important;
+  padding:0 14px!important;font:500 15px "DM Sans",sans-serif!important;letter-spacing:0!important;color:#fff!important}
+.nav-cta .wind-btn:hover,.nav-cta .wind-btn[aria-expanded="true"],.nav .nav-cta a.btn.merch:hover{background:rgba(255,255,255,.09)!important;box-shadow:none!important}
+.nav-cta .wind-btn .caret{display:none}
+.nav-cta .wind-btn .kn{font:500 15px "DM Sans",sans-serif!important}
+@media (max-width:860px){.nav-cta{padding:3px}.nav-cta .wind-btn{height:34px!important;min-height:34px!important;padding:0 11px!important;font-size:14px!important}}
+
+.nav .nav-cta a.btn.ghost{height:38px!important;min-height:38px!important;box-shadow:none!important;background:transparent!important;border-radius:999px!important;padding:0 14px!important;font:500 15px "DM Sans",sans-serif!important;color:#fff!important}
+.nav .nav-cta a.btn.ghost:hover{background:rgba(255,255,255,.09)!important;box-shadow:none!important}
+@media (min-width:861px) and (max-width:1200px){.nav ul a{padding:8px 9px;font-size:14px}.nav ul{padding:5px 6px!important}.nav-cta .wind-btn,.nav .nav-cta a.btn.merch,.nav .nav-cta a.btn.ghost{padding:0 10px!important;font-size:14px!important}.nav .wrap{gap:14px!important}}
+@media (min-width:861px) and (max-width:1000px){.nav ul a{padding:8px 7px;font-size:13.5px}.nav .wordmark b{font-size:30px!important}}
+/* Surf Shack: drone flyover of the beach behind the panel */
+.shack>video.shack-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+@media (prefers-reduced-motion:reduce){.shack>video.shack-v{display:none}.shack{background:#111 url(video/beach-drone-poster.jpg) center/cover}}
+/* Sponsor logos link to the brands */
+.sp-link{display:inline-flex;flex:none}
+.logo-track .sp-link img{pointer-events:none}
+
+/* Hall of Fame link in the right pill */
+.nav .nav-cta a.hof-link{height:38px!important;min-height:38px!important;box-shadow:none!important;background:transparent!important;border-radius:999px!important;padding:0 14px!important;font:500 15px "DM Sans",sans-serif!important;color:#fff!important;gap:7px!important}
+.nav .nav-cta a.hof-link i{color:#ffe234!important;font-size:16px}
+.nav .nav-cta a.hof-link:hover,.nav .nav-cta a.hof-link[aria-current]{background:rgba(255,255,255,.09)!important}
+@media (max-width:1200px){.nav .nav-cta a.hof-link{padding:0 10px!important;font-size:14px!important}}
+@media (max-width:860px){.nav .nav-cta a.hof-link{display:none!important}}
+/* Surf Spot flyover: punchy, sunny colour */
+.shack>video.shack-v{filter:none}
+/* More than lessons, redesigned: big heading, bento of three, neutral fade, standard yellow buttons */
+.x2{padding:96px 0 90px}
+.x2-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+.x2-head h2{font:400 clamp(3rem,6.4vw,5.6rem)/.9 Anton,Impact,sans-serif;text-transform:uppercase;color:var(--teal);letter-spacing:0}
+.x2-head p{max-width:40ch;color:#555;font-size:16.5px}
+.x2-grid{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:290px 290px;gap:16px}
+.x2-tile{position:relative;display:block;border-radius:22px;overflow:hidden;color:#fff;text-decoration:none;box-shadow:0 18px 40px rgba(0,0,0,.12)}
+.x2-tile.big{grid-row:1/3}
+.x2-tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.16,1,.3,1)}
+.x2-tile:hover img{transform:scale(1.05)}
+.x2-tile::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0))}
+.x2-txt{position:absolute;left:26px;right:26px;bottom:24px;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.x2-txt small{font:800 11.5px Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6ae6e0}
+.x2-txt b{font:400 clamp(1.8rem,2.8vw,2.6rem)/.95 Anton,Impact,sans-serif;text-transform:uppercase}
+.x2-tile.big .x2-txt b{font-size:clamp(2.4rem,4vw,3.6rem)}
+.x2-txt em{font-style:normal;font-size:16px;color:rgba(255,255,255,.85);max-width:38ch}
+.x2-txt .btn{margin-top:10px;min-height:42px!important;padding:0 18px!important;font-size:14.5px!important}
+@media (max-width:860px){.x2{padding:64px 0}.x2-head{flex-direction:column;align-items:flex-start}.x2-grid{grid-template-columns:1fr;grid-template-rows:380px 260px 260px}.x2-tile.big{grid-row:auto}}
+/* Partner strip: four current brands, trimmed logos sized evenly */
+.logos .logo-track img{height:52px!important;width:auto!important;margin:22px 54px!important}
+.logos .pl-p7 img{height:36px!important}.logos .pl-ff img{height:60px!important}
+@media (max-width:700px){.logos .logo-track img{height:38px!important;margin:16px 30px!important}.logos .pl-p7 img{height:26px!important}.logos .pl-ff img{height:44px!important}}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <div class="nav-cta"><a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn merch" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a></div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero: their own film from fransparadise.com, muted loop (Mo, 2026-11-02) -->
+  <section class="hero water">
+    <video class="hero-v" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" aria-label="Frans Paradise film: the shack, rigging and lessons on Lac Bay"><source src="video/hero-loop.mp4" type="video/mp4"></video>
+        <div class="wrap">
+      <p class="eyebrow">Windsurf Bonaire</p>
+      <h1>Lessons. Equipment. <span class="glow">Good times.</span></h1>
+      <p class="lead">Crystal clear water. Steady winds. A better you.</p>
+      <div class="cta">
+        <a class="btn" data-wa="Hi Taty! I'd like to book a lesson." href="https://wa.me/5997850514">Book a Lesson <i class="ph ph-arrow-right"></i></a>
+        <a class="btn hero-rent" href="rentals.html">See the gear <i class="ph ph-arrow-right"></i></a>
+      </div>
+      <ul class="perks">
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay</li>
+        <li><i class="ph ph-wind"></i>Warm, shallow water</li>
+        <li><i class="ph ph-users-three"></i>All levels welcome</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="finder" aria-label="Find a lesson">
+    <div class="wrap">
+      <form id="finder">
+        <div class="intro"><h3>Find a lesson</h3><p>See the wind for your day, then book on WhatsApp.</p></div>
+        <div><label for="f-act">Activity</label><div class="field"><i class="ph ph-sailboat"></i><select id="f-act"><option>Windsurfing</option><option>Wing foil</option><option>Wind foil</option><option>Kids lesson</option></select></div></div>
+        <div><label for="f-lvl">Level</label><div class="field"><i class="ph ph-chart-bar"></i><select id="f-lvl"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></div></div>
+        <div><label for="f-date">Date</label><div class="field"><i class="ph ph-calendar-blank"></i><input type="date" id="f-date"></div></div>
+        <button class="btn" type="submit">Check wind &amp; book <i class="ph ph-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <section class="ride rs" id="lessons">
+    <div class="wrap rs-grid">
+      <div class="rs-head">
+        <div class="rs-eyebrow">Dushi swaaaa.</div>
+        <h2 class="rs-h">Pick your ride</h2>
+        <p class="rs-lede">Prices per person, in dollars. Pick one and we'll sort a time on WhatsApp.</p>
+      </div>
+      <div class="strips" role="tablist" aria-label="Lessons">
+      <button class="strip on" role="tab" aria-selected="true" data-i="0"><img loading="lazy" src="img/windsurf-lesson2.jpg" alt="An instructor helps a beginner pull up her sail on the beach" style="object-position:47% 50%"><span class="v">Windsurf</span>
+        <span class="cap"><small>Beginners, 2 hours</small><div class="big">Windsurf</div><div class="p"><span>from</span>$50</div></span></button>
+      <button class="strip" role="tab" aria-selected="false" data-i="1"><img loading="lazy" src="img/wing-shed.jpg" alt="Taty lifts a wing overhead in the gear shed" style="object-position:48% 50%"><span class="v">Wing foil</span>
+        <span class="cap"><small>Beginners, 1 hour</small><div class="big">Wing foil</div><div class="p"><span>from</span>$125</div></span></button>
+      <button class="strip" role="tab" aria-selected="false" data-i="2"><img loading="lazy" src="img/windfoil.jpg" alt="Taty wind foiling on Lac Bay" style="object-position:50% 60%"><span class="v">Wind foil</span>
+        <span class="cap"><small>Beginners, 2 hours</small><div class="big">Wind foil</div><div class="p"><span>from</span>$125</div></span></button>
+      <button class="strip" role="tab" aria-selected="false" data-i="3"><img loading="lazy" src="img/kids.jpg" alt="A young girl in pink sunglasses holding the boom of her windsurf board" style="object-position:40% 45%"><span class="v">Kids</span>
+        <span class="cap"><small>From age 7</small><div class="big">Kids</div><div class="p"><span>price</span>Ask us</div></span></button>
+    </div>
+      <div class="rs-cta">
+        <div class="rs-info" id="rs-info" aria-live="polite"></div>
+        <div class="rs-acts"><a class="btn" id="rs-book" href="https://wa.me/5997850514">Book Windsurf <i class="ph ph-arrow-right"></i></a><a class="rs-more" id="rs-more" href="ride-windsurf.html">All about Windsurf <i class="ph ph-arrow-right"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rated" id="reviews" aria-label="Reviews">
+    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/rack-sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/rack-sails.jpg" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/beach-brief.jpg" alt="" loading="lazy"><img src="img/windfoil.jpg" alt="" loading="lazy"><img src="img/shack-aerial.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/beach-brief.jpg" alt="" loading="lazy"><img src="img/windfoil.jpg" alt="" loading="lazy"><img src="img/shack-aerial.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"></div></div></div>
+    <div class="rcenter rv">
+      <p class="rated-k">Rated</p>
+      <p class="rated-x">Excellent</p>
+      <p class="rated-s" aria-hidden="true">★★★★★</p>
+      <p class="rated-src">5.0 on Google · 67 reviews</p>
+      <h2>What riders say</h2>
+      <div class="rq" id="rq" aria-live="polite">
+        <blockquote class="on"><p>“Super chill and professional crew. Had a great private beginner lesson.”</p><footer>Jeen de Leur, Google</footer></blockquote>
+        <blockquote><p>“After an hour, I had learned enough that he let me go on my own. I was windsurfing!”</p><footer>Kazmanbrew, San Francisco</footer></blockquote>
+        <blockquote><p>“The spot is gorgeous and the people who own and work there are the nicest.”</p><footer>Nancy M, Kralendijk</footer></blockquote>
+        <blockquote><p>“Amazing experience for our two teenage boys. … Really fun, laid back experience.”</p><footer>Jessica Anderson</footer></blockquote>
+        <blockquote><p>“The staff was great, always helpful and friendly.”</p><footer>Family lesson, Google</footer></blockquote>
+      </div>
+      <a class="more" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Read them all on Google <i class="ph ph-arrow-up-right"></i></a>
+    </div>
+    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-air.jpg" alt="" loading="lazy"><img src="img/drone.jpg" alt="" loading="lazy"><img src="img/taty-shed.jpg" alt="" loading="lazy"><img src="img/rack-boards.jpg" alt="" loading="lazy"><img src="img/taty-air.jpg" alt="" loading="lazy"><img src="img/drone.jpg" alt="" loading="lazy"><img src="img/taty-shed.jpg" alt="" loading="lazy"><img src="img/rack-boards.jpg" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"></div></div></div>
+  </section>
+
+  <section class="extras x2" id="extras">
+    <div class="wrap">
+      <div class="x2-head rv"><h2>More than lessons</h2><p>Windsurf for a fuller experience: rent the gear, level up, or spend the whole day on the beach.</p></div>
+      <div class="x2-grid">
+        <a class="x2-tile big rv" href="rentals.html"><img src="img/beach-gear.jpg" alt="Sails, boards and foils lined up on the beach at Frans Paradise" loading="lazy" style="object-position:40% 60%">
+          <span class="x2-txt"><small>From $30 an hour</small><b>Equipment Rentals</b><em>Windsurf, wing and foil gear, ready on the sand.</em><span class="btn">See rentals <i class="ph ph-arrow-right"></i></span></span></a>
+        <a class="x2-tile rv" href="skills.html"><img src="img/coaching.jpg" alt="An instructor coaching a rider next to a rigged sail" loading="lazy" style="object-position:35% 40%">
+          <span class="x2-txt"><small>Advanced coaching</small><b>Improve Your Skills</b><span class="btn">Level up <i class="ph ph-arrow-right"></i></span></span></a>
+        <a class="x2-tile rv" href="day.html"><img src="img/taty-founder.jpg" alt="Taty Frans waving from the lagoon as a rider jumps behind him" loading="lazy" style="object-position:50% 70%">
+          <span class="x2-txt"><small>9 to 6, every day</small><b>A Day at Frans Paradise</b><span class="btn">Plan your day <i class="ph ph-arrow-right"></i></span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="shack" id="shack">
+    <video class="shack-v" autoplay muted loop playsinline preload="metadata" poster="video/beach-drone-poster.jpg" aria-label="Drone flyover of the beach at Sorobon with the Frans Paradise shack and gear on the sand"><source src="video/beach-drone.mp4" type="video/mp4"></video>
+    <div class="wrap"><div class="box rv">
+      <h2>Our Surf Spot</h2>
+      <p>Right on Sorobon Bay. Open every day, 9 to 6.</p>
+      <a class="btn spot-btn" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Plan Your Visit <i class="ph ph-arrow-right"></i></a>
+    </div></div>
+    <div class="sponsors on-photo" aria-label="Partners">
+    <div class="logos" id="logos" tabindex="0" aria-label="Partner brands, scroll sideways">
+      <div class="logo-track"><a class="sp-link pl-dt" href="https://www.duotonesports.com" target="_blank" rel="noopener"><img src="img/partners/duotone.svg" alt="Duotone"></a><a class="sp-link pl-p7" href="https://point-7.com" target="_blank" rel="noopener"><img src="img/partners/point7.png" alt="Point-7"></a><a class="sp-link pl-ff" href="https://futurefly.world" target="_blank" rel="noopener"><img src="img/partners/futurefly.png" alt="Future Fly"></a><a class="sp-link pl-br" href="https://www.brunotti.com" target="_blank" rel="noopener"><img src="img/partners/brunotti.png" alt="Brunotti"></a><a class="sp-link pl-dt" href="https://www.duotonesports.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/partners/duotone.svg" alt="" aria-hidden="true"></a><a class="sp-link pl-p7" href="https://point-7.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/partners/point7.png" alt="" aria-hidden="true"></a><a class="sp-link pl-ff" href="https://futurefly.world" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/partners/futurefly.png" alt="" aria-hidden="true"></a><a class="sp-link pl-br" href="https://www.brunotti.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/partners/brunotti.png" alt="" aria-hidden="true"></a></div>
+    </div>
+  </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div><h2>Frequently Asked Questions</h2><p class="sub">Find quick answers below, or get in touch. We're happy to help.</p></div>
+        <a class="more" href="#faq" id="faq-all">View all FAQs <i class="ph ph-arrow-right"></i></a>
+      </div>
+      <div class="qgrid rv" id="qgrid">
+        <details><summary>Do I need previous experience?<i class="ph ph-plus"></i></summary><p>No. You start on the beach, then move into shallow, flat water. An instructor stays close the whole time.</p></details>
+        <details><summary>Can I book a lesson for today?<i class="ph ph-plus"></i></summary><p>Message us on WhatsApp and we'll tell you what's free today.</p></details>
+        <details><summary>What should I bring?<i class="ph ph-plus"></i></summary><p>Swimwear, sunscreen, water and sunglasses with a strap. We have the rest.</p></details>
+        <details><summary>What is included in the lesson?<i class="ph ph-plus"></i></summary><p>Your instructor and all the gear you need: board, sail or wing, and a vest.</p></details>
+        <details class="extra"><summary>When is the best season for wind?<i class="ph ph-plus"></i></summary><p>Bonaire is windy all year. The best chance is December to June, with the strongest winds from February to May.</p></details>
+        <details class="extra"><summary>How old do kids need to be?<i class="ph ph-plus"></i></summary><p>Kids lessons start at 7. Ages 6 and under can try a 30 minute toddler session.</p></details>
+        <details class="extra"><summary>Is there a rescue boat?<i class="ph ph-plus"></i></summary><p>Yes, every day we're open. A rescue costs $10.</p></details>
+        <details class="extra"><summary>Can I store my own gear?<i class="ph ph-plus"></i></summary><p>Yes. Book your spot in time, or send us a message.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-grid">
+    <div class="wrap">
+      <div class="cta-head rv">
+        <div><h2>Ready to get on the water?</h2><p class="sub">Check availability and book your windsurfing lesson now.</p></div>
+        <a class="btn" data-wa="Hi Taty! I'd like to book a lesson." href="https://wa.me/5997850514">Book Your Lesson <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="ig-row" aria-label="Photos from Instagram">
+      <div class="ig-track">
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windfoil.jpg" alt="Taty wind foiling" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-air.jpg" alt="Taty flying a windsurf board" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/kids.jpg" alt="A young girl on her windsurf board" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/flag.jpg" alt="The Frans Paradise flag in the trade wind" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/coach.jpg" alt="An instructor helps a student pull up the sail" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-founder.jpg" alt="Taty waving from the lagoon" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/shack-aerial.jpg" alt="The shack from above" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windsurf-lesson.jpg" alt="A beginner sails with her instructor alongside" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/lacbay-fleet.jpg" alt="A fleet of windsurfers racing on Lac Bay" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/wing-shed.jpg" alt="A wing held overhead in the gear shed" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windfoil.jpg" alt="" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-air.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/kids.jpg" alt="" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/flag.jpg" alt="" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/coach.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-founder.jpg" alt="" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/shack-aerial.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windsurf-lesson.jpg" alt="" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/lacbay-fleet.jpg" alt="" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/wing-shed.jpg" alt="" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site water" id="contact">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="wordmark" href="#top"><b>Frans Paradise</b><small>BONAIRE</small></a><p class="tag">LESSONS. RENTALS. GOOD TIMES.</p><a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a></div>
+      <div><h4>Quick Links</h4><ul><li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+      </ul></div>
+      <div><h4>Follow Us</h4><div class="social"><a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a><a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></div></div>
+      <div class="igb"><h4>On Instagram</h4>
+        <div class="igb-head"><img class="igb-av" src="img/ig-feed/avatar.jpg" alt="The Frans Paradise on Instagram" loading="lazy"><div><a class="igb-handle" href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener">@thefransparadise</a></div></div>
+        <div class="igb-flip"><span class="igb-lbl"><i class="ph-fill ph-user"></i>Followers</span><span class="igb-digits" data-ig-flip data-value="4269" aria-label="4269 followers"></span></div>
+        <div class="igb-grid"><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p1.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p2.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p3.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p4.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p5.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p6.jpg" alt="" loading="lazy"></a></div>
+        <a class="igb-follow" href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>Follow</a></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+
+<script>
+const WA='https://wa.me/5997850514?text=';
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=WA+encodeURIComponent(a.dataset.wa);a.target='_blank';a.rel='noopener';});
+
+// Mobile menu
+const nav=document.getElementById('nav'),mb=nav.querySelector('.menu-btn');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
+nav.querySelectorAll('ul a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');mb.setAttribute('aria-expanded',false);}));
+
+// Find a lesson: builds a WhatsApp request from the three fields
+const d=document.getElementById('f-date'); d.valueAsDate=new Date(); d.min=d.value;
+document.getElementById('finder').addEventListener('submit',e=>{
+  e.preventDefault();
+  const act=document.getElementById('f-act').value,lvl=document.getElementById('f-lvl').value;
+  // Hand the three answers to the booking quiz, which adds the wind and writes the message
+  const ride={'Windsurfing':'windsurf','Wing foil':'wing','Wind foil':'foil','Kids lesson':'kids'}[act];
+  const level=ride==='kids'?null:{Beginner:'new',Intermediate:'ride',Advanced:'adv'}[lvl];
+  if(window.fpBook){window.fpBook({ride,level,date:d.value},e.submitter);return;}
+  const day=new Date(d.value+'T12:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
+  window.open(WA+encodeURIComponent(`Hi Taty! Is there space for a ${lvl.toLowerCase()} ${act.toLowerCase()} lesson on ${day}?`),'_blank','noopener');
+});
+
+// Reviews: rotate one quote at a time
+const rq=[...document.querySelectorAll('#rq blockquote')];let qi=0;
+if(rq.length&&!matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(()=>{rq[qi].classList.remove('on');qi=(qi+1)%rq.length;rq[qi].classList.add('on');},5200);}
+
+// FAQ: show the rest
+document.getElementById('faq-all').addEventListener('click',e=>{e.preventDefault();const g=document.getElementById('qgrid');const all=g.classList.toggle('all');e.currentTarget.firstChild.textContent=all?'Show fewer ':'View all FAQs ';});
+
+
+// Reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+
+<script>
+// Respect reduced motion: hold the hero film on its poster
+const hv=document.querySelector('.hero-v');
+if(hv&&matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause();}
+</script>
+<script>
+// Partner strip: drifts left forever; mouse over it (or a finger on it) hands control to the visitor
+(()=>{const box=document.getElementById("logos");if(!box)return;const track=box.firstElementChild;
+const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const set=[...track.children].filter(i=>!i.hasAttribute("aria-hidden"));
+let w=0,pos=0,hover=false,touchHold=0,drag=null,last=performance.now();
+const measure=()=>{w=track.querySelector("[aria-hidden]").offsetLeft-set[0].offsetLeft;
+  while(track.scrollWidth<w+box.clientWidth+w){set.forEach(i=>{const c=i.cloneNode(true);c.setAttribute("aria-hidden","true");c.setAttribute("tabindex","-1");c.querySelectorAll("img").forEach(m=>m.alt="");track.append(c)})}};
+const wrap=()=>{if(w>0){pos%=w;if(pos<0)pos+=w}};
+const paint=()=>{track.style.transform=`translate3d(${-pos}px,0,0)`};
+box.addEventListener("pointermove",e=>{if(e.pointerType==="mouse")hover=true;if(drag){pos=drag.p-(e.clientX-drag.x);wrap();paint()}});
+box.addEventListener("pointerleave",()=>{hover=false;drag=null;box.classList.remove("drag")});
+box.addEventListener("pointerdown",e=>{drag={x:e.clientX,p:pos};box.classList.add("drag");box.setPointerCapture(e.pointerId);if(e.pointerType!=="mouse")touchHold=Infinity});
+box.addEventListener("pointerup",e=>{drag=null;box.classList.remove("drag");if(e.pointerType!=="mouse")touchHold=performance.now()+2500});
+box.addEventListener("pointercancel",()=>{drag=null;touchHold=performance.now()+2500});
+box.addEventListener("wheel",e=>{if(Math.abs(e.deltaX)>Math.abs(e.deltaY)){e.preventDefault();pos+=e.deltaX;wrap();paint()}},{passive:false});
+box.addEventListener("keydown",e=>{if(e.key==="ArrowRight"||e.key==="ArrowLeft"){pos+=e.key==="ArrowRight"?160:-160;wrap();paint();e.preventDefault()}});
+box.addEventListener("focusin",()=>hover=true);box.addEventListener("focusout",()=>hover=false);
+addEventListener("resize",measure);addEventListener("load",measure);measure();
+const tick=t=>{const dt=Math.min(t-last,50);last=t;
+  if(!still&&!hover&&!drag&&t>touchHold){pos-=dt*.04;wrap();paint()}requestAnimationFrame(tick)};requestAnimationFrame(tick)})();
+</script>
+<script>
+// Pick your ride: open one strip, show that lesson's levels, hours and prices, and point Book at it
+(()=>{const L=[
+ {name:"Windsurf",url:"ride-windsurf.html",tag:"From $50",desc:"The classic way onto Lac Bay. Flat, shallow water and steady trade winds make it one of the friendliest places to learn.",
+  rows:[["Beginner","2 hours","$50"],["Advanced","1 hour","$110"]],
+  facts:[["users-three","Groups of max 5"],["user","Private on request"],["lifebuoy","Rescue boat on the water"]],
+  msg:"Hi! I'd like to book a windsurf lesson. Beginner (2 hours, $50) or advanced (1 hour, $110)?"},
+ {name:"Wing foil",url:"ride-wing-foil.html",tag:"From $125",desc:"Hold a wing in your hands, no mast, no boom. Learn to ride it on the board first, then rise up on the foil.",
+  rows:[["Beginner wing","1 hour","$125"],["Wing foil","1.5 hours","$145"],["Private","1 hour","$165"]],
+  facts:[["timer","1 hour free practice after"],["stack","Packages from $345"],["lifebuoy","Rescue boat on the water"]],
+  msg:"Hi! I'd like to book a wing lesson. Beginner wing (1 hour, $125), wing foil (1.5 hours, $145) or private (1 hour, $165)?"},
+ {name:"Wind foil",url:"ride-wind-foil.html",tag:"From $125",desc:"A windsurf rig on a foil board. Already windsurf? This is how you lift off the water and fly over the chop.",
+  rows:[["Beginner","2 hours","$125"],["Advanced","1 hour","$165"]],
+  facts:[["wind","Great next step for windsurfers"],["user","Private on request"],["lifebuoy","Rescue boat on the water"]],
+  msg:"Hi! I'd like to book a wind foil lesson. Beginner (2 hours, $125) or advanced (1 hour, $165)?"},
+ {name:"Kids",url:"ride-kids.html",tag:"From age 7",desc:"Patient instructors close by in the shallow, flat water of Lac Bay. The little ones get their own short sessions.",
+  rows:[["Kids","from age 7","Ask us"],["Toddlers","6 and under, 30 min","Ask us"]],
+  facts:[["baby","Toddler sessions"],["lifebuoy","Rescue boat on the water"]],
+  msg:"Hi! I'd like to book a kids lesson. My child is ... years old."}];
+const strips=[...document.querySelectorAll(".rs .strip")],info=document.getElementById("rs-info"),book=document.getElementById("rs-book"),more=document.getElementById("rs-more");if(!info||!book)return;
+let cur=-1,openedAt=0,hoverT=0;
+const open=i=>{if(i===cur)return;cur=i;openedAt=performance.now();const l=L[i];
+  strips.forEach((s,k)=>{s.classList.toggle("on",k==i);s.setAttribute("aria-selected",k==i)});
+  info.classList.remove("swap");void info.offsetWidth;info.classList.add("swap");
+  info.innerHTML=`<div class="rs-top"><div class="rs-name">${l.name}</div><div class="rs-tag">${l.tag}</div></div>
+   <p class="rs-desc">${l.desc}</p>
+   <ul class="rs-rows">${l.rows.map(r=>`<li><span class="lv">${r[0]}</span><span class="hr"><i class="ph ph-${r[1]==="package"?"stack":"clock"}"></i>${r[1]}</span><span class="pr">${r[2]}</span></li>`).join("")}</ul>
+   <ul class="rs-facts">${l.facts.map(f=>`<li><i class="ph ph-${f[0]}"></i>${f[1]}</li>`).join("")}</ul>`;
+  book.innerHTML=`Book ${l.name} <i class="ph ph-arrow-right"></i>`;book.href="https://wa.me/5997850514?text="+encodeURIComponent(l.msg);
+  if(more){more.href=l.url;more.innerHTML=`All about ${l.name} <i class="ph ph-arrow-right"></i>`}};
+// A tap on a closed photo opens it; a tap on the open one goes to that ride's page.
+// The time check stops the same tap that opened it (via focus) from also navigating.
+strips.forEach(el=>{el.addEventListener("click",()=>{clearTimeout(hoverT);const i=+el.dataset.i;if(i===cur&&performance.now()-openedAt>350)location.href=L[i].url;else open(i)});el.addEventListener("focus",()=>open(+el.dataset.i));
+  // Hover intent: a photo opens only when the mouse rests on it. Sliding across
+  // the strips on the way to the Book button no longer switches the lesson.
+  if(matchMedia("(hover:hover)").matches){
+    el.addEventListener("mouseenter",()=>{clearTimeout(hoverT);hoverT=setTimeout(()=>open(+el.dataset.i),240)});
+    el.addEventListener("mouseleave",()=>clearTimeout(hoverT))}});
+open(0)})();
+</script>
+<script>
+(()=>{const n=document.getElementById("nav");if(!n)return;const f=()=>n.classList.toggle("scrolled",scrollY>10);addEventListener("scroll",f,{passive:true});f()})();
+</script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+<script src="js/loops.js"></script>
+<script>
+(()=>{const box=document.getElementById("logos");if(!box)return;let x0=0,moved=false;
+box.addEventListener("pointerdown",e=>{x0=e.clientX;moved=false},true);
+box.addEventListener("pointermove",e=>{if(Math.abs(e.clientX-x0)>6)moved=true},true);
+box.addEventListener("click",e=>{if(moved){e.preventDefault();e.stopPropagation()}},true)})();
+</script>
+</body>
+</html>

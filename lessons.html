@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>Windsurf, Wing Foil &amp; Wind Foil Lessons in Bonaire | Frans Paradise</title>
+<meta name="description" content="Windsurf lessons from $50, wing foil and wind foil from $125, and kids lessons from age 7 at Sorobon, Lac Bay, Bonaire. Groups of max 5, rescue boat, every day 9 to 6.">
+<link rel="canonical" href="https://fransparadise.com/lessons/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Windsurf & Foil Lessons on Lac Bay, Bonaire">
+<meta property="og:description" content="Beginner windsurf from $50. Wing foil and wind foil from $125. Kids from 7. Book on WhatsApp.">
+<meta property="og:image" content="img/windsurf-lesson2.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/","telephone":"+5997850514",
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "openingHours":"Mo-Su 09:00-18:00",
+ "hasOfferCatalog":{"@type":"OfferCatalog","name":"Lessons","itemListElement":[
+  {"@type":"Offer","name":"Windsurf beginner lesson, 2 hours","price":"50","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Windsurf advanced lesson, 1 hour","price":"110","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wing foil beginner lesson, 2 hours","price":"125","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wing foil intermediate lesson, 1 to 1.5 hours","price":"145","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wind foil beginner lesson, 2 hours","price":"125","priceCurrency":"USD"},
+  {"@type":"Offer","name":"Wind foil advanced lesson, 1 hour","price":"165","priceCurrency":"USD"}]}}
+</script>
+<style>
+/* Lessons: a lesson menu. One big photo row per sport, prices set like a board. */
+.page-hero{min-height:620px;display:flex;align-items:center}
+.page-hero>img{object-position:50% 45%}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+.facts{background:var(--teal-dk);color:#fff}
+.facts ul{list-style:none;padding:22px 0;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.facts li{display:flex;align-items:center;gap:12px;font-weight:500}
+.facts i{font-size:26px;color:var(--aqua-hi)}
+
+.sport{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;padding:46px 0;border-top:1px solid rgba(0,0,0,.08)}
+.sport:first-of-type{border-top:0}
+.sport:nth-of-type(even) .sport-img{order:2}
+.sport-img{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:5/4}
+.sport-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.sport:hover .sport-img img{transform:scale(1.04)}
+.sport-img .tag{position:absolute;left:18px;top:18px;background:var(--canary);color:var(--ink);font:800 12px var(--head);letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
+.sport h2{font:400 clamp(2.6rem,4.6vw,3.8rem)/.92 var(--big);text-transform:uppercase;color:var(--orange)}
+.sport .sub{color:var(--ink-2);margin:12px 0 22px;max-width:44ch}
+.board{list-style:none;padding:0;margin:0 0 24px}
+.board li{display:grid;grid-template-columns:1fr auto auto;gap:18px;align-items:baseline;padding:13px 0;border-bottom:1px dashed rgba(0,0,0,.18)}
+.board .lv{font-weight:700}
+.board .hr{font-size:14px;color:var(--ink-2)}
+.board .pr{font:400 1.7rem/1 var(--big);min-width:3.4em;text-align:right}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:22px;padding:30px 28px 32px;box-shadow:0 14px 40px rgba(0,0,0,.05);position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font:400 3.6rem/1 var(--big);color:rgba(14,143,154,.18);position:absolute;right:22px;top:18px}
+.step i{font-size:34px;color:var(--teal)}
+.step h3{font:800 19px var(--head);margin:16px 0 8px}
+.step p{color:var(--ink-2)}
+
+.split2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{border-radius:22px;padding:32px}
+.box.dark{background:#111111;color:#fff}
+.box.sand{background:var(--sand)}
+.box h3{font:400 2rem/1 var(--big);text-transform:uppercase;margin-bottom:18px}
+.box.dark h3{color:var(--aqua-hi)}
+.box ul{list-style:none;padding:0;display:grid;gap:12px}
+.box li{display:flex;gap:12px;align-items:flex-start}
+.box li i{font-size:22px;flex:none;margin-top:1px}
+.box.dark li i{color:var(--canary)}
+.box.sand li i{color:var(--teal)}
+.pk{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.pk div{background:#fff;border-radius:16px;padding:16px 18px}
+.pk b{display:block;font:400 2rem/1 var(--big)}
+.pk span{font-size:14px;color:var(--ink-2)}
+
+@media (max-width:900px){
+  .page-hero{min-height:560px;align-items:flex-end;padding-bottom:48px}
+  .facts ul{grid-template-columns:1fr 1fr}
+  .sport{grid-template-columns:1fr;gap:24px;padding:34px 0}
+  .sport:nth-of-type(even) .sport-img{order:0}
+  .steps,.split2{grid-template-columns:1fr}
+}
+/* Lesson rows: a short loop of each sport; photos without footage drift slowly */
+.sport-img video.sport-v{width:100%;height:100%;object-fit:cover;display:block}
+.sport-img img.kb{animation:kb 14s ease-in-out infinite alternate;transform-origin:60% 40%}
+@keyframes kb{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.14) translate(-2%,1.5%)}}
+.sport:hover .sport-img img.kb{transform:none}
+@media (prefers-reduced-motion:reduce){.sport-img img.kb{animation:none}}
+/* Lessons hero: action montage behind the headline */
+.page-hero>video.hero-mont{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+@media (prefers-reduced-motion:reduce){.page-hero>video.hero-mont{display:none}.page-hero{background:#111 url(video/lessons-montage-poster.jpg) center/cover}}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html" aria-current="page">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="page-hero">
+  <video class="hero-mont" autoplay muted loop playsinline preload="auto" poster="video/lessons-montage-poster.jpg" aria-label="Montage: windsurfers, wing foilers and wind foilers on Lac Bay, filmed from the water and from the air"><source src="video/lessons-montage.mp4" type="video/mp4"></video>
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Lessons</p>
+    <p class="eyebrow light">Lessons on Lac Bay</p>
+    <h1>Windsurf &amp; foil lessons in <span>Bonaire</span></h1>
+    <p class="lead">Learn in the flat, shallow water of Lac Bay with our crew close by. First timers welcome.</p>
+    <div class="hero-acts">
+      <a class="btn" data-wa="Hi Taty! I'd like to book a lesson." href="https://wa.me/5997850514">Book a Lesson <i class="ph ph-arrow-right"></i></a>
+      <a class="btn ghost" href="#prices">See all prices</a>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Good to know">
+  <ul class="wrap">
+    <li><i class="ph ph-users-three"></i>Groups of max 5</li>
+    <li><i class="ph ph-user"></i>Private on request</li>
+    <li><i class="ph ph-lifebuoy"></i>Rescue boat on the water</li>
+    <li><i class="ph ph-clock"></i>Every day, 9 to 6</li>
+  </ul>
+</section>
+
+<section class="sec" id="prices">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Pick your sport</h2><p>Prices per person, in US dollars. Tap Book and we'll sort a time on WhatsApp.</p></div>
+
+    <article class="sport rv" id="windsurf">
+      <div class="sport-img"><video class="sport-v" autoplay muted loop playsinline preload="metadata" poster="video/lessons/windsurf-poster.jpg" aria-label="A beginner windsurfs on Lac Bay with her instructor wading alongside"><source src="video/lessons/windsurf.mp4" type="video/mp4"></video></div>
+      <div>
+        <h2>Windsurf</h2>
+        <p class="sub">The classic way onto Lac Bay. Flat, shallow water and steady trade winds make it one of the friendliest places to learn.</p>
+        <ul class="board">
+          <li><span class="lv">Beginner</span><span class="hr">2 hours</span><span class="pr">$50</span></li>
+          <li><span class="lv">Advanced</span><span class="hr">1 hour</span><span class="pr">$110</span></li>
+        </ul>
+        <a class="btn" data-wa="Hi! I'd like to book a windsurf lesson. Beginner (2 hours, $50) or advanced (1 hour, $110)?" href="https://wa.me/5997850514">Book Windsurf <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="sport rv" id="wing-foil">
+      <div class="sport-img"><video class="sport-v" autoplay muted loop playsinline preload="metadata" poster="video/lessons/wingfoil-poster.jpg" aria-label="A rider wing foiling across the turquoise water of Lac Bay"><source src="video/lessons/wingfoil.mp4" type="video/mp4"></video></div>
+      <div>
+        <h2>Wing foil</h2>
+        <p class="sub">Hold a wing in your hands, no mast, no boom. Learn to ride it on the board first, then rise up on the foil.</p>
+        <ul class="board">
+          <li><span class="lv">Beginner wing</span><span class="hr">1 hour</span><span class="pr">$125</span></li>
+          <li><span class="lv">Wing foil</span><span class="hr">1.5 hours</span><span class="pr">$145</span></li>
+          <li><span class="lv">Private</span><span class="hr">1 hour</span><span class="pr">$165</span></li>
+        </ul>
+        <p class="sub">Per person, gear included. One hour of free practice after every lesson.</p>
+        <a class="btn" data-wa="Hi! I'd like to book a wing lesson. Beginner wing (1 hour, $125), wing foil (1.5 hours, $145) or private (1 hour, $165)?" href="https://wa.me/5997850514">Book Wing foil <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="sport rv" id="wind-foil">
+      <div class="sport-img"><video class="sport-v" autoplay muted loop playsinline preload="metadata" poster="video/lessons/windfoil-poster.jpg" aria-label="Two riders flying on wind foils across Lac Bay"><source src="video/lessons/windfoil.mp4" type="video/mp4"></video></div>
+      <div>
+        <h2>Wind foil</h2>
+        <p class="sub">A windsurf rig on a foil board. Already windsurf? This is how you lift off the water and fly over the chop.</p>
+        <ul class="board">
+          <li><span class="lv">Beginner</span><span class="hr">2 hours</span><span class="pr">$125</span></li>
+          <li><span class="lv">Advanced</span><span class="hr">1 hour</span><span class="pr">$165</span></li>
+        </ul>
+        <a class="btn" data-wa="Hi! I'd like to book a wind foil lesson. Beginner (2 hours, $125) or advanced (1 hour, $165)?" href="https://wa.me/5997850514">Book Wind foil <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="sport rv" id="kids">
+      <div class="sport-img"><img class="kb" src="img/kids.jpg" alt="A young girl in pink sunglasses holding the boom of her windsurf board" loading="lazy" style="object-position:40% 40%"><span class="tag">From age 7</span></div>
+      <div>
+        <h2>Kids &amp; toddlers</h2>
+        <p class="sub">Patient instructors close by in the shallow, flat water. The little ones get their own short sessions.</p>
+        <ul class="board">
+          <li><span class="lv">Kids</span><span class="hr">from age 7</span><span class="pr">Ask us</span></li>
+          <li><span class="lv">Toddlers</span><span class="hr">6 and under, 30 min</span><span class="pr">Ask us</span></li>
+        </ul>
+        <a class="btn" data-wa="Hi! I'd like to book a kids lesson. My child is ... years old." href="https://wa.me/5997850514">Book Kids <i class="ph ph-arrow-right"></i></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" style="background:var(--sand);padding-top:80px">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">How a first lesson goes</h2><p>No experience needed. You learn the basics on land before you get wet.</p></div>
+    <div class="steps">
+      <div class="step rv"><i class="ph ph-sun-horizon"></i><h3>On the beach</h3><p>You start on the sand: how the board and sail work, and how to stand.</p></div>
+      <div class="step rv"><i class="ph ph-waves"></i><h3>Into shallow water</h3><p>Then into the flat, shallow water of Lac Bay, the friendliest place to fall in.</p></div>
+      <div class="step rv"><i class="ph ph-sailboat"></i><h3>On your board</h3><p>You sail your first runs while your instructor stays close the whole time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split2">
+    <div class="box dark rv">
+      <h3>Included &amp; what to bring</h3>
+      <ul>
+        <li><i class="ph ph-check-circle"></i>Your instructor and all the gear: board, sail or wing, and a vest.</li>
+        <li><i class="ph ph-sun"></i>Bring swimwear, sunscreen and water.</li>
+        <li><i class="ph ph-sunglasses"></i>Sunglasses with a strap help a lot.</li>
+        <li><i class="ph ph-lifebuoy"></i>A rescue boat is on the water every day we're open.</li>
+      </ul>
+    </div>
+    <div class="box sand rv">
+      <h3>Lesson packages</h3>
+      <p style="color:var(--ink-2)">Save when you book a few lessons at once.</p>
+      <div class="pk">
+        <div><b>$345</b><span>3 wing lessons</span></div>
+        <div><b>$550</b><span>5 wing lessons</span></div>
+        <div><b>$465</b><span>3 wing foil lessons</span></div>
+        <div><b>$725</b><span>5 wing foil lessons</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>Ready to get on the water?</h2><p>Tell us what you'd like to learn and when. We'll find you a time.</p></div>
+    <div class="acts"><a class="btn" data-wa="Hi Taty! I'd like to book a lesson." href="https://wa.me/5997850514">Book on WhatsApp <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="rentals.html">Rent gear instead</a></div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+<script src="js/loops.js"></script>
+</body>
+</html>

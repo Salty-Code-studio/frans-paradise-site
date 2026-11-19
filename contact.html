@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>Contact &amp; Directions | Frans Paradise, Sorobon, Bonaire</title>
+<meta name="description" content="Find Frans Paradise on the beach at Sorobon, Lac Bay, Bonaire. Open every day 9:00 to 18:00. WhatsApp or call +599 785 0514, or email info@fransparadise.com.">
+<link rel="canonical" href="https://fransparadise.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact Frans Paradise, Bonaire">
+<meta property="og:description" content="WhatsApp +599 785 0514. Sorobon, Lac Bay. Every day 9 to 6.">
+<meta property="og:image" content="img/drone.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/",
+ "telephone":"+5997850514","email":"info@fransparadise.com",
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"18:00"}],
+ "hasMap":"https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8",
+ "sameAs":["https://instagram.com/thefransparadise/","https://www.facebook.com/thefransparadise"]}
+</script>
+<style>
+/* Contact: dark top with big tap-to-contact tiles, then hours and the map side by side, then quick answers. */
+.ct-top{position:relative;background:#111111;color:#fff;padding:56px 0 90px;overflow:hidden}
+.ct-top>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.32}
+.ct-top::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,17,17,.4),#111111 92%)}
+.ct-top .wrap{position:relative;z-index:1}
+.ct-top h1{font:400 clamp(3.2rem,7.4vw,6.2rem)/.9 var(--big);text-transform:uppercase;margin:12px 0 14px}
+.ct-top h1 span{color:var(--orange)}
+.ct-top h1 .shaka{display:inline-block;height:.82em;width:auto;vertical-align:-.04em;margin-left:.06em;transform:rotate(-10deg)}
+.ct-top .lead{font-size:19px;color:rgba(255,255,255,.85);max-width:44ch}
+
+.tiles{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto 1fr;gap:16px;margin-top:40px}
+.tile{display:flex;flex-direction:column;gap:22px;padding:28px;border-radius:22px;text-decoration:none;transition:transform .25s,background .25s,box-shadow .25s}
+.tile:hover{transform:translateY(-3px)}
+.tile .t{display:block;font:400 clamp(1.9rem,3vw,2.6rem)/1 var(--big);text-transform:uppercase;letter-spacing:.01em}
+.tile .num{display:block;font:700 17px var(--body);margin-top:8px;opacity:.75}
+.tile p{margin-top:10px;max-width:34ch}
+.act{display:inline-flex;align-items:center;justify-content:center;gap:10px;align-self:flex-start;min-height:52px;padding:0 24px;border-radius:999px;font:700 16px var(--body);margin-top:auto}
+.act i{font-size:20px;transition:transform .25s}
+.tile:hover .act i{transform:translateX(4px)}
+.tile .ic{font-size:44px}
+.tile.wa{grid-row:1/3;background:var(--canary);color:var(--ink);justify-content:space-between}
+.tile.wa:hover{background:var(--canary-d)}
+.tile.wa .t{font-size:clamp(2.6rem,4.4vw,3.8rem)}
+.tile.wa p{color:rgba(0,0,0,.72)}
+.tile.wa .act{background:var(--ink);color:#fff;min-height:58px;padding:0 30px;font-size:17px}
+.tile.call{background:#fff;color:var(--ink)}
+.tile.call .ic{color:var(--teal);font-size:34px}
+.tile.call .act{box-shadow:inset 0 0 0 2px var(--ink);color:var(--ink)}
+.tile.call:hover .act{background:var(--ink);color:#fff}
+.more{display:grid;gap:10px;align-content:start}
+.more a{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:14px;color:#fff;text-decoration:none;background:rgba(255,255,255,.07);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);transition:background .2s}
+.more a:hover{background:rgba(255,255,255,.14)}
+.more a>i:first-child{font-size:24px;color:var(--aqua-hi);flex:none}
+.more span{flex:1;min-width:0}
+.more b{display:block;font:700 15px var(--body)}
+.more small{display:block;font-size:14px;color:rgba(255,255,255,.7);overflow-wrap:anywhere}
+.more a>i:last-child{font-size:18px;color:rgba(255,255,255,.6)}
+
+.visit{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:stretch}
+.hours{background:var(--teal-dk);color:#fff;border-radius:24px;padding:34px}
+.hours h2{font:400 2.4rem/1 var(--big);text-transform:uppercase;margin-bottom:6px}
+.hours .open{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:var(--aqua-hi);margin-bottom:22px}
+.hours .open::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--aqua-hi);box-shadow:0 0 0 4px rgba(106,230,224,.25)}
+.hours ul{list-style:none;padding:0;display:grid;gap:14px}
+.hours li{display:flex;gap:12px;align-items:flex-start;color:rgba(255,255,255,.88)}
+.hours li i{font-size:22px;color:var(--canary);flex:none;margin-top:1px}
+.hours .btn{margin-top:26px}
+.map{border-radius:24px;overflow:hidden;min-height:440px;background:#ddd;box-shadow:0 14px 40px rgba(0,0,0,.06)}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+.qa{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qa details{background:#fff;border-radius:18px;padding:20px 22px;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+.qa summary{cursor:pointer;font:700 17px var(--body);list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font:400 26px/1 var(--big);color:var(--teal);transition:transform .25s}
+.qa details[open] summary::after{transform:rotate(45deg)}
+.qa p{color:var(--ink-2);margin-top:10px}
+
+@media (max-width:900px){
+  .ct-top{padding:40px 0 60px}
+  .tiles{grid-template-columns:1fr}
+  .tile.wa{grid-row:auto}
+  .visit,.qa{grid-template-columns:1fr}
+  .map,.map iframe{min-height:340px}
+}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="ct-top">
+  <img src="img/lagoon-boats.jpg" alt="" fetchpriority="high" style="object-position:50% 55%">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+    <p class="eyebrow light">Contact &amp; directions</p>
+    <h1>Come say <span>hi</span> <img class="shaka" src="img/shaka.svg" alt="" aria-hidden="true"></h1>
+    <p class="lead">The fastest way to reach us is WhatsApp. Questions, bookings or just checking the wind, send a message.</p>
+
+    <div class="tiles">
+      <a class="tile wa" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514">
+        <i class="ph ph-whatsapp-logo ic" aria-hidden="true"></i>
+        <div><b class="t">Message us on WhatsApp</b><span class="num">+599 785 0514</span><p>The fastest way to reach us. Opens a chat with your message ready to send.</p></div>
+        <span class="act">Open WhatsApp<i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+      </a>
+      <a class="tile call" href="tel:+5997850514">
+        <div><b class="t">Call us</b><span class="num">+599 785 0514</span></div>
+        <span class="act"><i class="ph ph-phone" aria-hidden="true"></i>Call now</span>
+      </a>
+      <div class="more">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><i class="ph ph-instagram-logo" aria-hidden="true"></i><span><b>Instagram</b><small>@thefransparadise</small></span><i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        <a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple" aria-hidden="true"></i><span><b>Email</b><small>info@fransparadise.com</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="mailto:booking@fransparadise.com"><i class="ph ph-calendar-check" aria-hidden="true"></i><span><b>Bookings by email</b><small>booking@fransparadise.com</small></span><i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Find the shack</h2><p>On the beach at Sorobon, Lac Bay, on the east side of Bonaire.</p></div>
+    <div class="visit">
+      <div class="hours rv">
+        <h2>Opening hours</h2>
+        <span class="open">Open every day</span>
+        <ul>
+          <li><i class="ph ph-clock"></i><span><b>9:00 to 18:00</b>, seven days a week</span></li>
+          <li><i class="ph ph-map-pin"></i><span>Sorobon, Lac Bay, Bonaire, Caribbean Netherlands</span></li>
+          <li><i class="ph ph-wind"></i><span>Best wind from December to June, strongest February to May</span></li>
+          <li><i class="ph ph-lifebuoy"></i><span>Rescue boat on the water every day we're open</span></li>
+        </ul>
+        <a class="btn" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Open in Google Maps <i class="ph ph-arrow-up-right"></i></a>
+      </div>
+      <div class="map rv">
+        <iframe title="Map of Frans Paradise at Sorobon, Lac Bay, Bonaire" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=The%20Frans%20Paradise%2C%20Sorobon%2C%20Bonaire&z=14&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Quick answers</h2><p>Anything else? Just message us.</p></div>
+    <div class="qa">
+      <details class="rv"><summary>Can I book a lesson for today?</summary><p>Message us on WhatsApp and we'll tell you what's free today.</p></details>
+      <details class="rv"><summary>Do I need previous experience?</summary><p>No. You start on the beach, then move into shallow, flat water. An instructor stays close the whole time.</p></details>
+      <details class="rv"><summary>What should I bring?</summary><p>Swimwear, sunscreen, water and sunglasses with a strap. We have the rest.</p></details>
+      <details class="rv"><summary>How old do kids need to be?</summary><p>Kids lessons start at 7. Ages 6 and under can try a 30 minute toddler session.</p></details>
+      <details class="rv"><summary>Can I store my own gear?</summary><p>Yes. Book your spot in time, or send us a message.</p></details>
+      <details class="rv"><summary>Is there a rescue boat?</summary><p>Yes, every day we're open. A rescue costs $10.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+</body>
+</html>

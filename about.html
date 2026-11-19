@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>About Frans Paradise: a windsurf family on Lac Bay, Bonaire</title>
+<meta name="description" content="Frans Paradise is a small windsurf and wing foil family on the beach at Sorobon, Lac Bay, Bonaire. Lessons, rentals and good vibes every day from 9 to 6.">
+<link rel="canonical" href="https://fransparadise.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Frans Paradise, Bonaire">
+<meta property="og:description" content="A small windsurf family and a shack on Sorobon Bay.">
+<meta property="og:image" content="img/taty-shed.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/","foundingDate":"2018-12-30",
+ "founder":{"@type":"Person","name":"Taty Frans","jobTitle":"Founder and pro windsurfer"},
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "sameAs":["https://instagram.com/thefransparadise/","https://www.facebook.com/thefransparadise"]}
+</script>
+<style>
+/* About: editorial. Split hero with Taty, a big quote, the story in numbers, crew list, the shack, partners. */
+.ab-hero{background:#111111;color:#fff;overflow:hidden}
+.ab-hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;min-height:620px;padding-top:40px;padding-bottom:40px}
+.ab-hero h1{font:400 clamp(3.2rem,6.6vw,5.8rem)/.9 var(--big);text-transform:uppercase;margin:12px 0 18px}
+.ab-hero h1 span{color:var(--orange)}
+.ab-hero .lead{font-size:19px;color:rgba(255,255,255,.85);max-width:40ch}
+.ab-hero figure{margin:0;position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;max-height:560px;justify-self:end;width:100%}
+.ab-hero figure img{width:100%;height:100%;object-fit:cover;object-position:35% 40%}
+.ab-hero figcaption{position:absolute;left:18px;bottom:18px;background:rgba(17,17,17,.6);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:10px 14px;border-radius:12px;font-size:14px}
+.ab-hero figcaption b{font:400 30px/1 var(--script);display:block;color:var(--aqua-hi);margin-bottom:2px}
+
+.quote{background:var(--orange);color:#111111;padding:90px 0;text-align:center}
+.quote blockquote{font:400 clamp(2.4rem,5.4vw,4.6rem)/.98 var(--big);text-transform:uppercase;max-width:16ch;margin:0 auto}
+.quote cite{display:block;margin-top:22px;font:700 14px var(--head);letter-spacing:.14em;text-transform:uppercase;font-style:normal}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.story p{color:var(--ink-2);margin-bottom:16px;font-size:18px}
+.story p b{color:var(--ink)}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.num{background:#fff;border-radius:20px;padding:24px;box-shadow:0 14px 40px rgba(0,0,0,.05)}
+.num b{display:block;font:400 3.2rem/1 var(--big);color:var(--teal)}
+.num span{color:var(--ink-2);font-size:15px}
+.num.wide{grid-column:1/-1;background:var(--teal-dk);color:#fff}
+.num.wide b{color:var(--canary)}.num.wide span{color:rgba(255,255,255,.8)}
+
+.crew{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.mate{background:#111111;color:#fff;border-radius:20px;padding:26px 22px;display:flex;flex-direction:column;gap:10px;min-height:190px;position:relative;overflow:hidden}
+.mate::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(106,230,224,.25),transparent 70%)}
+.mate i{font-size:28px;color:var(--aqua-hi)}
+.mate h3{font:400 1.7rem/1 var(--big);text-transform:uppercase;margin-top:auto}
+.mate p{font-size:14px;color:rgba(255,255,255,.65)}
+.mate a{color:var(--aqua-hi);text-decoration:none;font-size:14px;font-weight:500;position:relative;z-index:1}
+.mate a:hover{text-decoration:underline}
+
+.shackband{position:relative;min-height:520px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.shackband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 55%}
+.shackband::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,0) 60%)}
+.shackband .wrap{position:relative;z-index:2;width:100%;padding-bottom:48px;display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.shackband h2{font:400 clamp(2.4rem,4.6vw,3.8rem)/.95 var(--big);text-transform:uppercase}
+.shackband p{color:rgba(255,255,255,.85);max-width:42ch;margin-top:8px}
+
+.partners{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;align-items:center}
+.partners .sp-link{display:inline-flex}.partners img{width:100%;height:80px;object-fit:contain;filter:brightness(0);opacity:.75;transition:opacity .2s}
+.partners img:hover{opacity:1}
+
+@media (max-width:900px){
+  .ab-hero .wrap{grid-template-columns:1fr;min-height:0;gap:28px;padding-top:36px;padding-bottom:48px}
+  .ab-hero figure{aspect-ratio:4/3;order:-1}
+  .story{grid-template-columns:1fr;gap:28px}
+  .crew{grid-template-columns:1fr 1fr}
+  .partners{grid-template-columns:repeat(3,1fr)}
+}
+.quote .sign{display:block;font:400 clamp(2.8rem,5vw,3.6rem)/1 var(--script);letter-spacing:.01em;text-transform:none;margin-bottom:6px}
+/* Partner logos: bigger, centred in two rows */
+.partners{display:flex!important;flex-wrap:wrap;justify-content:center;align-items:center;gap:44px 64px;padding:10px 0}
+.partners img{width:auto!important;height:auto!important;max-width:180px;max-height:62px;min-height:40px;object-fit:contain}
+@media (max-width:900px){.partners{gap:30px 36px}.partners img{max-width:130px;max-height:46px;min-height:30px}}
+/* Story: a shot of Taty under the text */
+.story-shot{margin:26px 0 0;position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 18px 44px rgba(0,0,0,.12)}
+.story-shot img{width:100%;height:100%;object-fit:cover;object-position:60% 45%}
+.story-shot figcaption{position:absolute;left:16px;bottom:14px;background:rgba(17,17,17,.6);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;padding:9px 13px;border-radius:12px;font-size:13.5px}
+.story-shot figcaption b{display:block;font:400 24px/1 var(--script);color:var(--aqua-hi);margin-bottom:2px}
+/* Crew: round portraits */
+.mate .av{width:84px;height:84px;border-radius:50%;object-fit:cover;transform:scale(1);clip-path:circle(44% at 50% 50%)}
+.mate{min-height:230px}
+/* Story: tall photo of Taty left, story and stats right */
+.story2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.s2-photo{margin:0;position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(0,0,0,.18)}
+.s2-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.s2-photo::after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(0deg,rgba(0,0,0,.55),transparent)}
+.s2-photo figcaption{position:absolute;left:22px;bottom:20px;z-index:1;color:#fff;font-size:14px}
+.s2-photo figcaption b{display:block;font:400 40px/1 var(--script);color:#fff;margin-bottom:2px}
+.s2-text .h2{margin-bottom:18px}
+.s2-text p{color:var(--ink-2);font-size:17.5px;margin-bottom:14px;max-width:54ch}
+.s2-text p b{color:var(--ink)}
+.s2-text .s2-lead{font-size:20px;color:var(--ink)}
+.s2-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:26px 0 20px;border-top:1px solid rgba(0,0,0,.1);border-bottom:1px solid rgba(0,0,0,.1)}
+.s2-stats div{padding:18px 14px 16px;border-left:1px solid rgba(0,0,0,.1)}
+.s2-stats div:first-child{border-left:0;padding-left:0}
+.s2-stats b{display:block;font:400 2.6rem/1 var(--big);color:var(--orange)}
+.s2-star{font-size:.62em;margin-left:.12em;vertical-align:.38em}
+.s2-stats span{display:block;margin-top:6px;font-size:13.5px;color:var(--ink-2);line-height:1.35}
+.s2-tags{display:flex;flex-wrap:wrap;gap:8px}
+.s2-tags span{padding:7px 13px;border-radius:999px;background:var(--teal-dk);color:#fff;font:700 12px var(--head);letter-spacing:.08em;text-transform:uppercase}
+@media (max-width:900px){.story2{grid-template-columns:1fr;gap:28px}.s2-photo{aspect-ratio:4/3}.s2-stats{grid-template-columns:1fr 1fr}.s2-stats div:nth-child(3){border-left:0;padding-left:0}.s2-stats div:nth-child(n+3){border-top:1px solid rgba(0,0,0,.1)}}
+/* Home of good vibes: punchier colour */
+.shackband img{filter:saturate(1.35) contrast(1.08) brightness(1.04)}
+.shackband::before{background:linear-gradient(0deg,rgba(0,0,0,.62),rgba(0,0,0,0) 55%)!important}
+/* Crew cards: square photo across the top, details below */
+.mate{padding:0!important;gap:0!important;min-height:0!important}
+.mate .sq{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:20px 20px 0 0}
+.mate h3,.mate p,.mate>a{margin-left:22px;margin-right:22px}
+.mate h3{margin-top:18px!important}
+.mate p{margin-top:6px}
+.mate>a{margin-top:10px;margin-bottom:22px;display:inline-block}
+.mate::after{z-index:0}
+.mate .mono{display:grid;place-items:center;background:linear-gradient(160deg,#1f3b3d,#111);font:400 3.4rem/1 var(--big);color:var(--aqua-hi);letter-spacing:.04em}
+.mate .back{margin:10px 22px 22px;font-size:14px;color:rgba(255,255,255,.65)}
+.built{font:400 clamp(1.7rem,2.6vw,2.1rem)/1 var(--script);color:var(--aqua-hi);margin-top:18px;opacity:.9}
+.s2-text .built{color:var(--teal);margin-top:6px}
+@media (max-width:1100px) and (min-width:901px){.crew{grid-template-columns:repeat(3,1fr)}}
+/* Quote band: tighter */
+.quote{padding:54px 0!important}
+.quote cite{margin-top:14px!important}
+/* Partners: four brands, big and even */
+.partners{display:grid!important;grid-template-columns:repeat(4,1fr);gap:40px 56px!important;align-items:center;justify-items:center;padding:24px 0!important}
+.partners .sp-link{display:flex;align-items:center;justify-content:center;width:100%}
+.partners img{width:100%!important;max-width:240px!important;height:64px!important;max-height:none!important;min-height:0!important;object-fit:contain}
+.partners .pl-p7 img{height:46px!important;max-width:260px!important}
+.partners .pl-ff img{height:70px!important}
+@media (max-width:900px){.partners{grid-template-columns:1fr 1fr;gap:34px 30px!important}.partners img{height:44px!important;max-width:170px!important}.partners .pl-p7 img{height:30px!important}.partners .pl-ff img{height:50px!important}}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="ab-hero">
+  <div class="wrap">
+    <div>
+      <p class="crumbs"><a href="index.html">Home</a> / About</p>
+      <h1>A <span>family</span> on Lac Bay</h1>
+      <p class="lead">A small windsurf and wing foil spot on the beach at Sorobon. You come for the wind. You stay because it feels like home.</p>
+      <p class="built">built by Taty</p>
+    </div>
+    <figure>
+      <img src="img/taty-shed-wide.jpg" alt="Taty Frans smiling in the Frans Paradise gear shed with a foil board" fetchpriority="high" style="object-position:45% 35%">
+      <figcaption><b>Taty Frans</b>Sorobon, Lac Bay</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap rv">
+    <blockquote>"We eat, sleep, live and do it again."</blockquote>
+    <cite><span class="sign">Frans Paradise</span>The family on the beach</cite>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap story2">
+    <figure class="s2-photo rv"><img src="img/windfoil.jpg" alt="A rider flying on a wind foil across Lac Bay" loading="lazy"><figcaption><b>Lac Bay</b>Home water</figcaption></figure>
+    <div class="s2-text rv">
+      <h2 class="h2">The story</h2>
+      <p class="s2-lead">Lac Bay raised a lot of us. Frans Paradise is how we share it.</p>
+      <p>The bay is flat, warm and shallow, with a steady trade wind. Generations of local kids learned to ride here, and some of them took it all the way to the world tour. The ones who stayed never stopped sharing it.</p>
+      <p>On <b>30 December 2018</b> the shack opened on the beach at Sorobon. It stays small on purpose. The same faces on the beach, a crew that knows your name, and a spot in the shade even when there's no wind. First timers, kids and riders chasing their next move, every day from 9 to 6.</p>
+      <p class="built">built by Taty</p>
+      <div class="s2-stats">
+        <div><b>2018</b><span>Opened on Sorobon beach</span></div>
+        <div><b>5</b><span>Instructors on the beach</span></div>
+        <div><b>5.0<i class="ph-fill ph-star s2-star" aria-hidden="true"></i></b><span>On Google, 67 reviews</span></div>
+        <div><b>9–6</b><span>Open every day</span></div>
+      </div>
+      <p class="s2-tags"><span>Windsurf</span><span>Wing foil</span><span>Wind foil</span><span>From age 7</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">The family</h2><p>Patient on the beach, close by on the water.</p></div>
+    <div class="crew">
+      <div class="mate rv"><img class="sq" src="img/crew/nigel-sq.jpg" alt="Nigel Hart" loading="lazy"><h3>Nigel Hart</h3><p>Instructor</p><a href="https://instagram.com/nigelhart07" target="_blank" rel="noopener">@nigelhart07</a></div>
+      <div class="mate rv"><img class="sq" src="img/crew/charles-sq.jpg" alt="Charles Dasher" loading="lazy"><h3>Charles Dasher</h3><p>Instructor</p><a href="https://instagram.com/dasherfilms" target="_blank" rel="noopener">@dasherfilms</a></div>
+      <div class="mate rv"><img class="sq" src="img/crew/juvannie-sq.jpg" alt="Juvannie Agostien" loading="lazy"><h3>Juvannie Agostien</h3><p>Instructor</p><a href="https://instagram.com/juvannieagostien" target="_blank" rel="noopener">@juvannieagostien</a></div>
+      <div class="mate rv"><img class="sq" src="img/crew/bimbi-sq.jpg" alt="Bimbi Clappers" loading="lazy"><h3>Bimbi Clappers</h3><p>Instructor</p><a href="https://instagram.com/clappersbimbi" target="_blank" rel="noopener">@clappersbimbi</a></div>
+      <div class="mate rv"><img class="sq" src="img/crew/terence-sq.jpg" alt="Terence Clappers holding his wing in Lac Bay" loading="lazy"><h3>Terence Clappers</h3><p>Instructor</p><span class="back">Back on the island</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="shackband">
+  <img src="img/shack-front.jpg" alt="The Frans Paradise shack: a painted sun container under shade sails, with boards on the sand" loading="lazy">
+  <div class="wrap">
+    <div><h2>Home of good vibes</h2><p>The shack sits right on Sorobon Bay. Come by for a lesson, rent a board, or just say hi.</p></div>
+    <a class="btn" href="contact.html">Plan your visit <i class="ph ph-arrow-right"></i></a>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Riding with</h2><p>The brands in the rack at the shack.</p></div>
+    <div class="partners rv">
+      <a class="sp-link pl-dt" href="https://www.duotonesports.com" target="_blank" rel="noopener"><img src="img/partners/duotone.svg" alt="Duotone"></a><a class="sp-link pl-p7" href="https://point-7.com" target="_blank" rel="noopener"><img src="img/partners/point7.png" alt="Point-7"></a><a class="sp-link pl-ff" href="https://futurefly.world" target="_blank" rel="noopener"><img src="img/partners/futurefly.png" alt="Future Fly"></a><a class="sp-link pl-br" href="https://www.brunotti.com" target="_blank" rel="noopener"><img src="img/partners/brunotti.png" alt="Brunotti"></a>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>Come ride with the family</h2><p>First timer or ready for the foil, there's a lesson for you.</p></div>
+    <div class="acts"><a class="btn" data-wa="Hi Taty! I'd like to book a lesson." href="https://wa.me/5997850514">Book a Lesson <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="lessons.html">See lessons</a></div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+</body>
+</html>

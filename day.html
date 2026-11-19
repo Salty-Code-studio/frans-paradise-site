@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Demo build: remove noindex at launch -->
+<meta name="robots" content="noindex, nofollow">
+<title>A Day at Frans Paradise: Windsurfing at Sorobon, Lac Bay, Bonaire</title>
+<meta name="description" content="What a day at Frans Paradise looks like: arrive at the shack on Sorobon beach, take a lesson in the flat, shallow water of Lac Bay, ride, relax in the shade. Open every day 9 to 6.">
+<link rel="canonical" href="https://fransparadise.com/a-day-at-frans-paradise/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Day at Frans Paradise, Bonaire">
+<meta property="og:description" content="Sorobon beach, steady trade winds, flat turquoise water and good vibes. Every day, 9 to 6.">
+<meta property="og:image" content="img/shack-front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="css/sub.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/","telephone":"+5997850514",
+ "address":{"@type":"PostalAddress","streetAddress":"Sorobon, Lac Bay","addressLocality":"Kralendijk","addressCountry":"BQ"},
+ "openingHours":"Mo-Su 09:00-18:00"}
+</script>
+<style>
+/* A day at Frans Paradise: film hero, a timeline from 9 to 6, conditions at a glance, life at the shack. */
+.film{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#111}
+.film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.film::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.45) 45%,rgba(10,10,10,.15) 100%)}
+.film .wrap{position:relative;z-index:2;width:100%;padding-bottom:64px}
+.film h1{font:400 clamp(3.4rem,8.4vw,7rem)/.88 var(--big);text-transform:uppercase;margin:12px 0 16px}
+.film h1 span{color:var(--orange)}
+.film .lead{font-size:19px;color:rgba(255,255,255,.88);max-width:44ch}
+
+.timeline{position:relative;display:grid;gap:26px;max-width:980px;margin:0 auto}
+.timeline::before{content:"";position:absolute;left:118px;top:10px;bottom:10px;width:3px;background:linear-gradient(var(--canary),var(--orange));border-radius:3px}
+.stop{display:grid;grid-template-columns:100px 1fr 300px;gap:40px;align-items:center}
+.stop time{font:400 2rem/1 var(--big);color:var(--teal);text-align:right}
+.stop .tx{position:relative;padding-left:4px}
+.stop .tx::before{content:"";position:absolute;left:-31px;top:8px;width:17px;height:17px;border-radius:50%;background:var(--sand-l);box-shadow:0 0 0 4px var(--orange)}
+.stop h3{font:400 1.9rem/1 var(--big);text-transform:uppercase;margin-bottom:8px}
+.stop p{color:var(--ink-2)}
+.stop img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;box-shadow:0 14px 40px rgba(0,0,0,.08)}
+
+.cond{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cd{background:#111111;color:#fff;border-radius:22px;padding:26px 24px}
+.cd i{font-size:32px;color:var(--aqua-hi)}
+.cd b{display:block;font:400 2.2rem/1 var(--big);margin:16px 0 6px;color:var(--canary)}
+.cd span{color:rgba(255,255,255,.75);font-size:15px}
+
+.shack2{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.shack2 .ph{border-radius:26px;overflow:hidden;aspect-ratio:16/11}
+.shack2 .ph img{width:100%;height:100%;object-fit:cover;object-position:45% 55%}
+.feat{list-style:none;padding:0;display:grid;gap:14px;margin-top:18px}
+.feat li{display:flex;gap:14px;align-items:flex-start}
+.feat i{font-size:26px;color:var(--orange);flex:none}
+.feat b{display:block}
+.feat span{color:var(--ink-2);font-size:15.5px}
+
+.vibes{background:var(--orange);color:#111;text-align:center;padding:90px 0}
+.vibes blockquote{font:400 clamp(2.2rem,5vw,4.2rem)/.98 var(--big);text-transform:uppercase;max-width:20ch;margin:0 auto}
+.vibes .sign{display:block;font:400 clamp(2.6rem,4.6vw,3.4rem)/1 var(--script);margin-top:22px}
+.vibes small{display:block;font:700 13px var(--head);letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
+
+.bring{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.bring div{background:#fff;border-radius:18px;padding:22px;display:flex;gap:12px;align-items:center;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+.bring i{font-size:28px;color:var(--teal)}
+
+@media (max-width:900px){
+  .film{min-height:78vh}
+  .timeline::before{left:10px}
+  .stop{grid-template-columns:1fr;gap:12px;padding-left:36px}
+  .stop time{text-align:left}
+  .stop .tx::before{left:-33px;top:-30px}
+  .cond,.bring{grid-template-columns:1fr 1fr}
+  .shack2{grid-template-columns:1fr;gap:26px}
+}
+@media (prefers-reduced-motion:reduce){.film video{display:none}.film{background:#111 url(video/hero-poster.jpg) center/cover}}
+/* The flag behind Taty's quote, for mood */
+.vibes{background:linear-gradient(rgba(240,106,36,.86),rgba(240,106,36,.9)),url(img/flag.jpg) 30% 45%/cover!important}
+</style>
+<link rel="stylesheet" href="css/wind.css?v=20261106d">
+<link rel="stylesheet" href="css/book.css?v=20261117b">
+</head>
+<body>
+<!-- header:start -->
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <ul id="menu">
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="m-only"><a href="hall-of-fame.html">Hall of Fame</a></li><li class="m-only"><a href="merch.html">Merch</a></li>
+    </ul>
+    <a class="wordmark" href="index.html" aria-label="Frans Paradise Bonaire, home"><b>Frans Paradise</b><small>BONAIRE</small></a>
+    <div class="nav-cta">
+      <a class="btn ghost hof-link" href="hall-of-fame.html"><i class="ph-fill ph-star"></i>Hall of Fame</a><a class="btn ghost" href="merch.html"><i class="ph ph-t-shirt"></i>Merch</a>
+      
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i class="ph ph-list"></i></button>
+  </div>
+</header>
+<!-- header:end -->
+
+<main id="main">
+<section class="film">
+  <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" aria-label="Footage from the shack and the water at Frans Paradise"><source src="video/hero-loop.mp4" type="video/mp4"></video>
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a> / A day at Frans Paradise</p>
+    <p class="eyebrow light">Sorobon, Lac Bay</p>
+    <h1>A day at <span>Frans Paradise</span></h1>
+    <p class="lead">Trade winds, flat turquoise water and a shack full of good vibes. Here's how a day with us can go.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">From 9 to 6</h2><p>Come for a lesson, stay for the day. The shack is open every day.</p></div>
+    <div class="timeline">
+      <div class="stop rv"><time>9:00</time><div class="tx"><h3>Arrive at the shack</h3><p>Head to Sorobon beach and find the painted container under the shade sails. The crew sorts your gear and your plan for the day.</p></div><img src="img/shack-front.jpg" alt="The Frans Paradise shack with boards on the sand" loading="lazy" style="object-position:40% 60%"></div>
+      <div class="stop rv"><time>Morning</time><div class="tx"><h3>Your lesson</h3><p>It starts with a briefing on the beach, then out into the flat, shallow water of Lac Bay with your instructor close by.</p></div><img src="img/windsurf-lesson2.jpg" alt="An instructor helps a beginner pull up her sail" loading="lazy" style="object-position:47% 50%"></div>
+      <div class="stop rv"><time>Midday</time><div class="tx"><h3>Cool off in the shade</h3><p>Rest under the sails, rehydrate and swap stories with other riders before the next session.</p></div><img src="img/coach-talk.jpg" alt="An instructor and a student talking on the beach" loading="lazy" style="object-position:40% 40%"></div>
+      <div class="stop rv"><time>Afternoon</time><div class="tx"><h3>Ride on your own</h3><p>Rent a board and practise what you learned, or bring your own gear. The rescue boat is out every day we're open.</p></div><img src="img/rescue-boat.jpg" alt="The Frans Paradise rescue boat out on Lac Bay" loading="lazy" style="object-position:55% 70%"></div>
+      <div class="stop rv"><time>18:00</time><div class="tx"><h3>Last run, then home</h3><p>Catch the last wind, pick up a tee or a cap at the shack, and plan tomorrow's session.</p></div><img src="img/taty-founder.jpg" alt="Taty Frans waving from the lagoon" loading="lazy" style="object-position:50% 45%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Conditions at a glance</h2><p>Why Lac Bay is one of the friendliest places to ride.</p></div>
+    <div class="cond">
+      <div class="cd rv"><i class="ph ph-wind"></i><b>Dec – Jun</b><span>Best wind season, strongest from February to May</span></div>
+      <div class="cd rv"><i class="ph ph-thermometer-simple"></i><b>26–29°C</b><span>Water temperature through the year</span></div>
+      <div class="cd rv"><i class="ph ph-waves"></i><b>Flat &amp; shallow</b><span>Calm water inside the reef</span></div>
+      <div class="cd rv"><i class="ph ph-clock"></i><b>9 to 6</b><span>Open every day of the week</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap shack2">
+    <div class="ph rv"><img src="img/beach-gear.jpg" alt="Gear lined up on the beach at the shack, the Frans Paradise flag flying" loading="lazy" style="object-position:45% 55%"></div>
+    <div class="rv">
+      <h2 class="h2">Life at the shack</h2>
+      <ul class="feat">
+        <li><i class="ph ph-users-three"></i><div><b>A crew that speaks your language</b><span>Our instructors speak several languages and keep it relaxed.</span></div></li>
+        <li><i class="ph ph-lifebuoy"></i><div><b>Rescue boat on the water</b><span>Every day we're open. A rescue costs $10.</span></div></li>
+        <li><i class="ph ph-warehouse"></i><div><b>Gear storage</b><span>Keep your own gear at the shack. Book your spot in time.</span></div></li>
+        <li><i class="ph ph-t-shirt"></i><div><b>Merch</b><span>Frans Paradise tees and caps. <a href="merch.html" style="color:var(--teal);font-weight:700">See merch</a></span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="vibes">
+  <div class="wrap rv">
+    <blockquote>"True local energy, smiles, happy laidback positive vibes."</blockquote>
+    <span class="sign">Taty Frans</span>
+    <small>Founder, Frans Paradise</small>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="h2">Bring for the day</h2><p>We have the rest.</p></div>
+    <div class="bring">
+      <div class="rv"><i class="ph ph-swimming-pool"></i>Swimwear</div>
+      <div class="rv"><i class="ph ph-sun"></i>Sunscreen</div>
+      <div class="rv"><i class="ph ph-drop"></i>Water</div>
+      <div class="rv"><i class="ph ph-sunglasses"></i>Sunglasses with a strap</div>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap">
+    <div><h2>Plan your day with us</h2><p>Book a lesson or rent gear, and we'll see you on the beach.</p></div>
+    <div class="acts"><a class="btn" data-wa="Hi Taty! I'd like to plan a day at Frans Paradise." href="https://wa.me/5997850514">Plan on WhatsApp <i class="ph ph-arrow-right"></i></a><a class="btn ghost" href="contact.html">How to find us</a></div>
+  </div>
+</section>
+</main>
+
+<!-- footer:start -->
+<footer class="site" id="contact-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="wordmark" href="index.html"><b>Frans Paradise</b><small>BONAIRE</small></a>
+        <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
+        <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
+        <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
+        <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
+        <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
+        <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
+      </ul></div>
+      <div><h4>Follow us</h4><div class="social">
+        <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+      </div></div>
+    </div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
+  </div>
+</footer>
+<!-- footer:end -->
+<script src="js/sub.js"></script>
+<script src="js/wind.js?v=20261106d"></script>
+<script src="js/book.js?v=20261117b"></script>
+</body>
+</html>
