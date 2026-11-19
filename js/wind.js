@@ -47,7 +47,7 @@
     <p class="wf-remark" data-w="remark"></p>
     <div class="wf-days" data-w="days"></div>
     <div class="wf-foot"><span>Daily figure = average 10:00–18:00. Forecast by Open-Meteo, so check with us on the beach.</span>
-      <a class="btn" data-w="book" href="https://wa.me/5997850514">Book for this wind <i class="ph ph-arrow-right"></i></a></div>
+      <a class="btn" data-w="book" href="https://wa.me/5997850514">Book for this wind</a></div>
   </div></div>`;
   nav.after(panel);
   const scrim = document.createElement("div"); scrim.className = "wf-scrim"; panel.after(scrim);
