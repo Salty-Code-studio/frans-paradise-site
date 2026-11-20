@@ -198,6 +198,8 @@
     dlg.showModal ? dlg.showModal() : dlg.setAttribute("open", "");
   };
   window.fpBook = open;
+  // Every forecast day, for the date picker: { 'YYYY-MM-DD': { kn, c } }
+  window.fpWindDays = () => loadWind().then(w => Object.fromEntries(Object.entries(w || {}).map(([k, v]) => [k, { kn: v.kn, c: band(v.kn).c }])));
   // Wind for one day, for the homepage bar: { kn, gust, dir, band, fit }
   window.fpWind = (date, ride, level) => loadWind().then(w => {
     const d = w && w[date]; if (!d) return null;
