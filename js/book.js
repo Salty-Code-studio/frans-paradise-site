@@ -59,7 +59,12 @@
 
   // Wind data, fetched once on first open
   let wind = null, windP = null;
-  const loadWind = () => windP ||= fetch(API).then(r => r.json()).then(d => {
+  // Forecast kept for 20 minutes so browsing the site doesn't call the weather service on every page
+  const getJSON = url => { const k = "fp:" + url;
+    try { const c = JSON.parse(localStorage.getItem(k)); if (c && Date.now() - c.t < 12e5) return Promise.resolve(c.d); } catch (e) {}
+    return fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => { try { localStorage.setItem(k, JSON.stringify({ t: Date.now(), d })); } catch (e) {} return d; }); };
+  const loadWind = () => windP ||= getJSON(API).then(d => {
     const h = d.hourly, out = {};
     h.time.forEach((t, i) => {
       const hr = +t.slice(11, 13); if (hr < 9 || hr > 17) return;

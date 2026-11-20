@@ -7,16 +7,21 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Contact &amp; Directions | Frans Paradise, Sorobon, Bonaire</title>
 <meta name="description" content="Find Frans Paradise on the beach at Sorobon, Lac Bay, Bonaire. Open every day 9:00 to 18:00. WhatsApp or call +599 785 0514, or email info@fransparadise.com.">
-<link rel="canonical" href="https://fransparadise.com/contact/">
+<link rel="canonical" href="https://fransparadise.com/contact.html">
+<link rel="icon" href="img/icon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/icon-180.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Contact Frans Paradise, Bonaire">
-<meta property="og:description" content="WhatsApp +599 785 0514. Sorobon, Lac Bay. Every day 9 to 6.">
-<meta property="og:image" content="img/drone.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<meta property="og:site_name" content="Frans Paradise Bonaire">
+<meta property="og:url" content="https://fransparadise.com/contact.html">
+<meta property="og:title" content="Contact &amp; Directions">
+<meta property="og:description" content="Find Frans Paradise on the beach at Sorobon, Lac Bay, Bonaire. Open every day 9:00 to 18:00. WhatsApp or call +599 785 0514, or email info@fransparadise.com.">
+<meta property="og:image" content="https://fransparadise.com/img/drone.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/DMSans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Montserrat-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="fonts/phosphor-regular.css">
+<link rel="stylesheet" href="fonts/phosphor-fill.css">
 <link rel="stylesheet" href="css/sub.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SportsActivityLocation","name":"The Frans Paradise","url":"https://fransparadise.com/",
@@ -73,6 +78,12 @@
 .hours li i{font-size:22px;color:var(--canary);flex:none;margin-top:1px}
 .hours .btn{margin-top:26px}
 .map{border-radius:24px;overflow:hidden;min-height:440px;background:#ddd;box-shadow:0 14px 40px rgba(0,0,0,.06)}
+.map-load{position:relative;width:100%;height:100%;min-height:440px;border:0;padding:0;cursor:pointer;background:#cfdfe2 center/cover;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff}
+.map-load::before{content:"";position:absolute;inset:0;background:rgba(5,30,34,.45);transition:background .2s}
+.map-load:hover::before{background:rgba(5,30,34,.3)}
+.map-load span{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;background:#fff;color:#111;font:700 16px var(--body)}
+.map-load span i{font-size:20px;color:var(--teal)}
+.map-load small{position:relative;font-size:13px;opacity:.9}
 .map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
 
 .qa{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -84,6 +95,7 @@
 .qa p{color:var(--ink-2);margin-top:10px}
 
 @media (max-width:900px){
+  .map-load{min-height:340px}
   .ct-top{padding:40px 0 60px}
   .tiles{grid-template-columns:1fr}
   .tile.wa{grid-row:auto}
@@ -120,7 +132,7 @@
 
 <main id="main">
 <section class="ct-top">
-  <img src="img/lagoon-boats.jpg" alt="" fetchpriority="high" style="object-position:50% 55%">
+  <img src="img/lagoon-boats.webp" alt="" fetchpriority="high" style="object-position:50% 55%">
   <div class="wrap">
     <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
     <p class="eyebrow light">Contact &amp; directions</p>
@@ -162,7 +174,9 @@
         <a class="btn" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Open in Google Maps</a>
       </div>
       <div class="map rv">
-        <iframe title="Map of Frans Paradise at Sorobon, Lac Bay, Bonaire" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=The%20Frans%20Paradise%2C%20Sorobon%2C%20Bonaire&z=14&output=embed"></iframe>
+        <button type="button" class="map-load" id="map-load" style="background-image:url(img/drone.webp)">
+          <span><i class="ph ph-map-trifold" aria-hidden="true"></i>Show the map</span><small>Loads Google Maps</small>
+        </button>
       </div>
     </div>
   </div>
@@ -192,22 +206,22 @@
         <p class="tag">LESSONS. RENTALS. GOOD TIMES.</p>
         <a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a>
       </div>
-      <div><h4>Explore</h4><ul>
+      <div><h2>Explore</h2><ul>
         <li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li>
         <li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li>
       </ul></div>
-      <div><h4>Contact</h4><ul>
+      <div><h2>Contact</h2><ul>
         <li><i class="ph ph-map-pin"></i>Sorobon Bay, Lac Bay, Bonaire</li>
         <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
         <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
         <li><i class="ph ph-clock"></i>Every day, 9:00 to 18:00</li>
       </ul></div>
-      <div><h4>Follow us</h4><div class="social">
+      <div><h2>Follow us</h2><div class="social">
         <a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
         <a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
       </div></div>
     </div>
-    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
     <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
   </div>
 </footer>
@@ -215,5 +229,9 @@
 <script src="js/sub.js"></script>
 <script src="js/wind.js?v=20261106d"></script>
 <script src="js/book.js?v=20261120b"></script>
+<script>
+// Map loads only when asked, so the page sets no Google cookies until then
+document.getElementById("map-load")?.addEventListener("click",e=>{const f=document.createElement("iframe");f.title="Map of Frans Paradise at Sorobon, Lac Bay, Bonaire";f.referrerPolicy="no-referrer-when-downgrade";f.src="https://maps.google.com/maps?q=The%20Frans%20Paradise%2C%20Sorobon%2C%20Bonaire&z=14&output=embed";e.currentTarget.replaceWith(f);});
+</script>
 </body>
 </html>

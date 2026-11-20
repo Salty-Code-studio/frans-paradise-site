@@ -73,7 +73,12 @@
     $("chart").innerHTML = g + "</g>";
   };
 
-  fetch(API).then(r => r.json()).then(d => {
+  // Forecast kept for 20 minutes so browsing the site doesn't call the weather service on every page
+  const getJSON = url => { const k = "fp:" + url;
+    try { const c = JSON.parse(localStorage.getItem(k)); if (c && Date.now() - c.t < 12e5) return Promise.resolve(c.d); } catch (e) {}
+    return fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => { try { localStorage.setItem(k, JSON.stringify({ t: Date.now(), d })); } catch (e) {} return d; }); };
+  getJSON(API).then(d => {
     const c = d.current, kn = c.wind_speed_10m, b = band(kn);
     pills.forEach(p => { p.querySelector(".kn").innerHTML = `${Math.round(kn)}<small>kn</small>`;
       p.querySelector(".arr").style.transform = `rotate(${(c.wind_direction_10m + 180) % 360}deg)`;

@@ -6,14 +6,22 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Frans Paradise Bonaire · Windsurf lessons, equipment, good times</title>
 <meta name="description" content="Windsurf and wing foil lessons and rentals on the beach at Sorobon, Lac Bay, Bonaire. Open every day from 9 to 6.">
-<meta property="og:image" content="img/taty-air.jpg">
-<link rel="icon" href="img/icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Mr+Dafoe&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-<link rel="preload" as="image" href="video/hero-poster.jpg">
+<link rel="canonical" href="https://fransparadise.com/">
+<link rel="icon" href="img/icon-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Frans Paradise Bonaire">
+<meta property="og:url" content="https://fransparadise.com/">
+<meta property="og:title" content="Frans Paradise Bonaire">
+<meta property="og:description" content="Windsurf and wing foil lessons and rentals on the beach at Sorobon, Lac Bay, Bonaire. Open every day from 9 to 6.">
+<meta property="og:image" content="https://fransparadise.com/img/taty-air.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/DMSans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Montserrat-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="fonts/phosphor-regular.css">
+<link rel="stylesheet" href="fonts/phosphor-fill.css">
+<link rel="preload" as="image" href="video/hero-poster.webp">
 <style>
 /* Built from Mo's wireframe (2026-11-01). Light theme, teal actions, navy type, diagonal section edges.
    Shape rule: buttons and inputs 6px, cards and photos 8px. */
@@ -89,8 +97,9 @@ h2{font:800 clamp(1.8rem,3vw,2.4rem)/1.15 var(--head);margin-top:6px;letter-spac
 /* Find a lesson bar */
 .finder{position:relative;z-index:5;margin-top:-82px}
 .finder form{background:#fff;border-radius:var(--rc);box-shadow:0 18px 50px rgba(0,0,0,.14);padding:22px 26px;display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr .62fr auto;gap:16px;align-items:end}
-.finder h3{font:800 17px var(--head);text-transform:uppercase}
+.finder h3,.finder .fh3{font:800 17px var(--head);text-transform:uppercase}
 .finder p{font-size:14px;color:var(--ink-2)}
+#f-wind{opacity:1!important}
 #f-wind b{font-weight:800}
 #f-wind .fw{display:inline-block;margin-left:4px;padding:2px 9px;border-radius:999px;font-weight:700;font-size:12.5px;background:#dcf3e5;color:#0d6b38}
 #f-wind .fw.f1{background:#fff4c2;color:#6b5600}#f-wind .fw.f0{background:#fde2dd;color:#a3321f}
@@ -194,7 +203,7 @@ details p{padding:0 20px 18px;color:var(--ink-2)}
 footer.site{padding:60px 0 30px;border-top:1px solid var(--line)}
 .fgrid{display:grid;grid-template-columns:1.3fr .8fr 1.2fr .8fr 1.3fr;gap:30px}
 .fgrid .tag{font:700 12.5px var(--head);letter-spacing:.06em;margin-top:18px;color:var(--ink-2)}
-footer h4{font:700 14px var(--body);margin-bottom:12px}
+footer h4,footer h2{font:700 14px var(--body);margin-bottom:12px}
 footer ul{list-style:none;padding:0;display:grid;gap:7px;font-size:14.5px;color:var(--ink-2)}
 footer ul a{text-decoration:none}
 footer ul a:hover{color:var(--teal)}
@@ -310,7 +319,7 @@ summary i{color:var(--coral)}
 footer.site{background:linear-gradient(170deg,#0067b8 0%,#023e8a 45%,#03224f 100%);color:#e6f6ff;border:0;position:relative;overflow:hidden}
 footer.site .wrap{position:relative;z-index:2}
 footer .wordmark b,footer .wordmark small{color:#fff}
-footer h4{color:#fff}
+footer h4,footer h2{color:#fff}
 footer ul,footer .tag,.legal{color:#b9def5}
 footer li i{color:var(--sun)}
 footer ul a:hover,.social a:hover{color:var(--sun)}
@@ -324,10 +333,10 @@ footer ul a:hover,.social a:hover{color:var(--sun)}
 /* Real water texture: their own drone shot of the lagoon, tinted and drifting slowly */
 .hero>img{-webkit-mask:linear-gradient(90deg,transparent 0,#000 30%);mask:linear-gradient(90deg,transparent 0,#000 30%)}
 @media (max-width:860px){.hero>img{-webkit-mask:none;mask:none}}
-.hero{background:linear-gradient(160deg,rgba(201,247,251,.86) 0%,rgba(142,232,242,.8) 40%,rgba(63,207,227,.75) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.hero{background:linear-gradient(160deg,rgba(201,247,251,.86) 0%,rgba(142,232,242,.8) 40%,rgba(63,207,227,.75) 100%),url(img/drone.webp) 30% 40%/1400px auto}
 .reviews::before{background:linear-gradient(115deg,rgba(0,190,214,.7) 0%,rgba(0,119,182,.74) 55%,rgba(2,62,138,.82) 100%)}
-footer.site{background:linear-gradient(170deg,rgba(0,103,184,.93) 0%,rgba(2,62,138,.95) 45%,rgba(3,34,79,.97) 100%),url(img/drone.jpg) center/1600px auto}
-.sponsors{background:linear-gradient(120deg,rgba(0,212,224,.9),rgba(0,166,214,.9) 45%,rgba(0,103,184,.92)),url(img/drone.jpg) center 70%/1600px auto}
+footer.site{background:linear-gradient(170deg,rgba(0,103,184,.93) 0%,rgba(2,62,138,.95) 45%,rgba(3,34,79,.97) 100%),url(img/drone.webp) center/1600px auto}
+.sponsors{background:linear-gradient(120deg,rgba(0,212,224,.9),rgba(0,166,214,.9) 45%,rgba(0,103,184,.92)),url(img/drone.webp) center 70%/1600px auto}
 @media (prefers-reduced-motion:no-preference){
   .hero,footer.site,.sponsors{animation:lagoon 60s ease-in-out infinite alternate}
   .reviews>img{animation:lagoon-img 40s ease-in-out infinite alternate}
@@ -342,7 +351,7 @@ footer.site{background:linear-gradient(170deg,rgba(0,103,184,.93) 0%,rgba(2,62,1
 .btn.ghost{background:#fff;border:2px solid var(--line)}
 .eyebrow{color:var(--ocean)}
 .hero h1 .glow{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--ocean)}
-.hero{background:linear-gradient(160deg,rgba(236,249,252,.93) 0%,rgba(214,243,248,.9) 45%,rgba(190,235,243,.88) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.hero{background:linear-gradient(160deg,rgba(236,249,252,.93) 0%,rgba(214,243,248,.9) 45%,rgba(190,235,243,.88) 100%),url(img/drone.webp) 30% 40%/1400px auto}
 .finder form{border:1px solid var(--line);background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.12)}
 .card::before{height:3px}
 .card .btn{background:#fff;color:var(--ink);border:2px solid var(--ink)}
@@ -387,7 +396,7 @@ footer.site .tag{color:#d4ecf7}
 .nav ul a:hover{color:var(--red)}
 .hero h1{color:var(--ink)}
 .hero h1 .glow{color:var(--sky)}
-.hero{background:linear-gradient(160deg,rgba(225,244,255,.92) 0%,rgba(196,234,252,.88) 45%,rgba(160,224,240,.85) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.hero{background:linear-gradient(160deg,rgba(225,244,255,.92) 0%,rgba(196,234,252,.88) 45%,rgba(160,224,240,.85) 100%),url(img/drone.webp) 30% 40%/1400px auto}
 .perks i,.field i,.card li i{color:var(--sky)}
 .finder form{border:2px solid var(--lagoon2)}
 .card::before{background:linear-gradient(90deg,var(--lagoon2),var(--sky));height:4px}
@@ -426,7 +435,7 @@ footer li i,footer ul a:hover,.social a:hover,.news-ok{color:#ffd166}
 .more{color:var(--teal)}
 .nav ul a:hover{color:var(--orange-t)}
 .hero h1 .glow{color:var(--teal)}
-.hero{background:linear-gradient(160deg,rgba(226,245,253,.93) 0%,rgba(198,236,251,.9) 45%,rgba(160,220,244,.86) 100%),url(img/drone.jpg) 30% 40%/1400px auto}
+.hero{background:linear-gradient(160deg,rgba(226,245,253,.93) 0%,rgba(198,236,251,.9) 45%,rgba(160,220,244,.86) 100%),url(img/drone.webp) 30% 40%/1400px auto}
 .perks i,.field i,.card li i{color:var(--teal)}
 .finder form{border:2px solid var(--teal)}
 .lessons{background:linear-gradient(180deg,#fff 0%,var(--sand-l) 100%)}
@@ -713,13 +722,13 @@ footer.site .social a:hover{color:var(--aqua-hi)!important}
 @media (max-width:860px){.hero::before{display:block!important;background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.85))!important}}
 /* Find a lesson: solid turquoise bar, black text, white fields, orange button */
 .finder form{background:#6ae6e0!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:0 20px 50px rgba(0,0,0,.18)!important}
-.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#111111!important}
+.finder form,.finder .intro h2,.finder .intro h3,.finder .intro h2,.finder .intro strong,.finder label,.finder .intro p{color:#111111!important}
 .finder .intro p,.finder label{opacity:.78}
 .finder select,.finder input{background-color:#fff!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 .finder .field i{color:#0b5f66!important}
 /* Find a lesson: dark frosted teal glass, white text */
 .finder form{background:rgba(6,78,84,.8)!important;-webkit-backdrop-filter:blur(22px) saturate(1.5)!important;backdrop-filter:blur(22px) saturate(1.5)!important;box-shadow:0 20px 50px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.12)!important}
-.finder form,.finder .intro h2,.finder .intro h3,.finder .intro strong,.finder label,.finder .intro p{color:#fff!important}
+.finder form,.finder .intro h2,.finder .intro h3,.finder .intro h2,.finder .intro strong,.finder label,.finder .intro p{color:#fff!important}
 .finder .intro p,.finder label{opacity:.8}
 @media (prefers-reduced-transparency:reduce){.finder form{background:#0b5f66!important}}
 /* Lesson name in bright orange; Windsurf strip tinted red so all four strips differ */
@@ -819,7 +828,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
 @media (min-width:861px) and (max-width:1000px){.nav ul a{padding:8px 7px;font-size:13.5px}.nav .wordmark b{font-size:30px!important}}
 /* Surf Shack: drone flyover of the beach behind the panel */
 .shack>video.shack-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-@media (prefers-reduced-motion:reduce){.shack>video.shack-v{display:none}.shack{background:#111 url(video/beach-drone-poster.jpg) center/cover}}
+@media (prefers-reduced-motion:reduce){.shack>video.shack-v{display:none}.shack{background:#111 url(video/beach-drone-poster.webp) center/cover}}
 /* Sponsor logos link to the brands */
 .sp-link{display:inline-flex;flex:none}
 .logo-track .sp-link img{pointer-events:none}
@@ -880,7 +889,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
 <main id="top">
   <!-- Hero: their own film from fransparadise.com, muted loop (Mo, 2026-11-02) -->
   <section class="hero water">
-    <video class="hero-v" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" aria-label="Frans Paradise film: the shack, rigging and lessons on Lac Bay"><source src="video/hero-loop.mp4" type="video/mp4"></video>
+    <video class="hero-v" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.webp" aria-label="Frans Paradise film: the shack, rigging and lessons on Lac Bay"><source src="video/hero-loop-sm.mp4" type="video/mp4" media="(max-width: 700px)"><source src="video/hero-loop-hd.mp4" type="video/mp4"></video>
         <div class="wrap">
       <p class="eyebrow">Windsurf Bonaire</p>
       <h1>Lessons. Equipment. <span class="glow">Good times.</span></h1>
@@ -900,7 +909,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
   <section class="finder" aria-label="Find a lesson">
     <div class="wrap">
       <form id="finder">
-        <div class="intro"><h3>Find a lesson</h3><p id="f-wind" aria-live="polite">Pick a day to see the wind.</p></div>
+        <div class="intro"><h2 class="fh3">Find a lesson</h2><p id="f-wind" aria-live="polite">Pick a day to see the wind.</p></div>
         <div><label for="f-act">Activity</label><div class="field"><i class="ph ph-sailboat"></i><select id="f-act"><option value="windsurf">Windsurfing</option><option value="wing">Wing foil</option><option value="foil">Wind foil</option><option value="kids">Kids lesson</option></select></div></div>
         <div><label for="f-lvl" id="f-lvl-l">Level</label><div class="field"><i class="ph ph-chart-bar"></i><select id="f-lvl"></select></div></div>
         <div><label for="f-date">Date</label><div class="field"><i class="ph ph-calendar-blank"></i><input type="date" id="f-date"></div></div>
@@ -918,13 +927,13 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
         <p class="rs-lede">Prices per person, in dollars. Pick one and we'll sort a time on WhatsApp.</p>
       </div>
       <div class="strips" role="tablist" aria-label="Lessons">
-      <button class="strip on" role="tab" aria-selected="true" data-i="0"><img loading="lazy" src="img/windsurf-lesson2.jpg" alt="An instructor helps a beginner pull up her sail on the beach" style="object-position:47% 50%"><span class="v">Windsurf</span>
+      <button class="strip on" role="tab" aria-selected="true" data-i="0"><img loading="lazy" src="img/windsurf-lesson2.webp" alt="An instructor helps a beginner pull up her sail on the beach" style="object-position:47% 50%"><span class="v">Windsurf</span>
         <span class="cap"><small>Beginners, 2 hours</small><div class="big">Windsurf</div><div class="p"><span>from</span>$50</div></span></button>
-      <button class="strip" role="tab" aria-selected="false" data-i="1"><img loading="lazy" src="img/wing-shed.jpg" alt="Taty lifts a wing overhead in the gear shed" style="object-position:48% 50%"><span class="v">Wing foil</span>
+      <button class="strip" role="tab" aria-selected="false" data-i="1"><img loading="lazy" src="img/wing-shed.webp" alt="Taty lifts a wing overhead in the gear shed" style="object-position:48% 50%"><span class="v">Wing foil</span>
         <span class="cap"><small>Beginners, 1 hour</small><div class="big">Wing foil</div><div class="p"><span>from</span>$125</div></span></button>
-      <button class="strip" role="tab" aria-selected="false" data-i="2"><img loading="lazy" src="img/windfoil.jpg" alt="Taty wind foiling on Lac Bay" style="object-position:50% 60%"><span class="v">Wind foil</span>
+      <button class="strip" role="tab" aria-selected="false" data-i="2"><img loading="lazy" src="img/windfoil.webp" alt="Taty wind foiling on Lac Bay" style="object-position:50% 60%"><span class="v">Wind foil</span>
         <span class="cap"><small>Beginners, 2 hours</small><div class="big">Wind foil</div><div class="p"><span>from</span>$125</div></span></button>
-      <button class="strip" role="tab" aria-selected="false" data-i="3"><img loading="lazy" src="img/kids.jpg" alt="A young girl in pink sunglasses holding the boom of her windsurf board" style="object-position:40% 45%"><span class="v">Kids</span>
+      <button class="strip" role="tab" aria-selected="false" data-i="3"><img loading="lazy" src="img/kids.webp" alt="A young girl in pink sunglasses holding the boom of her windsurf board" style="object-position:40% 45%"><span class="v">Kids</span>
         <span class="cap"><small>From age 7</small><div class="big">Kids</div><div class="p"><span>price</span>Ask us</div></span></button>
     </div>
       <div class="rs-cta">
@@ -935,7 +944,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
   </section>
 
   <section class="rated" id="reviews" aria-label="Reviews">
-    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/rack-sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/rack-sails.jpg" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/beach-brief.jpg" alt="" loading="lazy"><img src="img/windfoil.jpg" alt="" loading="lazy"><img src="img/shack-aerial.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/beach-brief.jpg" alt="" loading="lazy"><img src="img/windfoil.jpg" alt="" loading="lazy"><img src="img/shack-aerial.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"></div></div></div>
+    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-founder.webp" alt="" loading="lazy"><img src="img/coach.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/rack-sails.webp" alt="" loading="lazy"><img src="img/taty-founder.webp" alt="" loading="lazy"><img src="img/coach.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/rack-sails.webp" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/beach-brief.webp" alt="" loading="lazy"><img src="img/windfoil.webp" alt="" loading="lazy"><img src="img/shack-aerial.webp" alt="" loading="lazy"><img src="img/coach-talk.webp" alt="" loading="lazy"><img src="img/beach-brief.webp" alt="" loading="lazy"><img src="img/windfoil.webp" alt="" loading="lazy"><img src="img/shack-aerial.webp" alt="" loading="lazy"><img src="img/coach-talk.webp" alt="" loading="lazy"></div></div></div>
     <div class="rcenter rv">
       <p class="rated-k">Rated</p>
       <p class="rated-x">Excellent</p>
@@ -951,25 +960,25 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
       </div>
       <a class="more" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Read them all on Google</a>
     </div>
-    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-air.jpg" alt="" loading="lazy"><img src="img/drone.jpg" alt="" loading="lazy"><img src="img/taty-shed.jpg" alt="" loading="lazy"><img src="img/rack-boards.jpg" alt="" loading="lazy"><img src="img/taty-air.jpg" alt="" loading="lazy"><img src="img/drone.jpg" alt="" loading="lazy"><img src="img/taty-shed.jpg" alt="" loading="lazy"><img src="img/rack-boards.jpg" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"><img src="img/coach-talk.jpg" alt="" loading="lazy"><img src="img/student.jpg" alt="" loading="lazy"><img src="img/sails.jpg" alt="" loading="lazy"><img src="img/taty-founder.jpg" alt="" loading="lazy"></div></div></div>
+    <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-air.webp" alt="" loading="lazy"><img src="img/drone.webp" alt="" loading="lazy"><img src="img/taty-shed.webp" alt="" loading="lazy"><img src="img/rack-boards.webp" alt="" loading="lazy"><img src="img/taty-air.webp" alt="" loading="lazy"><img src="img/drone.webp" alt="" loading="lazy"><img src="img/taty-shed.webp" alt="" loading="lazy"><img src="img/rack-boards.webp" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/coach-talk.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/sails.webp" alt="" loading="lazy"><img src="img/taty-founder.webp" alt="" loading="lazy"><img src="img/coach-talk.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/sails.webp" alt="" loading="lazy"><img src="img/taty-founder.webp" alt="" loading="lazy"></div></div></div>
   </section>
 
   <section class="extras x2" id="extras">
     <div class="wrap">
       <div class="x2-head rv"><h2>More than lessons</h2><p>Windsurf for a fuller experience: rent the gear, level up, or spend the whole day on the beach.</p></div>
       <div class="x2-grid">
-        <a class="x2-tile big rv" href="rentals.html"><img src="img/beach-gear.jpg" alt="Sails, boards and foils lined up on the beach at Frans Paradise" loading="lazy" style="object-position:40% 60%">
+        <a class="x2-tile big rv" href="rentals.html"><img src="img/beach-gear.webp" alt="Sails, boards and foils lined up on the beach at Frans Paradise" loading="lazy" style="object-position:40% 60%">
           <span class="x2-txt"><small>From $30 an hour</small><b>Equipment Rentals</b><em>Windsurf, wing and foil gear, ready on the sand.</em><span class="btn">See rentals</span></span></a>
-        <a class="x2-tile rv" href="skills.html"><img src="img/coaching.jpg" alt="An instructor coaching a rider next to a rigged sail" loading="lazy" style="object-position:35% 40%">
+        <a class="x2-tile rv" href="skills.html"><img src="img/coaching.webp" alt="An instructor coaching a rider next to a rigged sail" loading="lazy" style="object-position:35% 40%">
           <span class="x2-txt"><small>Advanced coaching</small><b>Improve Your Skills</b><span class="btn">Level up</span></span></a>
-        <a class="x2-tile rv" href="day.html"><img src="img/taty-founder.jpg" alt="Taty Frans waving from the lagoon as a rider jumps behind him" loading="lazy" style="object-position:50% 70%">
+        <a class="x2-tile rv" href="day.html"><img src="img/taty-founder.webp" alt="Taty Frans waving from the lagoon as a rider jumps behind him" loading="lazy" style="object-position:50% 70%">
           <span class="x2-txt"><small>9 to 6, every day</small><b>A Day at Frans Paradise</b><span class="btn">Plan your day</span></span></a>
       </div>
     </div>
   </section>
 
   <section class="shack" id="shack">
-    <video class="shack-v" autoplay muted loop playsinline preload="metadata" poster="video/beach-drone-poster.jpg" aria-label="Drone flyover of the beach at Sorobon with the Frans Paradise shack and gear on the sand"><source src="video/beach-drone.mp4" type="video/mp4"></video>
+    <video class="shack-v" autoplay muted loop playsinline preload="metadata" poster="video/beach-drone-poster.webp" aria-label="Drone flyover of the beach at Sorobon with the Frans Paradise shack and gear on the sand"><source src="video/beach-drone-hd.mp4" type="video/mp4"></video>
     <div class="wrap"><div class="box rv">
       <h2>Our Surf Spot</h2>
       <p>Right on Sorobon Bay. Open every day, 9 to 6.</p>
@@ -1010,26 +1019,26 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
     </div>
     <div class="ig-row" aria-label="Photos from Instagram">
       <div class="ig-track">
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windfoil.jpg" alt="Taty wind foiling" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-air.jpg" alt="Taty flying a windsurf board" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/kids.jpg" alt="A young girl on her windsurf board" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/flag.jpg" alt="The Frans Paradise flag in the trade wind" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/coach.jpg" alt="An instructor helps a student pull up the sail" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-founder.jpg" alt="Taty waving from the lagoon" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/shack-aerial.jpg" alt="The shack from above" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windsurf-lesson.jpg" alt="A beginner sails with her instructor alongside" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/lacbay-fleet.jpg" alt="A fleet of windsurfers racing on Lac Bay" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/wing-shed.jpg" alt="A wing held overhead in the gear shed" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windfoil.jpg" alt="" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-air.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/kids.jpg" alt="" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/flag.jpg" alt="" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/coach.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-founder.jpg" alt="" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/shack-aerial.jpg" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windsurf-lesson.jpg" alt="" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/lacbay-fleet.jpg" alt="" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
-          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/wing-shed.jpg" alt="" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windfoil.webp" alt="Taty wind foiling" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-air.webp" alt="Taty flying a windsurf board" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/kids.webp" alt="A young girl on her windsurf board" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/flag.webp" alt="The Frans Paradise flag in the trade wind" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/coach.webp" alt="An instructor helps a student pull up the sail" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/taty-founder.webp" alt="Taty waving from the lagoon" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/shack-aerial.webp" alt="The shack from above" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/windsurf-lesson.webp" alt="A beginner sails with her instructor alongside" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/lacbay-fleet.webp" alt="A fleet of windsurfers racing on Lac Bay" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener"><img src="img/wing-shed.webp" alt="A wing held overhead in the gear shed" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windfoil.webp" alt="" loading="lazy" style="object-position:50% 60%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-air.webp" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/kids.webp" alt="" loading="lazy" style="object-position:45% 45%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/flag.webp" alt="" loading="lazy" style="object-position:40% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/coach.webp" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/taty-founder.webp" alt="" loading="lazy" style="object-position:50% 40%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/shack-aerial.webp" alt="" loading="lazy" style="object-position:50% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/windsurf-lesson.webp" alt="" loading="lazy" style="object-position:45% 50%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/lacbay-fleet.webp" alt="" loading="lazy" style="object-position:50% 70%"><i class="ph ph-instagram-logo"></i></a>
+          <a class="ig-tile" href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="img/wing-shed.webp" alt="" loading="lazy" style="object-position:48% 50%"><i class="ph ph-instagram-logo"></i></a>
       </div>
     </div>
   </section>
@@ -1039,20 +1048,20 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
   <div class="wrap">
     <div class="fgrid">
       <div><a class="wordmark" href="#top"><b>Frans Paradise</b><small>BONAIRE</small></a><p class="tag">LESSONS. RENTALS. GOOD TIMES.</p><a class="wa-pill" data-wa="Hi Taty! I have a question." href="https://wa.me/5997850514"><i class="ph ph-whatsapp-logo"></i>Contact us via WhatsApp</a></div>
-      <div><h4>Quick Links</h4><ul><li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li></ul></div>
-      <div><h4>Contact</h4><ul>
+      <div><h2>Quick Links</h2><ul><li><a href="lessons.html">Lessons</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="about.html">About</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="hall-of-fame.html">Hall of Fame</a></li><li><a href="news.html">News &amp; Events</a></li><li><a href="contact.html">Contact</a></li><li><a href="merch.html">Merch</a></li></ul></div>
+      <div><h2>Contact</h2><ul>
         <li><i class="ph ph-map-pin"></i>Sorobon Bay, Bonaire</li>
         <li><a data-wa="Hi Taty!" href="https://wa.me/5997850514"><i class="ph ph-phone"></i>+599 785 0514</a></li>
         <li><a href="mailto:info@fransparadise.com"><i class="ph ph-envelope-simple"></i>info@fransparadise.com</a></li>
       </ul></div>
-      <div><h4>Follow Us</h4><div class="social"><a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a><a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></div></div>
-      <div class="igb"><h4>On Instagram</h4>
+      <div><h2>Follow Us</h2><div class="social"><a href="https://instagram.com/thefransparadise/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a><a href="https://www.facebook.com/thefransparadise" target="_blank" rel="noopener" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a></div></div>
+      <div class="igb"><h2>On Instagram</h2>
         <div class="igb-head"><img class="igb-av" src="img/ig-feed/avatar.jpg" alt="The Frans Paradise on Instagram" loading="lazy"><div><a class="igb-handle" href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener">@thefransparadise</a></div></div>
         <div class="igb-flip"><span class="igb-lbl"><i class="ph-fill ph-user"></i>Followers</span><span class="igb-digits" data-ig-flip data-value="4269" aria-label="4269 followers"></span></div>
-        <div class="igb-grid"><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p1.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p2.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p3.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p4.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p5.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1"><img src="img/ig-feed/p6.jpg" alt="" loading="lazy"></a></div>
+        <div class="igb-grid"><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p1.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p2.jpg" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p3.webp" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p4.webp" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p5.webp" alt="" loading="lazy"></a><a href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/ig-feed/p6.jpg" alt="" loading="lazy"></a></div>
         <a class="igb-follow" href="https://www.instagram.com/thefransparadise/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.2-9.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>Follow</a></div>
     </div>
-    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
+    <div class="legal"><span>© 2026 Frans Paradise. All rights reserved.</span><nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></nav><span><b>Dushi bida,</b> the good life.</span></div>
     <p class="credit"><a class="crafted" href="https://saltycodestudio.com" target="_blank" rel="noopener">Crafted by <img src="img/saltycode-mark.svg" alt="" width="22" height="22"> <b>saltycodestudio</b></a></p>
   </div>
 </footer>
