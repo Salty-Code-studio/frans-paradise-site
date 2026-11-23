@@ -110,7 +110,12 @@
 @media (min-width:861px) and (max-width:1100px){.nav .wrap ul#menu a{padding:7px 6px!important;font-size:13px!important}}
 @media (min-width:861px) and (max-width:980px){.nav .wrap{gap:6px!important;padding-left:18px!important;padding-right:18px!important}.nav .wrap ul#menu{padding:4px!important}.nav .wrap ul#menu a{padding:7px 5px!important;font-size:12.5px!important}.nav .wordmark b{font-size:24px!important}}
 /* 2026-11-06: no pill around the menu or the right-hand links; only the wind widget keeps a bubble, at the far right */
-.nav .wrap ul#menu{background:none!important;box-shadow:none!important;padding:0!important}
+@media (min-width:861px){.nav .wrap ul#menu{background:none!important;box-shadow:none!important;padding:0!important}}
+/* Mobile menu panel: dark sheet under the header, full width, same side gutter as the page */
+@media (max-width:860px){.nav.open .wrap ul#menu{background:#111111!important;box-shadow:0 24px 40px rgba(0,0,0,.4)!important;padding:8px 24px 24px!important;gap:0!important;border-top:1px solid rgba(255,255,255,.08);max-height:calc(100vh - 76px);overflow-y:auto}
+.nav.open .wrap ul#menu li{border-bottom:1px solid rgba(255,255,255,.08)}
+.nav.open .wrap ul#menu a{display:block;padding:15px 0!important;font-size:18px!important;color:#fff}
+.nav.open .wrap ul#menu a::after{display:none}}
 .nav .wrap ul#menu a,.nav .wrap ul#menu a:hover,.nav .wrap ul#menu a[aria-current]{background:none!important}
 .nav .wrap ul#menu a:hover{color:#6ae6e0!important;opacity:1}
 .nav .wrap .nav-cta{background:none!important;box-shadow:none!important;padding:0!important;gap:4px!important}
