@@ -959,7 +959,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
         <blockquote><p>“Amazing experience for our two teenage boys. … Really fun, laid back experience.”</p><footer>Jessica Anderson</footer></blockquote>
         <blockquote><p>“The staff was great, always helpful and friendly.”</p><footer>Family lesson, Google</footer></blockquote>
       </div>
-      <a class="more" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Read them all on Google</a>
+      <a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=The+Frans+Paradise+Sorobon+Bonaire&amp;query_place_id=ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Read them all on Google</a>
     </div>
     <div class="rside" aria-hidden="true"><div class="rcol up"><div class="rtrack"><img src="img/taty-air.webp" alt="" loading="lazy"><img src="img/drone.webp" alt="" loading="lazy"><img src="img/taty-shed.webp" alt="" loading="lazy"><img src="img/rack-boards.webp" alt="" loading="lazy"><img src="img/taty-air.webp" alt="" loading="lazy"><img src="img/drone.webp" alt="" loading="lazy"><img src="img/taty-shed.webp" alt="" loading="lazy"><img src="img/rack-boards.webp" alt="" loading="lazy"></div></div><div class="rcol down"><div class="rtrack"><img src="img/coach-talk.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/sails.webp" alt="" loading="lazy"><img src="img/taty-founder.webp" alt="" loading="lazy"><img src="img/coach-talk.webp" alt="" loading="lazy"><img src="img/student.webp" alt="" loading="lazy"><img src="img/sails.webp" alt="" loading="lazy"><img src="img/taty-founder.webp" alt="" loading="lazy"></div></div></div>
   </section>
@@ -983,7 +983,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
     <div class="wrap"><div class="box rv">
       <h2>Our Surf Spot</h2>
       <p>Right on Sorobon Bay. Open every day, 9 to 6.</p>
-      <a class="btn spot-btn" href="https://www.google.com/maps/place/?q=place_id:ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Plan Your Visit</a>
+      <a class="btn spot-btn" href="https://www.google.com/maps/search/?api=1&amp;query=The+Frans+Paradise+Sorobon+Bonaire&amp;query_place_id=ChIJwa7WBDQdg44RZHUnNEPact8" target="_blank" rel="noopener">Plan Your Visit</a>
     </div></div>
     <div class="sponsors on-photo" aria-label="Partners">
     <div class="logos" id="logos" tabindex="0" aria-label="Partner brands, scroll sideways">
@@ -1000,7 +1000,7 @@ section.hero.water::after{background:var(--grain),var(--dune),linear-gradient(18
       </div>
       <div class="qgrid rv" id="qgrid">
         <details><summary>Do I need previous experience?<i class="ph ph-plus"></i></summary><p>No. You start on the beach, then move into shallow, flat water. An instructor stays close the whole time.</p></details>
-        <details><summary>Can I book a lesson for today?<i class="ph ph-plus"></i></summary><p>Message us on WhatsApp and we'll tell you what's free today.</p></details>
+        <details><summary>Can I book a lesson for today?<i class="ph ph-plus"></i></summary><p>Same-day lessons are walk-in only. Come by the shack in Sorobon, open every day 9 to 6, and we'll get you on the water if there's space.</p></details>
         <details><summary>What should I bring?<i class="ph ph-plus"></i></summary><p>Swimwear, sunscreen, water and sunglasses with a strap. We have the rest.</p></details>
         <details><summary>What is included in the lesson?<i class="ph ph-plus"></i></summary><p>Your instructor and all the gear you need: board, sail or wing, and a vest.</p></details>
         <details class="extra"><summary>When is the best season for wind?<i class="ph ph-plus"></i></summary><p>Bonaire is windy all year. The best chance is December to June, with the strongest winds from February to May.</p></details>
@@ -1078,7 +1078,7 @@ nav.querySelectorAll('ul a').forEach(a=>a.addEventListener('click',()=>{nav.clas
 
 // Find a lesson: shows the wind for the chosen day, then hands every answer to the booking quiz
 const d=document.getElementById('f-date'),fa=document.getElementById('f-act'),fl=document.getElementById('f-lvl'),fll=document.getElementById('f-lvl-l'),fp=document.getElementById('f-ppl'),fw=document.getElementById('f-wind');
-d.valueAsDate=new Date(); d.min=d.value;
+{const t=new Date();t.setDate(t.getDate()+1);d.valueAsDate=t;d.min=d.value;}
 const LV=[['new','Never tried it'],['few','Had a lesson or two'],['ride','I can ride around'],['adv','I want to go further']],AG=[['7-9','7 to 9 years'],['10-12','10 to 12 years'],['13-16','13 to 16 years'],['mixed','Different ages']];
 const fillLvl=()=>{const kids=fa.value==='kids';fll.textContent=kids?'Age':'Level';fl.innerHTML=(kids?AG:LV).map(([k,t])=>`<option value="${k}">${t}</option>`).join('');};
 const showWind=()=>{if(!window.fpWind||!d.value)return;fw.textContent='Checking the wind…';

@@ -398,6 +398,12 @@ body{background:#100d09}
 .hst::after{content:"";position:absolute;left:0;right:0;bottom:0;height:7%;z-index:2;pointer-events:none;background:linear-gradient(180deg,rgba(6,22,28,0),#06161c)}
 @media (max-width:760px){.stairs{height:62vh;gap:4px}.st:nth-child(1),.st:nth-child(9){display:none}.hst .ghost img{width:70%}}
 @media (max-width:460px){.st:nth-child(2),.st:nth-child(8){display:none}}
+.st-link{position:absolute;inset:0;display:block;color:#fff;text-decoration:none;cursor:pointer}
+.st{transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s}
+@media (hover:hover){.st:hover{transform:translateY(-8px);box-shadow:0 0 0 2px rgba(106,230,224,.85),0 30px 60px rgba(2,14,18,.6)}.st:hover img{filter:brightness(1.08)}}
+.st-link:focus-visible{outline:3px solid #6ae6e0;outline-offset:-3px}
+.st:active{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.st,.st img{transition:none}.st:hover{transform:none}}
 </style>
 <section class="hst" aria-label="Hall of Fame">
   <div class="glow" aria-hidden="true"></div>
@@ -405,15 +411,15 @@ body{background:#100d09}
   <div class="wrap">
     <div class="ttl"><p class="sub">The legends of Frans Paradise</p><h1>Hall of <span>Fame</span></h1></div>
     <div class="stairs" role="list" aria-label="Featured riders">
-      <figure role="listitem" class="st" style="--t:62%"><img src="img/hof/strip/sarahquita.webp" alt="" style="object-position:50% 0"><figcaption>Sarah-Quita Offringa</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:52%"><img src="img/hof/strip/bjorn.webp" alt="" style="object-position:50% 0"><figcaption>Bjorn Saragoza</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:38%"><img src="img/hof/strip/kiri.webp" alt="" style="object-position:50% 0"><figcaption>Kiri Thode</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:20%"><img src="img/hof/strip/tonky.jpg" alt="" style="object-position:50% 0"><figcaption>Tonky Frans</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:6%"><img src="img/hof/strip/taty.webp" alt="" style="object-position:50% 0"><figcaption>Taty Frans</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:18%"><img src="img/hof/strip/arxon.webp" alt="" style="object-position:50% 0"><figcaption>Arxon Gomperts</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:36%"><img src="img/hof/strip/youp.jpg" alt="" style="object-position:50% 0"><figcaption>Youp Schmit</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:46%"><img src="img/hof/strip/amado.webp" alt="" style="object-position:50% 0"><figcaption>Amado Vrieswijk</figcaption></figure>
-      <figure role="listitem" class="st" style="--t:58%"><img src="img/hof/strip/tycho.webp" alt="" style="object-position:50% 0"><figcaption>Tycho Smits</figcaption></figure>
+      <figure role="listitem" class="st" style="--t:62%"><a class="st-link" href="#rider-sarah-quita-offringa" aria-label="Sarah-Quita Offringa, open profile"><img src="img/hof/strip/sarahquita.webp" alt="" style="object-position:50% 0"><figcaption>Sarah-Quita Offringa</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:52%"><a class="st-link" href="#rider-bjorn-saragoza" aria-label="Bjorn Saragoza, open profile"><img src="img/hof/strip/bjorn.webp" alt="" style="object-position:50% 0"><figcaption>Bjorn Saragoza</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:38%"><a class="st-link" href="#rider-kiri-thode" aria-label="Kiri Thode, open profile"><img src="img/hof/strip/kiri.webp" alt="" style="object-position:50% 0"><figcaption>Kiri Thode</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:20%"><a class="st-link" href="#rider-tonky-frans" aria-label="Tonky Frans, open profile"><img src="img/hof/strip/tonky.jpg" alt="" style="object-position:50% 0"><figcaption>Tonky Frans</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:6%"><a class="st-link" href="#rider-taty-frans" aria-label="Taty Frans, open profile"><img src="img/hof/strip/taty.webp" alt="" style="object-position:50% 0"><figcaption>Taty Frans</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:18%"><a class="st-link" href="#rider-arxon-gomperts" aria-label="Arxon Gomperts, open profile"><img src="img/hof/strip/arxon.webp" alt="" style="object-position:50% 0"><figcaption>Arxon Gomperts</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:36%"><a class="st-link" href="#rider-youp-schmit" aria-label="Youp Schmit, open profile"><img src="img/hof/strip/youp.jpg" alt="" style="object-position:50% 0"><figcaption>Youp Schmit</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:46%"><a class="st-link" href="#rider-amado-vrieswijk" aria-label="Amado Vrieswijk, open profile"><img src="img/hof/strip/amado.webp" alt="" style="object-position:50% 0"><figcaption>Amado Vrieswijk</figcaption></a></figure>
+      <figure role="listitem" class="st" style="--t:58%"><a class="st-link" href="#rider-tycho-smits" aria-label="Tycho Smits, open profile"><img src="img/hof/strip/tycho.webp" alt="" style="object-position:50% 0"><figcaption>Tycho Smits</figcaption></a></figure>
     </div>
   </div>
 </section>
@@ -569,7 +575,8 @@ const slug=n=>n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").re
 const openRider=()=>{const m=location.hash.match(/^#rider-(.+)$/);if(!m)return;const k=P.findIndex(p=>slug(p.n)===m[1]);if(k<0)return;
  let b=R.querySelector(`.rc[data-i="${k}"]`);if(!b){show("all");b=R.querySelector(`.rc[data-i="${k}"]`)}
  if(b){document.getElementById("roster").scrollIntoView({block:"start"});setTimeout(()=>b.click(),350)}};
-window.addEventListener("hashchange",openRider);setTimeout(openRider,300);
+window.addEventListener("hashchange",openRider);
+document.querySelectorAll(".st-link").forEach(a=>a.addEventListener("click",()=>{if(location.hash===a.getAttribute("href"))setTimeout(openRider,0)}));setTimeout(openRider,300);
 show("all");
 })();
 </script>

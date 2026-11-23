@@ -145,13 +145,14 @@
     const todayK = iso(today), hasWind = wind && Object.keys(wind).length;
     let html = `<div class="bk-wk">${["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map(d => `<span>${d}</span>`).join("")}</div><div class="bk-grid">`;
     cells.forEach(d => {
-      const k = iso(d), past = k < todayK, w = wind && wind[k], f = w ? fit(s.ride, s.level, w.kn) : null;
+      const k = iso(d), past = k <= todayK, w = wind && wind[k], f = w ? fit(s.ride, s.level, w.kn) : null;
       const mon = d.getDate() === 1 ? `<em>${d.toLocaleDateString("en-GB", { month: "short" })}</em>` : "";
       html += `<button type="button" class="bk-day${s.date === k ? " on" : ""}${k === todayK ? " today" : ""}${f === 2 ? " fit" : ""}" data-date="${k}" ${past ? "disabled" : ""}
         ${w ? `style="--c:${band(w.kn).c}" aria-label="${fmt(k, { weekday: "long", day: "numeric", month: "long" })}, ${w.kn} knots${f != null ? ", " + FIT[f].toLowerCase() : ""}"` : ""}>
         <span class="n">${mon}${d.getDate()}</span>${w ? `<span class="kn">${w.kn}<small>kn</small></span><span class="arr" style="transform:rotate(${(w.dir + 180) % 360}deg)"></span>` : past ? "" : `<span class="kn none">·</span>`}</button>`;
     });
     html += `</div><div class="bk-key"><span><i style="--c:#6ae6e0"></i>Learn</span><span><i style="--c:#ffe234"></i>Improve</span><span><i style="--c:#f06a24"></i>Fun</span><span><i style="--c:#ff6b57"></i>Strong</span>${s.ride !== "rent" ? `<span class="g">Good for you</span>` : ""}</div>`;
+    html += `<p class="bk-fine">Today? No booking needed. Just walk in at the shack in Sorobon, open every day 9 to 6.</p>`;
     if (!hasWind) html += `<p class="bk-fine">Forecast not available right now. Pick any day and Taty will tell you about the wind.</p>`;
     box.innerHTML = html;
     dayInfo();
@@ -195,7 +196,7 @@
   });
 
   const open = (preset = {}, from) => {
-    reset(); Object.assign(s, preset); s.pre = !!preset.date; back = from; loadWind();
+    reset(); Object.assign(s, preset); if (s.date && s.date <= iso(new Date())) s.date = null; s.pre = !!s.date; back = from; loadWind();
     flow = steps(); at = 0;
     // skip what the button already told us
     while (at < flow.length - 1 && s[{ ride: "ride", level: "level", age: "age", gear: "gear", days: "days", people: "people" }[flow[at]]]) { at++; flow = steps(); }
@@ -223,7 +224,6 @@
     const ride = /kids/.test(t) ? "kids" : /\bwing/.test(t) ? "wing" : /wind foil/.test(t) ? "foil" : /windsurf/.test(t) ? "windsurf" : null;
     const p = { ride };
     if (ride && ride !== "kids") { if (/intermediate/.test(t)) p.level = "ride"; else if (/advanced/.test(t)) p.level = "adv"; }
-    if (/this wind/.test(t)) p.date = iso(new Date());
     return p;
   };
   document.addEventListener("click", e => {

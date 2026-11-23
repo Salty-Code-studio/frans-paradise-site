@@ -255,6 +255,7 @@
 <script src="js/sub.js"></script>
 <script>
 // Coaching request: build a WhatsApp message from the form
+{const t=new Date();t.setDate(t.getDate()+1);const di=document.querySelector('#coach-form input[type="date"]');di.min=`${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,"0")}-${String(t.getDate()).padStart(2,"0")}`;}
 document.getElementById("coach-form").addEventListener("submit",e=>{
   e.preventDefault();const f=e.target;
   const msg=`Hi! I'd like an advanced coaching session.\nDiscipline: ${f.d.value}\nDate: ${f.t.value||"flexible"}\nMy experience and goal: ${f.x.value||"-"}`;
