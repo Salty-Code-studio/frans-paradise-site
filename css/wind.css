@@ -115,7 +115,8 @@
 @media (max-width:860px){.nav.open .wrap ul#menu{background:#111111!important;box-shadow:0 24px 40px rgba(0,0,0,.4)!important;padding:8px 24px 24px!important;gap:0!important;border-top:1px solid rgba(255,255,255,.08);max-height:calc(100vh - 76px);overflow-y:auto}
 .nav.open .wrap ul#menu li{border-bottom:1px solid rgba(255,255,255,.08)}
 .nav.open .wrap ul#menu a{display:block;padding:15px 0!important;font-size:18px!important;color:#fff}
-.nav.open .wrap ul#menu a::after{display:none}}
+.nav.open .wrap ul#menu a::after{display:none}
+.nav.open .wrap ul#menu::after{content:"";align-self:center;width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.28);margin-top:18px}}
 .nav .wrap ul#menu a,.nav .wrap ul#menu a:hover,.nav .wrap ul#menu a[aria-current]{background:none!important}
 .nav .wrap ul#menu a:hover{color:#6ae6e0!important;opacity:1}
 .nav .wrap .nav-cta{background:none!important;box-shadow:none!important;padding:0!important;gap:4px!important}
