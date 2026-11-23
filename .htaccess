@@ -1,0 +1,39 @@
+# Frans Paradise: static site
+ErrorDocument 404 /404.html
+Options -Indexes
+
+# Old WordPress URLs
+Redirect 301 /about-us/ /about.html
+Redirect 301 /our-crew/ /about.html
+Redirect 301 /lessons/ /lessons.html
+Redirect 301 /bookings/ /lessons.html
+Redirect 301 /lessons/windsurfing-beginners/ /ride-windsurf.html
+Redirect 301 /lessons/windsurfing-advanced/ /skills.html
+Redirect 301 /lessons/advanced-lessons/ /skills.html
+Redirect 301 /lessons/wing-foil-beginners/ /ride-wing-foil.html
+Redirect 301 /lessons/wing-foil-intermediate/ /ride-wing-foil.html
+Redirect 301 /lessons/foiling-beginners/ /ride-wind-foil.html
+Redirect 301 /lessons/foiling-advanced/ /ride-wind-foil.html
+Redirect 301 /rentals/ /rentals.html
+Redirect 301 /contact/ /contact.html
+Redirect 301 /reviews/ /reviews.html
+Redirect 301 /news/ /news.html
+Redirect 301 /hall-of-fame/ /hall-of-fame.html
+Redirect 301 /merch/ /merch.html
+Redirect 301 /shop/ /merch.html
+Redirect 301 /the-frans-paradise-shop/ /merch.html
+Redirect 301 /shop-2/ /merch.html
+Redirect 301 /a-day-at-frans-paradise/ /day.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
+</IfModule>
