@@ -176,6 +176,12 @@
 .gc-pic img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);max-width:none;object-fit:contain;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
 .gc:hover .gc-pic img{transform:scale(1.04)}
 .gc-pic.dark{background:#0b0b0b}
+.gc-pic img.mul{mix-blend-mode:multiply}
+.gc-pic img.cw{opacity:0;transition:opacity .35s,transform .5s cubic-bezier(.2,.8,.2,1)}.gc-pic img.cw.on{opacity:1}
+.gc-sw{display:flex;align-items:center;gap:8px;margin:8px 0 2px}
+.gc-sw .sw{width:22px;height:22px;border-radius:50%;background:var(--c);border:0;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18);cursor:pointer;padding:0;outline-offset:3px}
+.gc-sw .sw.on{box-shadow:inset 0 0 0 1px rgba(0,0,0,.18),0 0 0 2px #fff,0 0 0 3.5px var(--teal,#0e8f9a)}
+.gc-sw span{font-size:13px;color:var(--ink-2,#555);font-weight:600}
 .gc-pic.dark img{inset:0;width:100%;height:100%;object-fit:cover}
 .gc-none{position:absolute;inset:0;display:grid;place-items:center;font:800 18px var(--head);color:#9aa8ad}
 .gc-b{display:flex;flex-direction:column;flex:1;padding:18px 18px 20px}
@@ -270,6 +276,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Super_Hero</h3>
           <p class="gc-kind">Wave sail</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>3.4</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>Made for waves in every condition</li><li>Balanced, easy to control pull</li></ul>
         </div>
@@ -280,6 +287,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Duke</h3>
           <p class="gc-kind">Wave and bump &amp; jump sail</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.2</li><li>4.5</li><li>5.0</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>5 battens for a big wind range</li><li>Neutral, light feel in the hands</li></ul>
         </div>
@@ -290,6 +298,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Idol</h3>
           <p class="gc-kind">Freestyle sail</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.4</li><li>4.8</li><li>5.2</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>Duotone&#x27;s freestyle sail</li><li>Smooth, progressive power for tricks</li></ul>
         </div>
@@ -300,6 +309,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>E_Pace</h3>
           <p class="gc-kind">Freeride sail, no cams</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>5.4</li><li>5.8</li><li>6.2</li><li>6.6</li><li>7.3</li><li>7.8</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>Planes early without pumping</li><li>Two trim settings for a wide wind range</li></ul>
         </div>
@@ -310,6 +320,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Warp_Fin</h3>
           <p class="gc-kind">Slalom race sail</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>5.7</li><li>6.2</li><li>6.7</li><li>7.7</li><li>8.4</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>7 battens, 4 cams</li><li>Holds its shape in the gusts</li></ul>
         </div>
@@ -320,6 +331,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>S_Pace</h3>
           <p class="gc-kind">Freerace sail with cams</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>6.6</li><li>7.3</li><li>7.8</li><li>8.3</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>Easy rotation through the jibe</li><li>Biggest wind range in the Duotone line</li></ul>
         </div>
@@ -330,6 +342,7 @@
           <p class="gc-brand">Point-7</p>
           <h3>Rush</h3>
           <p class="gc-kind">Freeride sail</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>4.7</li><li>5.1</li><li>5.7</li><li>6.2</li><li>6.7</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>The newest sails in the rack</li><li>Ask Taty to rig one for you</li></ul>
         </div>
@@ -346,6 +359,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Eagle</h3>
           <p class="gc-kind">Freeride board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>120</li><li>130</li><li>148</li><li>168</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Easy, early planing</li><li>From first footstraps to fast freeride</li></ul>
         </div>
@@ -356,6 +370,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Blitz</h3>
           <p class="gc-kind">Freeride and freerace board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>116</li><li>126</li><li>136</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Light, fast and lively</li><li>For riders who want more speed</li></ul>
         </div>
@@ -366,6 +381,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Falcon_Fin D/LAB</h3>
           <p class="gc-kind">Slalom race board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>98</li><li>111</li><li>118</li><li>129</li><li>139</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Duotone&#x27;s top slalom shape</li><li>Super light D/LAB build</li></ul>
         </div>
@@ -376,6 +392,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Ultra FreeWave</h3>
           <p class="gc-kind">Freewave board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>84</li><li>94</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Waves, freestyle and bump &amp; jump</li><li>Huge wind range</li></ul>
         </div>
@@ -386,6 +403,7 @@
           <p class="gc-brand">Future Fly</p>
           <h3>White Tiger</h3>
           <p class="gc-kind">Freerace board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>115</li><li>125</li><li>132</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>A pure freerace board</li><li>Fast on edge, still comfortable</li></ul>
         </div>
@@ -396,6 +414,7 @@
           <p class="gc-brand">Future Fly</p>
           <h3>Abu Fish</h3>
           <p class="gc-kind">Wave board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>105</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Floats and turns in light wind</li><li>Great for heavier riders</li></ul>
         </div>
@@ -406,6 +425,7 @@
           <p class="gc-brand">Future Fly</p>
           <h3>Blue Rabbit</h3>
           <p class="gc-kind">Freewave and bump &amp; jump board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>95</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Balance of speed and easy turns</li><li>Fun in all conditions</li></ul>
         </div>
@@ -417,11 +437,12 @@
       <p class="gg-intro">Duotone wings and boards, from your first flight to freestyle.</p>
       <div class="gg-grid">
       <article class="gc">
-        <div class="gc-pic"><img src="img/gear/unit.webp" alt="Duotone Unit" loading="lazy"></div>
+        <div class="gc-pic"><img class="cw on mul" data-c="0" src="img/gear/unit.webp" alt="Duotone Unit, white" loading="lazy"><img class="cw mul" data-c="1" src="img/gear/unit-red.webp" alt="Duotone Unit, red" loading="lazy"></div>
         <div class="gc-b">
           <p class="gc-brand">Duotone</p>
           <h3>Unit</h3>
-          <p class="gc-kind">Wing, with boom</p>
+          <p class="gc-kind">Wing with boom, 2027</p>
+          <div class="gc-sw" role="group" aria-label="Colours"><button type="button" class="sw on" data-c="0" style="--c:#f4f4f4" aria-pressed="true" aria-label="White"></button><button type="button" class="sw" data-c="1" style="--c:#ee3a3a" aria-pressed="false" aria-label="Red"></button><span>White</span></div>
           <ul class="gc-sizes" aria-label="Sizes in square metres"><li>2.0</li><li>2.5</li><li>3.0</li><li>3.5</li><li>4.0</li><li>4.5</li><li>5.0</li><li>5.5</li><li>6.0</li><li>6.5</li><li class="u">Sizes, m²</li></ul>
           <ul class="gc-pts"><li>Balanced on every course</li><li>Comes with the Fusion boom</li></ul>
         </div>
@@ -432,6 +453,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Sky Start DST</h3>
           <p class="gc-kind">Beginner wing board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>170</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>170 L and 80 cm wide, very stable</li><li>Easy to stand up on</li></ul>
         </div>
@@ -442,6 +464,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Sky Free</h3>
           <p class="gc-kind">Freeride wing board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>105</li><li>120</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Early take-off, easy glide</li><li>Stable and easy to steer</li></ul>
         </div>
@@ -452,6 +475,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Sky Free DST</h3>
           <p class="gc-kind">Freeride wing board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>135</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Same shape as the Sky Free</li><li>Tough, ding-resistant top sheet</li></ul>
         </div>
@@ -462,6 +486,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Skybrid</h3>
           <p class="gc-kind">Mid-length foil board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>80</li><li>90</li><li>100</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Long glide, easy take-off</li><li>Wing, foil assist and prone</li></ul>
         </div>
@@ -472,6 +497,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Skybrid SLS</h3>
           <p class="gc-kind">Mid-length foil board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>60</li><li>70</li><li>80</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>The Skybrid in a lighter carbon build</li><li>For riders who pump and glide</li></ul>
         </div>
@@ -482,6 +508,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Sky Style</h3>
           <p class="gc-kind">Freestyle and wave wing board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>85</li><li>95</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Wide nose for stable starts</li><li>Recessed deck for control</li></ul>
         </div>
@@ -492,6 +519,7 @@
           <p class="gc-brand">Duotone</p>
           <h3>Sky Style SLS</h3>
           <p class="gc-kind">Freestyle and wave wing board</p>
+          
           <ul class="gc-sizes" aria-label="Sizes in litres"><li>55</li><li>65</li><li>75</li><li class="u">Sizes, L</li></ul>
           <ul class="gc-pts"><li>Light carbon SLS build</li><li>Quick and responsive on the wave</li></ul>
         </div>
@@ -500,6 +528,7 @@
     </details>
   </div>
 </section>
+<script>document.querySelectorAll(".gc-sw").forEach(s=>s.addEventListener("click",e=>{const b=e.target.closest(".sw");if(!b)return;const c=b.dataset.c,card=s.closest(".gc");card.querySelectorAll(".cw").forEach(i=>i.classList.toggle("on",i.dataset.c===c));s.querySelectorAll(".sw").forEach(x=>{x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",x===b)});s.querySelector("span").textContent=b.getAttribute("aria-label")}))</script>
 <!-- GEAR:end -->
 
 <section class="sec extras-sec">
